@@ -1,12 +1,21 @@
 import Image from "next/image";
 
-export default function HeadingTwoHighlight({ color, title, titleCss }) {
+export default function HeadingTwoHighlight({
+  color,
+  title,
+  titleCss,
+  titleOrientation,
+  titleWidth,
+  titleJustify,
+}) {
   return (
-    <div className={`flex justify-center`}>
+    <div className={`flex ${titleJustify ? titleJustify : "justify-center"}`}>
       <h2
         className={`${titleCss && titleCss} ${
           color ? color : "text-black-heading-color"
-        } relative max-w-[1200px] text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem] text-center font-bold`}
+        } relative max-w-[1200px] text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem] ${
+          titleOrientation ? titleOrientation : "text-center"
+        } font-semibold`}
       >
         {title &&
           title.map((text) =>

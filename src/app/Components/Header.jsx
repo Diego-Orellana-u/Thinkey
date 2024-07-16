@@ -1,14 +1,14 @@
-import logo from "../../assets/logos/logo-thinkey.svg";
-
-import Image from "next/image";
 import { MenuIcon } from "./MenuIcon";
+import LogoHeader from "./LogoHeader";
 export const Header = () => {
   return (
-    <div className="h-14 shadow-md flex justify-between px-5 items-center">
-      <Image className="w-28 pt-1" src={logo} alt="Logo of Thinkey school" />
+    <div className="h-14 sticky flex justify-between pt-5 px-5 items-center bg-transparent">
+      <LogoHeader />
       <div>
         <MenuIcon />
       </div>
     </div>
   );
 };
+
+// Header logo is server component so it's rendered in the server

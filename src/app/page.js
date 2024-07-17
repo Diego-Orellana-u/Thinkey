@@ -1,9 +1,10 @@
-import { Header } from "./Components/Header";
+import Image from "next/image";
+import test from "../../public/test.svg";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Image className="w-full" src={test} />
     </>
   );
 }

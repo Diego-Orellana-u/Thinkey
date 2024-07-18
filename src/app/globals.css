@@ -38,6 +38,10 @@ p {
   text-wrap: pretty;
 }
 
+.info-bar {
+  background: linear-gradient(90deg, #f34e4e 0%, #7062c4 100%);
+}
+
 .drawer__overlay {
   content: "";
   top: 0;

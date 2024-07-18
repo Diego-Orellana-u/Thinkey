@@ -4,7 +4,9 @@ import test from "../../public/test.svg";
 export default function Home() {
   return (
     <>
-      <Image className="w-full" src={test} />
+      <div className="">
+        <Image className="w-full absolute top-0" src={test} />
+      </div>
     </>
   );
 }

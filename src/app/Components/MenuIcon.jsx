@@ -9,7 +9,6 @@ export const MenuIcon = () => {
   const [overlayClicked, setOverlayClicked] = useState(false);
 
   const handleMenuClick = (e) => {
-    console.log("hola");
     setActiveMenu(!activeMenu);
     setOverlayClicked(false);
   };

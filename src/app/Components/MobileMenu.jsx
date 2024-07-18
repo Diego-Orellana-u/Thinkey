@@ -24,7 +24,7 @@ export const MobileMenu = ({
       ></span>
 
       <div
-        className={`h-screen absolute left-0 top-0 w-[80vw] max-w-[350px] z-[999]  ${
+        className={`h-screen fixed left-0 top-0 w-[80vw] max-w-[350px] z-[999]  ${
           activeMenu
             ? "ease-in duration-300"
             : "ease-in duration-300 -translate-x-full"

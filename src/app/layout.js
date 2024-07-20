@@ -1,9 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "./Components/Header";
 import InfoBar from "./Components/InfoBar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { generalSans } from "./fonts";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${generalSans.variable} antialiased font-sans`}>
         <InfoBar />
         <Header />
         {children}

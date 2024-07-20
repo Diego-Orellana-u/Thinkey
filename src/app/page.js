@@ -1,12 +1,9 @@
-import Image from "next/image";
-import test from "../../public/test.svg";
+import Hero from "./Components/Hero";
 
 export default function Home() {
   return (
-    <>
-      <div className="">
-        <Image className="w-full absolute top-0" src={test} />
-      </div>
-    </>
+    <div className="font-sans">
+      <Hero />
+    </div>
   );
 }

@@ -42,6 +42,11 @@ p {
   background: linear-gradient(90deg, #f34e4e 0%, #7062c4 100%);
 }
 
+.box-shadow-hero {
+  box-shadow: 0px 4px 30px 50px rgba(0, 0, 0, 0.3) inset,
+    0px 4px 50px 15px rgba(0, 0, 0, 0.25);
+}
+
 .drawer__overlay {
   content: "";
   top: 0;

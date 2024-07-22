@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 import Image from "next/image";
 import test from "../../../public/test.svg";
 import fotoHero from "../../../public/fotoHero.webp";
@@ -5,6 +7,10 @@ import fotoHero from "../../../public/fotoHero.webp";
 export default function Hero() {
   return (
     <div className="pt-5">
+      <div>
+        <Image className="w-full absolute top-0 -z-20" src={test} />
+      </div>
+
       <div className="px-5 flex flex-col gap-3">
         <div>
           <span className="text-sm">EVENTOS CIENTIFICOS Y EDUCATIVOS</span>
@@ -23,9 +29,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div>
-        <Image className="w-full absolute top-0 -z-20" src={test} />
-      </div>
+      <Button>Click me</Button>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import "./globals.css";
-import { Header } from "./Components/Header";
-import InfoBar from "./Components/InfoBar";
+import { Header } from "./components/Header";
+import InfoBar from "./components/InfoBar";
 import { generalSans } from "./fonts";
+import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${generalSans.variable} antialiased font-sans`}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          generalSans.variable
+        )}
+      >
         <InfoBar />
         <Header />
         {children}

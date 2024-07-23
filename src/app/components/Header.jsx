@@ -6,25 +6,21 @@ export const Header = () => {
   const [headerColor, setHeaderColor] = useState(false);
 
   const scrollHeader = () => {
-    if (window.scrollY >= 20) {
-      setHeaderColor(true);
-    } else {
-      setHeaderColor(false);
-    }
+    window.scrollY >= 40 ? setHeaderColor(true) : setHeaderColor(false);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
 
     return () => {
-      window.addEventListener("scroll", scrollHeader);
+      window.removeEventListener("scroll", scrollHeader);
     };
   });
 
   return (
     <div
       className={`sticky top-0 py-3 z-10 ${
-        headerColor ? "bg-[white]" : "bg-[transparent]"
+        headerColor ? "bg-[white] shadow-md" : "bg-[transparent]"
       }`}
     >
       <div className="h-14 flex justify-between px-5 items-center bg-transparent">

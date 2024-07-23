@@ -23,7 +23,7 @@ export const MenuNavm = () => {
               {Object.keys(link.subnav).length === 0 && (
                 <a
                   href={link.link}
-                  className="text-xl h-16 flex justify-between items-center mx-7 relative cursor-pointer border-b-2"
+                  className="text-xl h-16 flex justify-between items-center mx-5 min-[375px]:mx-7 relative cursor-pointer border-b-2 border-zinc-300"
                 >
                   {link.name}
                 </a>
@@ -32,7 +32,7 @@ export const MenuNavm = () => {
               {/* Here we separate individual nav and navs with subnavs */}
 
               {Object.keys(link.subnav).length > 0 && (
-                <div className="border-b-2 mx-7">
+                <div className="border-b-2 border-zinc-300 mx-5 min-[375px]:mx-7">
                   <div
                     onClick={() => handleOpen(link.key)}
                     className="h-16 flex flex-col items-center justify-between relative cursor-pointer"

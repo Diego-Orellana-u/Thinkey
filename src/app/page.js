@@ -1,6 +1,8 @@
 import HomeFifty from "./components/HomeFifty";
 import Hero from "./components/Hero";
 import HomeServices from "./components/HomeServices";
+import ImpactNumbers from "./components/ImpactNumbers";
+import VennHome from "./components/VennHome";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <HomeFifty />
       <HomeServices />
+      <ImpactNumbers />
+      <VennHome />
     </div>
   );
 }

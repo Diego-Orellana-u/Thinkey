@@ -13,7 +13,7 @@ export default function ServicesCard() {
         href="/"
         className={`${buttonVariants({
           variant: "link",
-        })} w-full rounded-[50px]`}
+        })} w-full rounded-[50px] bg-[#EA624A]`}
       >
         SEE MORE
       </Link>

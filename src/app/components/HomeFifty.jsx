@@ -1,4 +1,4 @@
-import FiftyText from "./FiftyText";
+import FiftyCard from "./FiftyCard";
 
 export default function HomeFifty() {
   return (
@@ -13,9 +13,9 @@ export default function HomeFifty() {
       </div>
 
       <div>
-        <FiftyText />
-        <FiftyText />
-        <FiftyText />
+        <FiftyCard />
+        <FiftyCard />
+        <FiftyCard />
       </div>
     </div>
   );

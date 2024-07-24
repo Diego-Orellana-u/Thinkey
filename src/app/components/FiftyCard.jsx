@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function FiftyText() {
+export default function FiftyCard() {
   return (
     <div className="flex flex-col mb-24">
       <div className="mb-7">

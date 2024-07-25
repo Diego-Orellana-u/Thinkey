@@ -4,6 +4,7 @@ import HomeServices from "./components/HomeServices";
 import ImpactNumbers from "./components/ImpactNumbers";
 import VennHome from "./components/VennHome";
 import Testimonies from "./components/Testimonies";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ImpactNumbers />
       <VennHome />
       <Testimonies />
+      <Footer />
     </div>
   );
 }

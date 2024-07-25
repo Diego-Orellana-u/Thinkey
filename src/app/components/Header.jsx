@@ -23,7 +23,7 @@ export const Header = () => {
         headerColor ? "bg-[white] shadow-md" : "bg-[transparent]"
       }`}
     >
-      <div className="h-14 flex justify-between px-5 items-center bg-transparent">
+      <div className="h-14 flex justify-between px-5 min-[425px]:px-7 items-center bg-transparent">
         <LogoHeader />
         <div>
           <MenuIcon />

@@ -2,7 +2,7 @@ import FiftyCard from "./FiftyCard";
 
 export default function HomeFifty() {
   return (
-    <div className="pt-28 px-5">
+    <div className="pt-28 px-5 min-[425px]:px-7">
       <div className="flex flex-col items-center text-center gap-2 pb-12">
         <h2 className="text-3xl font-bold text-[#002A54] tracking-tight">
           Catchy title solving the problem

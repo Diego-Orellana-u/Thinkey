@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function VennHome() {
   return (
-    <div className="px-5 pt-14 pb-20 text-center">
+    <div className="px-5 min-[425px]:px-7 pt-14 pb-20 text-center">
       <div className="relative">
         <h2 className="text-3xl font-bold text-[#002A54] tracking-tight mb-8">
           Make your students start loving science

@@ -27,11 +27,11 @@ export default function Testimonies() {
     },
   ];
   return (
-    <div className="px-5 text-lg mb-20">
+    <div className="px-5 min-[425px]:px-7 text-lg mb-28">
       <h2 className="text-3xl font-semibold text-[#002A54] tracking-tight mb-8 text-center">
         What does our clients say about us?
       </h2>
-      <Carousel className="box-shadow-testimonies">
+      <Carousel>
         <CarouselContent>
           {testimonies.map((testimony) => (
             <CarouselItem key={testimony.name}>

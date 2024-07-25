@@ -1,12 +1,23 @@
 "use client";
 import Image from "next/image";
 import menuIcon from "../../assets/icons/menu-icon.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 
 export const MenuIcon = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [overlayClicked, setOverlayClicked] = useState(false);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (activeMenu) {
+      body.classList.remove("overflow-auto");
+      body.classList.add("overflow-hidden");
+    } else {
+      body.classList.remove("overflow-hidden");
+      body.classList.add("overflow-auto");
+    }
+  }, [activeMenu]);
 
   const handleMenuClick = (e) => {
     setActiveMenu(!activeMenu);

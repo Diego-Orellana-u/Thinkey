@@ -10,7 +10,7 @@ export default function VennHome() {
           Make your students start loving science
         </h2>
         <Image
-          className="absolute top-7 left-[25%] -z-10"
+          className="absolute top-7 left-[25%] min-[425px]:left-[32%] -z-10"
           src="/highlight-marker.svg"
           width={210}
           height={61}

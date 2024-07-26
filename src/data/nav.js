@@ -1,4 +1,4 @@
-export const nav = [
+export const mobileNav = [
   {
     name: "Servicios",
     link: "/servicios",
@@ -6,31 +6,74 @@ export const nav = [
       {
         name: "Para familias",
         link: "/familias",
-        key: "familiasnav",
+        key: "familiasnav-mobile",
       },
       {
         name: "Para empresas",
         link: "/empresas",
-        key: "empresasnav",
+        key: "empresasnav-mobile",
       },
       {
         name: "Para organizaciones",
         link: "/organizaciones",
-        key: "organizacionesnav",
+        key: "organizacionesnav-mobile",
       },
     ],
-    key: "serviciosnav",
+    key: "serviciosnav-mobile",
   },
   {
     name: "Nosotros",
     link: "/nosotros",
     subnav: [],
-    key: "nosotrosnav",
+    key: "nosotrosnav-mobile",
   },
   {
     name: "Contacto",
     link: "/contacto",
     subnav: [],
-    key: "contactonav",
+    key: "contactonav-mobile",
+  },
+  {
+    name: "Blog",
+    link: "/blog",
+    subnav: [],
+    key: "blognav-mobile",
+  },
+];
+
+export const desktopNav = [
+  {
+    name: "Servicios",
+    link: "/servicios",
+    subnav: [
+      {
+        name: "Para familias",
+        link: "/familias",
+        key: "familiasnav-desktop",
+      },
+      {
+        name: "Para empresas",
+        link: "/empresas",
+        key: "empresasnav-desktop",
+      },
+      {
+        name: "Para organizaciones",
+        link: "/organizaciones",
+        key: "organizacionesnav-desktop",
+      },
+    ],
+    key: "serviciosnav-desktop",
+  },
+  {
+    name: "Nosotros",
+    link: "/nosotros",
+    subnav: [],
+    key: "nosotrosnav-desktop",
+  },
+  {
+    name: "Contacto",
+    link: "/contacto",
+    subnav: [],
+    key: "contactonav-desktop",
   },
 ];

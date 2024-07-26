@@ -1,6 +1,6 @@
 import Image from "next/image";
 import plusIcon from "../../assets/icons/plus.svg";
-import { nav } from "../../data/nav.js";
+import { mobileNav } from "../../data/nav.js";
 import { useState } from "react";
 
 export const MenuNavm = () => {
@@ -16,8 +16,8 @@ export const MenuNavm = () => {
 
   return (
     <div>
-      {nav &&
-        nav.map((link) => {
+      {mobileNav &&
+        mobileNav.map((link) => {
           return (
             <div key={link.key}>
               {Object.keys(link.subnav).length === 0 && (

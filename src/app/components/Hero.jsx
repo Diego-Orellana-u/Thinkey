@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { heroInfo } from "../../data/heroInfo";
 
 import { buttonVariants } from "@/components/ui/button";
 
@@ -30,50 +31,48 @@ export default function Hero() {
         </div>
         <div className="max-[899px]:block hidden drop-shadow-2xl mb-3">
           <Image
-            src="/fotoHero.webp"
+            src={heroInfo.img}
             width={1920}
             height={1280}
             className="rounded-[20px] box-shadow-hero object-cover max-h-[430px]"
           />
         </div>
         <div className="flex min-[900px]:gap-8 min-[1024px]:gap-12 min-[1150px]:gap-18">
-          <div className="flex min-[1024px]:mt-6 flex-col gap-4 min-[768px]:gap-7 min-[900px]:w-[70%] min-[900px]:gap-4 min-[1150px]:gap-5">
+          <div className="flex min-[1024px]:mt-6 flex-col gap-4 min-[768px]:gap-7 min-[900px]:w-[70%] min-[900px]:gap-4">
             <div className="min-[600px]:mb-2 min-[900px]:block hidden min-[900px]:mb-0">
               <span className="text-sm min-[1150px]:text-base font-medium text-[#424142]">
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS
               </span>
             </div>
             <span className="min-[1150px]:leading-[72px] text-[28px] min-[345px]:text-[30px] min-[550px]:text-5xl min-[900px]:text-4xl min-[1150px]:text-6xl min-[1150px]:mb-3 leading-9 font-bold pt-1 min-[550px]:pt-5 min-[900px]:pt-0">
-              Frase Catchy sobre lo que hacemos
+              {heroInfo.title}
             </span>
-            <p className="text-lg text-[#424142] min-[768px]:mb-2 min-[1150px]:mb-4 min-[1150px]:w-[470px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+            <p className="text-lg text-[#424142] min-[768px]:mb-2 min-[1150px]:mb-6 min-[1150px]:w-[470px]">
+              {heroInfo.desc}
             </p>
             <div className="min-[768px]:flex gap-8 hidden min-[1150px]:w-[80%]">
               <Link
-                href="/"
+                href={heroInfo.mainBtnLink}
                 className={`${buttonVariants({
                   variant: "link",
                 })} w-full rounded-[50px] bg-[#EA624A] border-[#EA624A] border-2 text-white font-normal`}
               >
-                SEE MORE
+                {heroInfo.mainBtnText}
               </Link>
               <Link
-                href="/"
+                href={heroInfo.secondBtnLink}
                 className={`${buttonVariants({
                   variant: "link",
                 })} w-full rounded-[50px] bg-transparent border-[#16171D] border-2 text-[#424142] font-medium text-base`}
               >
-                SEE MORE
+                {heroInfo.secondBtnText}
               </Link>
             </div>
           </div>
 
           <div className="min-[900px]:block hidden drop-shadow-2xl mb-3 min-[900px]:mb-0 min-[900px]:w-[75%]">
             <Image
-              src="/fotoHero.webp"
+              src={heroInfo.img}
               width={1920}
               height={1280}
               className="rounded-[20px] box-shadow-hero object-cover max-h-[430px] h-full"
@@ -84,12 +83,12 @@ export default function Hero() {
 
       <div className="px-5 min-[425px]:px-7 pt-8 max-[767px]:block hidden">
         <Link
-          href="/"
+          href={heroInfo.mainBtnLink}
           className={`${buttonVariants({
             variant: "link",
           })} w-full rounded-[50px] bg-[#EA624A] text-white font-normal`}
         >
-          SEE MORE
+          {heroInfo.mainBtnText}
         </Link>
       </div>
     </div>

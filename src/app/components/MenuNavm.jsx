@@ -2,6 +2,7 @@ import Image from "next/image";
 import plusIcon from "../../assets/icons/plus.svg";
 import { mobileNav } from "../../data/nav.js";
 import { useState } from "react";
+import Link from "next/link";
 
 export const MenuNavm = () => {
   const [opened, setOpened] = useState([]);
@@ -20,18 +21,18 @@ export const MenuNavm = () => {
         mobileNav.map((link) => {
           return (
             <div key={link.key}>
-              {Object.keys(link.subnav).length === 0 && (
-                <a
+              {link.subnav.length === 0 && (
+                <Link
                   href={link.link}
                   className="text-xl h-16 flex justify-between items-center mx-5 min-[375px]:mx-7 relative cursor-pointer border-b-2 border-zinc-300"
                 >
                   {link.name}
-                </a>
+                </Link>
               )}
 
               {/* Here we separate individual nav and navs with subnavs */}
 
-              {Object.keys(link.subnav).length > 0 && (
+              {link.subnav.length > 0 && (
                 <div className="border-b-2 border-zinc-300 mx-5 min-[375px]:mx-7">
                   <div
                     onClick={() => handleOpen(link.key)}
@@ -49,16 +50,16 @@ export const MenuNavm = () => {
                         : "overflow-hidden max-h-0 height-out"
                     }`}
                   >
-                    <div className="mb-3 w-full px-7 flex flex-col">
+                    <div className="mb-3 w-full pl-7 flex flex-col">
                       {link.subnav.map((subnav) => {
                         return (
-                          <a
+                          <Link
                             href={subnav.link}
                             key={subnav.name}
                             className="mb-4 px-2"
                           >
                             {subnav.name}
-                          </a>
+                          </Link>
                         );
                       })}
                     </div>

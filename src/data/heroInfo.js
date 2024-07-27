@@ -1,6 +1,6 @@
 export const heroInfo = {
   title: "Frase Catchy sobre lo que hacemosa",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  desc: "RLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   mainBtnText: "SEE MORE",
   mainBtnLink: "/",
   secondBtnText: "SEE MORE 2",

@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="pt-5 min-[332px]:pt-0 min-[560px]:pt-5 min-[940px]:h-[95vh]">
+    <div className="pt-5 min-[332px]:pt-0 min-[560px]:pt-5 min-[940px]:h-[95vh] min-[1150px]:pt-8">
       <div>
         <Image
           className="w-full absolute top-0 -z-20 min-h-[700px] h-[125vh] min-[515px]:h-[785px] min-[550px]:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] min-[768px]:h-[1020px] min-[900px]:hidden"
@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div>
         <Image
-          className="w-full absolute top-0 -z-20 h-[98vh] hidden min-[900px]:block"
+          className="w-full absolute top-0 -z-20 h-[100vh] hidden min-[900px]:block"
           src="/desktop-bg.png"
           width={1440}
           height={680}

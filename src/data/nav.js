@@ -43,7 +43,7 @@ export const mobileNav = [
 
 export const desktopNav = [
   {
-    name: "Servicios",
+    name: "SERVICIOS",
     link: "/servicios",
     subnav: [
       {
@@ -65,15 +65,21 @@ export const desktopNav = [
     key: "serviciosnav-desktop",
   },
   {
-    name: "Nosotros",
+    name: "NOSOTROS",
     link: "/nosotros",
     subnav: [],
     key: "nosotrosnav-desktop",
   },
   {
-    name: "Contacto",
+    name: "CONTACTO",
     link: "/contacto",
     subnav: [],
     key: "contactonav-desktop",
+  },
+  {
+    name: "BLOG",
+    link: "/blog",
+    subnav: [],
+    key: "blognav-desktop",
   },
 ];

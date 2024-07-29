@@ -35,16 +35,16 @@ export default function InfoBar() {
         </div>
       </div>
       <div className="gap-3 items-center hidden min-[550px]:flex">
-        <Link href="" className="">
+        <Link href="/" className="">
           <Image src="fb-icon.svg" width={17} height={17} />
         </Link>
-        <Link href="" className="mb-">
+        <Link href="/" className="mb-">
           <Image src="youtube.svg" width={22} height={18} />
         </Link>
-        <Link href="" className="">
+        <Link href="/" className="">
           <Image src="x.svg" width={19} height={19} />
         </Link>
-        <Link href="" className="">
+        <Link href="/" className="">
           <Image
             src="linkedin-icon.svg"
             width={17.06}

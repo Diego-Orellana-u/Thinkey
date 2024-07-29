@@ -33,14 +33,19 @@ export const Header = () => {
         </div>
         <div className="min-[1024px]:flex hidden items-center">
           <DesktopMenu />
-          <Image src="/world.svg" width={28} height={28} className="w-7 mr-6" />
-          <Button
-            className={`${buttonVariants({
-              variant: "header",
-            })} px-10 rounded-[50px] bg-[#EA624A] border-[#EA624A] border-2 text-white font-normal `}
+          <button>
+            <Image
+              src="/world.svg"
+              width={28}
+              height={28}
+              className="w-7 mr-6"
+            />
+          </button>
+          <button
+            className={`min-[1024px]:h-[50px] text-base relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
           >
-            BOOK NOW
-          </Button>
+            <span className="relative z-10">BOOK NOW</span>
+          </button>
         </div>
       </div>
     </div>

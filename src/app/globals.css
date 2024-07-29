@@ -82,7 +82,8 @@ p {
 }
 
 .info-bar {
-  background: linear-gradient(90deg, #f34e4e 0%, #7062c4 100%);
+  /* background: linear-gradient(90deg, #f34e4e 0%, #7062c4 100%); */
+  background: linear-gradient(to right, #e55dd0, #b473ff 48%, #9a44fd);
 }
 
 .box-shadow-hero {
@@ -105,6 +106,17 @@ p {
   visibility: hidden;
   left: 0;
   z-index: 100;
+}
+
+.gradient-header {
+  background: linear-gradient(
+      90deg,
+      #4b3ba2 0%,
+      #8f1472 35.52%,
+      #e11723 71.8%,
+      #fc7800 100%
+    ),
+    #ea624a;
 }
 
 @layer utilities {

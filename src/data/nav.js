@@ -47,19 +47,45 @@ export const desktopNav = [
     link: "/servicios",
     subnav: [
       {
-        name: "Para familias",
-        link: "/familias",
-        key: "familiasnav-desktop",
+        title: "Alert Dialog",
+        href: "/docs/primitives/alert-dialog",
+        description:
+          "A modal dialog that interrupts the user with important content and expects a response.",
+        key: "alert-dialog-subnav",
       },
       {
-        name: "Para empresas",
-        link: "/empresas",
-        key: "empresasnav-desktop",
+        title: "Hover Card",
+        href: "/docs/primitives/hover-card",
+        description:
+          "For sighted users to preview content available behind a link.",
+        key: "hover-card-subnav",
       },
       {
-        name: "Para organizaciones",
-        link: "/organizaciones",
-        key: "organizacionesnav-desktop",
+        title: "Progress",
+        href: "/docs/primitives/progress",
+        description:
+          "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        key: "progess-subnav",
+      },
+      {
+        title: "Scroll-area",
+        href: "/docs/primitives/scroll-area",
+        description: "Visually or semantically separates content.",
+        key: "scroll-area-subnav",
+      },
+      {
+        title: "Tabs",
+        href: "/docs/primitives/tabs",
+        description:
+          "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        key: "tabs-subnav",
+      },
+      {
+        title: "Tooltip",
+        href: "/docs/primitives/tooltip",
+        description:
+          "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        key: "tooltip-subnav",
       },
     ],
     key: "serviciosnav-desktop",
@@ -67,7 +93,43 @@ export const desktopNav = [
   {
     name: "NOSOTROS",
     link: "/nosotros",
-    subnav: [],
+    subnav: [
+      {
+        title: "Alert Dialog",
+        href: "/docs/primitives/alert-dialog",
+        description:
+          "A modal dialog that interrupts the user with important content and expects a response.",
+      },
+      {
+        title: "Hover Card",
+        href: "/docs/primitives/hover-card",
+        description:
+          "For sighted users to preview content available behind a link.",
+      },
+      {
+        title: "Progress",
+        href: "/docs/primitives/progress",
+        description:
+          "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      },
+      {
+        title: "Scroll-area",
+        href: "/docs/primitives/scroll-area",
+        description: "Visually or semantically separates content.",
+      },
+      {
+        title: "Tabs",
+        href: "/docs/primitives/tabs",
+        description:
+          "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      },
+      {
+        title: "Tooltip",
+        href: "/docs/primitives/tooltip",
+        description:
+          "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      },
+    ],
     key: "nosotrosnav-desktop",
   },
   {

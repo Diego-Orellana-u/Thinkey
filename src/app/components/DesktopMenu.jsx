@@ -1,10 +1,10 @@
 import { desktopNav } from "data/nav";
-import Image from "next/image";
 import Link from "next/link";
+import DesktopMenuSelectNav from "./DesktopMenuSelectNav";
 
 export default function DesktopMenu() {
   return (
-    <nav className="mr-[43px]">
+    <nav className="mr-[43px] relative">
       <ul className="flex gap-10 font-medium text-lg text-[#333333]">
         {desktopNav &&
           desktopNav.map((link) => {
@@ -12,7 +12,7 @@ export default function DesktopMenu() {
               <li
                 key={link.key}
                 className={`${
-                  link.subnav.length > 0 ? `flex gap-1` : undefined
+                  link.subnav.length > 0 ? `flex gap-1` : "flex items-center"
                 }`}
               >
                 {link.subnav.length === 0 && (
@@ -26,12 +26,7 @@ export default function DesktopMenu() {
                 )}
 
                 {link.subnav.length > 0 && (
-                  <div className="flex gap-1">
-                    <Link href={link.link}>
-                      <span>{link.name}</span>
-                    </Link>
-                    <Image src="/caret-down.svg" width={15} height={8} />
-                  </div>
+                  <DesktopMenuSelectNav subnav={link.subnav} link={link} />
                 )}
               </li>
             );

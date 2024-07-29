@@ -21,7 +21,7 @@ export default function DesktopMenu() {
                     className="group relative md:inline-block"
                   >
                     <span>{link.name}</span>
-                    <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-[#8f1472]/20 group-hover:-translate-y-0.5 group-hover:opacity-100"></span>
+                    <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-[#8f1472]/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
                   </Link>
                 )}
 

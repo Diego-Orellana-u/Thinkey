@@ -12,6 +12,7 @@ export default function InfoBar() {
             width={20}
             height={20}
             className="w-[21px] h-[21px]"
+            alt=""
           />
           <div className="flex items-center">
             <span className="text-white pt-[3px]">+ 569 7791 7078</span>
@@ -36,13 +37,13 @@ export default function InfoBar() {
       </div>
       <div className="gap-3 items-center hidden tablet-s:flex">
         <Link href="/" className="">
-          <Image src="fb-icon.svg" width={17} height={17} />
+          <Image src="fb-icon.svg" width={17} height={17} alt="" />
         </Link>
         <Link href="/" className="mb-">
-          <Image src="youtube.svg" width={22} height={18} />
+          <Image src="youtube.svg" width={22} height={18} alt="" />
         </Link>
         <Link href="/" className="">
-          <Image src="x.svg" width={19} height={19} />
+          <Image src="x.svg" width={19} height={19} alt="" />
         </Link>
         <Link href="/" className="">
           <Image
@@ -50,6 +51,7 @@ export default function InfoBar() {
             width={17.06}
             height={15}
             className="mb-[1px]"
+            alt=""
           />
         </Link>
       </div>

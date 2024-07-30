@@ -14,11 +14,12 @@ export default function VennHome() {
           src="/highlight-marker.svg"
           width={210}
           height={61}
+          alt=""
         />
       </div>
       <div className="flex flex-col items-center gap-8">
         <div className="">
-          <Image src="/VennDiagram.svg" width={313} height={388} />
+          <Image src="/VennDiagram.svg" width={313} height={388} alt="" />
         </div>
         <div className="flex flex-col gap-8">
           <h2 className="hidden">Make your students start loving science</h2>

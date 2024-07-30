@@ -6,13 +6,14 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="pt-5 min-[332px]:pt-0 min-[560px]:pt-5 min-[940px]:h-[95vh] desktop-l:pt-8 mb-10">
+    <div className="pt-5 min-[332px]:pt-0 tablet-s:pt-5 tablet-xl:pt-10 min-[940px]:h-[95vh] desktop-l:pt-8 mb-10">
       <div>
         <Image
           className="w-full absolute top-0 -z-20 min-h-[700px] h-[125vh] min-[515px]:h-[785px] tablet-s:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] tablet-l:h-[1020px] tablet-xl:hidden"
           src="/hero-bg.svg"
           width={320}
           height={700}
+          alt=""
         />
       </div>
 
@@ -22,6 +23,7 @@ export default function Hero() {
           src="/desktop-bg.png"
           width={1440}
           height={680}
+          alt=""
         />
       </div>
 
@@ -35,12 +37,13 @@ export default function Hero() {
             width={1920}
             height={1280}
             className="rounded-[20px] box-shadow-hero object-cover max-h-[430px]"
+            alt=""
           />
         </div>
         <div className="flex tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">
           <div className="flex desktop-s:mt-6 flex-col gap-4 tablet-l:gap-7 tablet-xl:w-[70%] tablet-xl:gap-4">
             <div className="min-[600px]:mb-2 tablet-xl:block hidden tablet-xl:mb-0">
-              <span className="text-sm desktop-l:text-base font-medium text-[#424142]">
+              <span className="text-sm desktop-l:text-base desktop-s:pl-[3px] font-medium text-[#424142]">
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS
               </span>
             </div>
@@ -76,6 +79,7 @@ export default function Hero() {
               width={1920}
               height={1280}
               className="rounded-[20px] box-shadow-hero object-cover max-h-[430px] h-full"
+              alt=""
             />
           </div>
         </div>

@@ -5,10 +5,16 @@ export default function TestimonyCard(info) {
     <div className="rounded-[20px] bg-white py-6 px-5 mobile-l:px-7 min-[490px]:h-[450px]">
       <div className="flex justify-between mb-4 min-[490px]:mb-12">
         <div>
-          <Image className="pt-6" src={info.logo} width={108} height={45} />
+          <Image
+            className="pt-6"
+            src={info.logo}
+            width={108}
+            height={45}
+            alt=""
+          />
         </div>
         <div className="w-[40%]">
-          <Image src={info.portrait} width={129} height={152} />
+          <Image src={info.portrait} width={129} height={152} alt="" />
         </div>
       </div>
 

@@ -10,6 +10,7 @@ export default function FiftyCard() {
           width={312}
           height={221}
           className="w-full rounded-[20px]"
+          alt=""
         />
       </div>
       <div>
@@ -25,7 +26,7 @@ export default function FiftyCard() {
           <Link className="text-[#002A54] font-medium text-lg" href="/">
             SEE MORE
           </Link>
-          <Image src="/go-icon.svg" width={30} height={30} />
+          <Image src="/go-icon.svg" width={30} height={30} alt="" />
         </div>
       </div>
     </div>

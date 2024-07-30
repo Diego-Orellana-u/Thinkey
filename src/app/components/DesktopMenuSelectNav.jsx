@@ -16,7 +16,7 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
           <span>{link.name}</span>
           <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-[#8f1472]/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
         </Link>
-        <Image src="/caret-down.svg" width={15} height={8} />
+        <Image src="/caret-down.svg" width={15} height={8} alt="" />
       </div>
       <div
         className={`${
@@ -29,7 +29,7 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
         onMouseLeave={() => setSelected(false)}
       >
         <div className="group shadow-lg border-[1px] border-[#e5e7eb] w-full overflow-hidden rounded-[0.45rem]">
-          <ul className="grid grid-cols-2 gap-3 p-4 w-[400px] lg:w-[600px]">
+          <ul className="grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
             {subnav.map((indiv) => (
               <li key={indiv.key}>
                 <Link

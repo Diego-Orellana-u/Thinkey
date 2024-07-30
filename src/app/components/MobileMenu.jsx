@@ -34,8 +34,8 @@ export const MobileMenu = ({
           <Image
             className="cursor-pointer absolute right-6"
             src={x}
-            alt=""
             onClick={handleOverlayClick}
+            alt=""
           />
         </div>
 

@@ -39,6 +39,7 @@ export const Header = () => {
               width={28}
               height={28}
               className="w-7 mr-6"
+              alt=""
             />
           </button>
           <button

@@ -4,7 +4,7 @@ import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
 import DesktopMenu from "./DesktopMenu";
 import Image from "next/image";
-import { Button, buttonVariants } from "./ui/button";
+
 export const Header = () => {
   const [headerColor, setHeaderColor] = useState(false);
 
@@ -38,7 +38,7 @@ export const Header = () => {
               src="/world.svg"
               width={28}
               height={28}
-              className="w-7 mr-6"
+              className="w-7 mr-7"
               alt=""
             />
           </button>
@@ -52,5 +52,3 @@ export const Header = () => {
     </div>
   );
 };
-
-// Header logo is server component so it's rendered in the server

@@ -4,8 +4,8 @@ import DesktopMenuSelectNav from "./DesktopMenuSelectNav";
 
 export default function DesktopMenu() {
   return (
-    <nav className="mr-[43px] relative">
-      <ul className="flex gap-10 font-medium text-lg text-[#333333]">
+    <nav className="mr-7 desktop-l:mr-11 relative">
+      <ul className="flex text-base gap-6 desktop-l:gap-10 font-medium text-[#333333]">
         {desktopNav &&
           desktopNav.map((link) => {
             return (

@@ -23,15 +23,15 @@ export const Header = () => {
   return (
     <div
       className={`sticky top-0 z-10 flex items-center h-20 ${
-        headerColor ? "bg-[white] shadow-md" : "bg-[transparent]"
+        headerColor ? "bg-[white] shadow-sm" : "bg-[transparent]"
       }`}
     >
-      <div className="h-14 w-full flex justify-between px-5 min-[425px]:px-7 min-[900px]:px-12 min-[1150px]:px-[92px] items-center bg-transparent">
+      <div className="h-14 w-full flex justify-between px-5 mobile-l:px-7 tablet-xl:px-12 desktop-l:px-[92px] items-center bg-transparent">
         <LogoHeader />
-        <div className="min-[1023px]:hidden">
+        <div className="desktop-s:hidden">
           <MenuIcon />
         </div>
-        <div className="min-[1024px]:flex hidden items-center">
+        <div className="desktop-s:flex hidden items-center">
           <DesktopMenu />
           <button>
             <Image
@@ -42,7 +42,7 @@ export const Header = () => {
             />
           </button>
           <button
-            className={`min-[1024px]:h-[50px] text-base relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
+            className={`desktop-s:h-[50px] text-base relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
           >
             <span className="relative z-10">BOOK NOW</span>
           </button>

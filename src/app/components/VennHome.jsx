@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function VennHome() {
   return (
-    <div className="px-5 min-[425px]:px-7 pt-14 pb-20 text-center">
+    <div className="px-5 mobile-l:px-7 pt-14 pb-20 text-center">
       <div className="relative">
         <h2 className="text-3xl font-bold text-[#002A54] tracking-tight mb-8">
           Make your students start loving science
         </h2>
         <Image
-          className="absolute top-7 left-[25%] min-[425px]:left-[32%] -z-10"
+          className="absolute top-7 left-[25%] mobile-l:left-[32%] -z-10"
           src="/highlight-marker.svg"
           width={210}
           height={61}

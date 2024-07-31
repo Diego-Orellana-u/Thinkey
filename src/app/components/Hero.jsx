@@ -6,10 +6,10 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="pt-5 min-[332px]:pt-0 min-[560px]:pt-5 min-[940px]:h-[95vh] min-[1150px]:pt-8">
+    <div className="pt-5 min-[332px]:pt-0 min-[560px]:pt-5 min-[940px]:h-[95vh] desktop-l:pt-8 mb-10">
       <div>
         <Image
-          className="w-full absolute top-0 -z-20 min-h-[700px] h-[125vh] min-[515px]:h-[785px] min-[550px]:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] min-[768px]:h-[1020px] min-[900px]:hidden"
+          className="w-full absolute top-0 -z-20 min-h-[700px] h-[125vh] min-[515px]:h-[785px] tablet-s:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] tablet-l:h-[1020px] tablet-xl:hidden"
           src="/hero-bg.svg"
           width={320}
           height={700}
@@ -18,14 +18,14 @@ export default function Hero() {
 
       <div>
         <Image
-          className="w-full absolute top-0 -z-20 h-[100vh] hidden min-[900px]:block"
+          className="w-full absolute top-0 -z-20 h-[100vh] hidden tablet-xl:block"
           src="/desktop-bg.png"
           width={1440}
           height={680}
         />
       </div>
 
-      <div className="px-5 min-[425px]:px-7 min-[900px]:px-12 flex flex-col min-[1150px]:px-[92px]">
+      <div className="px-5 mobile-l:px-7 tablet-xl:px-12 flex flex-col desktop-l:px-[92px]">
         <div className="min-[600px]:mb-2 max-[899px]:block hidden">
           <span className="text-sm">EVENTOS CIENTIFICOS Y EDUCATIVOS</span>
         </div>
@@ -37,20 +37,20 @@ export default function Hero() {
             className="rounded-[20px] box-shadow-hero object-cover max-h-[430px]"
           />
         </div>
-        <div className="flex min-[900px]:gap-8 min-[1024px]:gap-12 min-[1150px]:gap-18">
-          <div className="flex min-[1024px]:mt-6 flex-col gap-4 min-[768px]:gap-7 min-[900px]:w-[70%] min-[900px]:gap-4">
-            <div className="min-[600px]:mb-2 min-[900px]:block hidden min-[900px]:mb-0">
-              <span className="text-sm min-[1150px]:text-base font-medium text-[#424142]">
+        <div className="flex tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">
+          <div className="flex desktop-s:mt-6 flex-col gap-4 tablet-l:gap-7 tablet-xl:w-[70%] tablet-xl:gap-4">
+            <div className="min-[600px]:mb-2 tablet-xl:block hidden tablet-xl:mb-0">
+              <span className="text-sm desktop-l:text-base font-medium text-[#424142]">
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS
               </span>
             </div>
-            <span className="min-[1150px]:leading-[72px] text-[28px] min-[345px]:text-[30px] min-[550px]:text-5xl min-[900px]:text-4xl min-[1150px]:text-6xl min-[1150px]:mb-3 leading-9 font-bold pt-1 min-[550px]:pt-5 min-[900px]:pt-0">
+            <span className="desktop-l:leading-[72px] text-[28px] min-[345px]:text-[30px] tablet-s:text-5xl tablet-xl:text-4xl desktop-l:text-6xl desktop-l:mb-3 leading-9 font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
               {heroInfo.title}
             </span>
-            <p className="text-lg text-[#424142] min-[768px]:mb-2 min-[1150px]:mb-6 min-[1150px]:w-[470px]">
+            <p className="text-lg text-[#424142] tablet-l:mb-2 desktop-l:mb-6 desktop-l:w-[470px]">
               {heroInfo.desc}
             </p>
-            <div className="min-[768px]:flex gap-8 hidden min-[1150px]:w-[80%]">
+            <div className="tablet-l:flex gap-8 hidden desktop-l:w-[80%]">
               <Link
                 href={heroInfo.mainBtnLink}
                 className={`${buttonVariants({
@@ -70,7 +70,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="min-[900px]:block hidden drop-shadow-2xl mb-3 min-[900px]:mb-0 min-[900px]:w-[75%]">
+          <div className="tablet-xl:block hidden min-h-[700px]:pt-10 drop-shadow-2xl mb-3 tablet-xl:mb-0 tablet-xl:w-[75%]">
             <Image
               src={heroInfo.img}
               width={1920}
@@ -81,7 +81,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="px-5 min-[425px]:px-7 pt-8 max-[767px]:block hidden">
+      <div className="px-5 mobile-l:px-7 pt-8 max-[767px]:block hidden">
         <Link
           href={heroInfo.mainBtnLink}
           className={`${buttonVariants({

@@ -1,6 +1,6 @@
 export default function ImpactNumbers() {
   return (
-    <div className="bg-[#D9D9D9] py-14 px-5 min-[425px]:px-7 flex flex-col gap-7 items-center text-center">
+    <div className="bg-[#D9D9D9] py-14 px-5 mobile-l:px-7 flex flex-col gap-7 items-center text-center">
       <h2 className="text-3xl font-bold text-[#002A54] tracking-tight">
         Solving the education problem by the root
       </h2>

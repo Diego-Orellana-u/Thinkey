@@ -30,7 +30,7 @@ export const MobileMenu = ({
             : "ease-in duration-300 -translate-x-full"
         } bg-white drop-shadow-2xl`}
       >
-        <div className="h-14 flex justify-between items-center px-5 min-[425px]:px-7 relative">
+        <div className="h-14 flex justify-between items-center px-5 mobile-l:px-7 relative">
           <Image
             className="cursor-pointer absolute right-6"
             src={x}

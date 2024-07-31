@@ -5,7 +5,7 @@ import { footerSubnavArr } from "data/footer";
 export default function Footer() {
   return (
     <div>
-      <div className="flex flex-col gap-9 mb-16 px-5 min-[425px]:px-7">
+      <div className="flex flex-col gap-9 mb-16 px-5 mobile-l:px-7">
         {footerSubnavArr.map((info, index) => (
           <FooterSubnav key={info.name} {...info} />
         ))}

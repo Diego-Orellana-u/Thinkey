@@ -6,7 +6,7 @@ export default function LogoHeader() {
   return (
     <Link href="/">
       <Image
-        className="w-30 min-[1024px]:w-[150px] pt-1 min-[1024px]:pt-0"
+        className="w-30 desktop-s:w-[150px] pt-1 desktop-s:pt-0"
         src={logo}
         alt="Logo of Thinkey school"
       />

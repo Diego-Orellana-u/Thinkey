@@ -22,8 +22,8 @@ export const Header = () => {
 
   return (
     <div
-      className={`sticky top-0 z-10 flex items-center h-20 ${
-        headerColor ? "bg-[white] shadow-sm" : "bg-[transparent]"
+      className={`sticky top-0 z-10 flex items-center h-24 ${
+        headerColor ? "bg-[#F8F8FC] shadow-sm" : "bg-[transparent]"
       }`}
     >
       <div className="h-14 w-full flex justify-between px-5 mobile-l:px-7 tablet-xl:px-12 desktop-l:px-[92px] items-center bg-transparent">

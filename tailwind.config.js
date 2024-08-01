@@ -18,6 +18,16 @@ module.exports = {
       "desktop-s": "1024px",
       "desktop-l": "1150px",
     },
+    // fontSize: {
+    //   "h1-s": "35px",
+    //   "h2-s": "30px",
+    //   "h3-s": "24px",
+    //   "p-s": "20px",
+    //   "h1-xl": "60px",
+    //   "h2-xl": "56px",
+    //   "h3-xl": "48px",
+    //   "p-xl": "24px"
+    // },
     container: {
       center: true,
       padding: "2rem",

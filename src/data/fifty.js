@@ -3,6 +3,8 @@ export const homeFiftyTitleDesc = {
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 };
 
+// Important: The orientation determine if the text is on the left or the right
+
 export const homeFiftyCards = [
   {
     title: "Building steam experiences that teach and impact",

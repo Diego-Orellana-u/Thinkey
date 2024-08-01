@@ -30,14 +30,16 @@ export default function FiftyCard({
         />
       </div>
       <div className="tablet-xl:w-2/4 tablet-xl:self-center">
-        <h3 className="text-[#16171D] text-2xl font-bold leading-9 tracking-tight mb-5 desktop-l:mb-7 tablet-xl:text-3xl desktop-l:text-5xl desktop-l:leading-[58px]">
+        <h3 className="text-[#16171D] text-h3-s font-bold leading-9 tracking-tight mb-5 desktop-l:mb-7 tablet-xl:text-h2-s desktop-l:text-h3-xl desktop-l:leading-[48px]">
           {title}
         </h3>
-        <p className="text-lg text-[#424142] mb-5">{desc}</p>
+        <p className="text-p-l tablet-l:text-p-xl tablet-l:leading-7 text-[#424142] mb-5">
+          {desc}
+        </p>
 
         <div className="flex items-center gap-3">
           <Link
-            className="text-[#002A54] font-medium text-lg tablet-xl:text-base desktop-l:text-lg"
+            className="text-[#002A54] font-medium text-p-l tablet-xl:text-p-s desktop-l:text-p-l"
             href={btnHref}
           >
             {btnText}

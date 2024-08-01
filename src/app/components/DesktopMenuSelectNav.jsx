@@ -36,10 +36,10 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
                   href={indiv.href}
                   className="block select-none space-y-1 transition-colors rounded-[0.45rem] p-3 leading-none no-underline outline-none hover:bg-[#f1f1f1] focus:bg-[#f1f1f1]"
                 >
-                  <div className="text-sm font-medium leading-none text-[#16171D]">
+                  <div className="text-p-s mb-2 font-medium leading-none text-[#16171D]">
                     {indiv.title}
                   </div>
-                  <p className="mt-1 line-clamp-2 text-sm leading-snug text-[#71717a]">
+                  <p className="mt-1 line-clamp-2 text-[14px] leading-snug text-[#71717a]">
                     {indiv.description}
                   </p>
                 </Link>

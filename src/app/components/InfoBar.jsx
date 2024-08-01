@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function InfoBar() {
   return (
-    <section className="tablet-s:justify-between tablet-s:px-8 relative text-xs info-bar z-10 py-2 justify-around flex items-center bg-slate-400 tablet-xl:px-12 desktop-l:px-[92px]">
+    <section className="tablet-s:justify-between tablet-s:px-8 relative text-[12px] info-bar z-10 py-2 justify-around flex items-center bg-slate-400 tablet-xl:px-12 desktop-l:px-[92px]">
       <div className="flex gap-4 desktop-s:relative desktop-s:left-[25%] desktop-l:left-[30%]">
         <div className="flex gap-2">
           <Image

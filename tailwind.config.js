@@ -18,16 +18,18 @@ module.exports = {
       "desktop-s": "1024px",
       "desktop-l": "1150px",
     },
-    // fontSize: {
-    //   "h1-s": "35px",
-    //   "h2-s": "30px",
-    //   "h3-s": "24px",
-    //   "p-s": "20px",
-    //   "h1-xl": "60px",
-    //   "h2-xl": "56px",
-    //   "h3-xl": "48px",
-    //   "p-xl": "24px"
-    // },
+    fontSize: {
+      "h1-s": "2.188rem", //font-size: 35px, line-height: 42px
+      "h2-s": "1.875rem", //font-size: 30px, line-height: 36px
+      "h3-s": "1.5rem", //font-size: 24px, line-height: 28px
+      "p-xs": "0.875rem", //font-size: 14px, line-height: 21px
+      "p-s": "1rem", //font-size: 16px, line-height: 24px
+      "p-l": "1.125rem", //font-size: 18px, line-height: 27px-28px
+      "h1-xl": "4rem", //font-size: 64px, line-height: 75px
+      "h2-xl": "3.5rem", //font-size: 56px, line-height: 67px
+      "h3-xl": "2.5rem", //font-size: 40px, line-height: 48px
+      "p-xl": "1.25rem", //font-size: 20px, line-height: 30px
+    },
     container: {
       center: true,
       padding: "2rem",

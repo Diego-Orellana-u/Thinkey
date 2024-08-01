@@ -29,7 +29,7 @@ export default function Hero() {
 
       <div className="px-5 mobile-l:px-7 tablet-xl:px-12 flex flex-col desktop-l:px-[92px]">
         <div className="min-[600px]:mb-2 max-[899px]:block hidden">
-          <span className="text-sm">EVENTOS CIENTIFICOS Y EDUCATIVOS</span>
+          <span className="text-[14px]">EVENTOS CIENTIFICOS Y EDUCATIVOS</span>
         </div>
         <div className="max-[899px]:block hidden drop-shadow-2xl mb-3">
           <Image
@@ -43,14 +43,14 @@ export default function Hero() {
         <div className="flex tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">
           <div className="flex desktop-s:mt-6 flex-col gap-4 tablet-l:gap-7 tablet-xl:w-[70%] tablet-xl:gap-4">
             <div className="min-[600px]:mb-2 tablet-xl:block hidden tablet-xl:mb-0">
-              <span className="text-sm desktop-l:text-base desktop-s:pl-[3px] font-medium text-[#424142]">
+              <span className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] font-medium text-[#424142]">
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS
               </span>
             </div>
-            <span className="desktop-l:leading-[72px] text-[35px] min-[345px]:text-[30px] tablet-s:text-5xl tablet-xl:text-4xl desktop-s:text-5xl desktop-s:leading-[58px] desktop-l:text-6xl desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
+            <span className="text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:text-h1-xl desktop-l:leading-[75px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
               {heroInfo.title}
             </span>
-            <p className="text-lg text-[#424142] tablet-l:mb-2 desktop-l:mb-6 desktop-l:w-[470px]">
+            <p className="text-p-l text-[#424142] tablet-l:mb-2 desktop-l:mb-6 desktop-l:w-[470px]">
               {heroInfo.desc}
             </p>
             <div className="tablet-l:flex gap-8 hidden desktop-l:w-[80%]">
@@ -66,7 +66,7 @@ export default function Hero() {
                 href={heroInfo.secondBtnLink}
                 className={`${buttonVariants({
                   variant: "link",
-                })} w-full rounded-[50px] bg-transparent border-[#16171D] border-2 text-[#424142] font-medium text-base`}
+                })} w-full rounded-[50px] bg-transparent border-[#16171D] border-2 text-[#424142] font-medium text-p-s`}
               >
                 {heroInfo.secondBtnText}
               </Link>

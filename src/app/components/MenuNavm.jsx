@@ -24,7 +24,7 @@ export const MenuNavm = () => {
               {link.subnav.length === 0 && (
                 <Link
                   href={link.link}
-                  className="text-xl h-16 flex justify-between items-center mx-5 mobile-m:mx-7 relative cursor-pointer border-b-2 border-zinc-300"
+                  className="text-p-xl h-16 flex justify-between items-center mx-5 mobile-m:mx-7 relative cursor-pointer border-b-2 border-zinc-300"
                 >
                   {link.name}
                 </Link>
@@ -39,7 +39,7 @@ export const MenuNavm = () => {
                     className="h-16 flex flex-col items-center justify-between relative cursor-pointer"
                   >
                     <div className="flex h-full justify-between items-center w-full">
-                      <span className="text-xl">{link.name}</span>
+                      <span className="text-p-xl">{link.name}</span>
                       <Image className="" src={plusIcon} alt="" />
                     </div>
                   </div>

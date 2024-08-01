@@ -4,7 +4,7 @@ export default function FooterSubnav(info) {
   return (
     <div className="max-w-fit">
       <div className="mb-3">
-        <span className="font-semibold text-lg">{info.name}</span>
+        <span className="font-semibold text-p-l">{info.name}</span>
       </div>
       <div className="flex flex-col gap-4">
         {info.links.map((subnav) => (

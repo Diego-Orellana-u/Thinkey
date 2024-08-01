@@ -43,7 +43,7 @@ export const Header = () => {
             />
           </button>
           <button
-            className={`desktop-s:h-[50px] text-base relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
+            className={`desktop-s:h-[50px] text-p-s relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
           >
             <span className="relative z-10">BOOK NOW</span>
           </button>

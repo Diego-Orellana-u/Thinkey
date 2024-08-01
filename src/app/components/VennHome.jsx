@@ -6,7 +6,7 @@ export default function VennHome() {
   return (
     <div className="px-5 mobile-l:px-7 pt-14 pb-20 text-center">
       <div className="relative">
-        <h2 className="text-3xl font-bold text-[#002A54] tracking-tight mb-8">
+        <h2 className="text-h2-s font-bold text-[#002A54] tracking-tight mb-8">
           Make your students start loving science
         </h2>
         <Image
@@ -23,7 +23,7 @@ export default function VennHome() {
         </div>
         <div className="flex flex-col gap-8">
           <h2 className="hidden">Make your students start loving science</h2>
-          <p className="text-lg text-[#424142]">
+          <p className="text-p-l text-[#424142]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt.

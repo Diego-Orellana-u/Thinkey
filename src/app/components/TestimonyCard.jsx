@@ -19,9 +19,9 @@ export default function TestimonyCard(info) {
       </div>
 
       <div className="flex flex-col gap-3">
-        <span className="font-medium text-2xl">{info.name}</span>
+        <span className="font-medium text-h3-s">{info.name}</span>
         <p className="mb-3">{info.testimony}</p>
-        <span className="text-sm">{info.position}</span>
+        <span className="text-p-xs">{info.position}</span>
       </div>
     </div>
   );

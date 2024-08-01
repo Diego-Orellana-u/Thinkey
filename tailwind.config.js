@@ -25,6 +25,7 @@ module.exports = {
       "p-xs": "0.875rem", //font-size: 14px, line-height: 21px
       "p-s": "1rem", //font-size: 16px, line-height: 24px
       "p-l": "1.125rem", //font-size: 18px, line-height: 27px-28px
+      "h2-l": "2.375rem", //font-size: 38px, line-height: 45px
       "h1-xl": "4rem", //font-size: 64px, line-height: 75px
       "h2-xl": "3.5rem", //font-size: 56px, line-height: 67px
       "h3-xl": "2.5rem", //font-size: 40px, line-height: 48px

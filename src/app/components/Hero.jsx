@@ -47,7 +47,7 @@ export default function Hero() {
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS
               </span>
             </div>
-            <span className="text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:text-h1-xl desktop-l:leading-[75px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
+            <span className="text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:text-h1-xl desktop-l:leading-[75px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
               {heroInfo.title}
             </span>
             <p className="text-p-l text-[#424142] tablet-l:mb-2 desktop-l:mb-6 desktop-l:w-[470px]">

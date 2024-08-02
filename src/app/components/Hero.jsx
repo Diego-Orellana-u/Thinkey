@@ -40,6 +40,7 @@ export default function Hero() {
             height={1280}
             className="rounded-[10px] box-shadow-hero object-cover max-h-[430px]"
             alt=""
+            priority={true}
           />
         </div>
         <div className="flex tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">
@@ -82,6 +83,7 @@ export default function Hero() {
               height={1280}
               className="rounded-[10px] box-shadow-hero object-cover max-h-[430px] h-full"
               alt=""
+              priority={true}
             />
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function HighlightTitle() {
             start loving science
           </span>
           <Image
-            className="absolute top-0 -z-10 left-[-6px] w-full tablet-xl:top-[-17px]"
+            className="absolute top-0 -z-10 right-[0px] w-[75%] tablet-xl:top-[-17px]"
             src="/highlight-marker.svg"
             width={210}
             height={61}

@@ -9,17 +9,17 @@ export default function VennHome() {
       <div className="tablet-xl:hidden">
         <HighlightTitle />
       </div>
-      <div className="flex flex-col items-center gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12">
-        <div>
+      <div className="flex flex-col items-center gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12 desktop-l:gap-32">
+        <div className="desktop-s:w-full">
           <Image
             src="/VennDiagram.svg"
             width={313}
             height={388}
             alt=""
-            className="tablet-xl:w-[110vw]"
+            className="desktop-s:w-full"
           />
         </div>
-        <div className="flex flex-col gap-8 items-center tablet-xl:items-start tablet-xl:gap-0">
+        <div className="flex flex-col gap-8 items-center tablet-xl:items-start tablet-xl:gap-0 desktop-s:flex-[0_0_55%]">
           <div className="hidden tablet-xl:block">
             <HighlightTitle />
           </div>
@@ -32,7 +32,7 @@ export default function VennHome() {
             href="/"
             className={`${buttonVariants({
               variant: "link",
-            })} w-full min-[520px]:w-[50%] rounded-[50px] bg-[#16171D] border-[#16171D] border-2 text-[#F2F2F2] h-14`}
+            })} w-full min-[520px]:w-fit px-10 rounded-[50px] bg-[#16171D] border-[#16171D] border-2 text-[#F2F2F2] h-14`}
           >
             SEE MORE ABOUT US
           </Link>

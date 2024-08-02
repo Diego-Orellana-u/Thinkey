@@ -8,8 +8,6 @@ import Image from "next/image";
 export const Header = () => {
   const [headerColor, setHeaderColor] = useState(false);
 
-  console.log("hola");
-
   const scrollHeader = () => {
     window.scrollY >= 40 ? setHeaderColor(true) : setHeaderColor(false);
   };

@@ -25,6 +25,7 @@ export default function Hero() {
           width={1440}
           height={680}
           alt=""
+          priority={true}
         />
       </div>
 

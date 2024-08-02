@@ -14,6 +14,7 @@ export default function Hero() {
           width={320}
           height={700}
           alt=""
+          priority={true}
         />
       </div>
 
@@ -36,7 +37,7 @@ export default function Hero() {
             src={heroInfo.img}
             width={1920}
             height={1280}
-            className="rounded-[20px] box-shadow-hero object-cover max-h-[430px]"
+            className="rounded-[10px] box-shadow-hero object-cover max-h-[430px]"
             alt=""
           />
         </div>
@@ -78,7 +79,7 @@ export default function Hero() {
               src={heroInfo.img}
               width={1920}
               height={1280}
-              className="rounded-[20px] box-shadow-hero object-cover max-h-[430px] h-full"
+              className="rounded-[10px] box-shadow-hero object-cover max-h-[430px] h-full"
               alt=""
             />
           </div>

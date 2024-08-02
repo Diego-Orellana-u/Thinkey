@@ -25,7 +25,7 @@ export default function FiftyCard({
           src={imgLink}
           width={imgWidth}
           height={imgHeight}
-          className="w-full rounded-[20px] tablet-xl:h-full object-cover"
+          className="w-full rounded-[10px] tablet-xl:h-full object-cover shadow-lg"
           alt={imgAlt}
         />
       </div>

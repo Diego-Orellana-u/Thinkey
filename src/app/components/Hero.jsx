@@ -6,17 +6,18 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="pt-5 min-[332px]:pt-0 tablet-s:pt-5 tablet-xl:pt-10 tablet-xl:h-[82vh] desktop-l:pt-8 mb-10">
-      <div>
-        <Image
-          className="w-full absolute top-0 -z-20 min-h-[700px] h-[130%] min-[515px]:h-[785px] tablet-s:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] tablet-l:h-[1020px] tablet-xl:hidden"
-          src="/hero-bg.webp"
-          width={320}
-          height={700}
-          alt=""
-          priority={true}
-        />
-      </div>
+    <div
+      id="hero-div"
+      className="relative pt-5 min-[332px]:pt-0 tablet-s:pt-5 tablet-xl:pt-10 tablet-xl:h-[82vh] desktop-l:pt-8 mb-10"
+    >
+      <Image
+        className="w-full absolute top-[-96px] -z-20 h-[130%] min-[515px]:h-[785px] tablet-s:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] tablet-l:h-[1020px] tablet-xl:hidden"
+        src="/hero-bg.webp"
+        width={320}
+        height={700}
+        alt=""
+        priority={true}
+      />
 
       <div>
         <Image

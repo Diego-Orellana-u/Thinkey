@@ -6,12 +6,9 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div
-      id="hero-div"
-      className="relative pt-5 min-[332px]:pt-0 tablet-s:pt-5 tablet-xl:pt-10 tablet-xl:h-[82vh] desktop-l:pt-8 mb-10"
-    >
+    <div className="relative pt-5 tablet-xl:pt-10 desktop-l:pt-8 tablet-xl:pb-20">
       <Image
-        className="w-full absolute top-[-96px] -z-20 h-[130%] min-[515px]:h-[785px] tablet-s:h-[880px] min-[600px]:h-[900px] min-[630px]:h-[950px] min-[690px]:h-[980px] tablet-l:h-[1020px] tablet-xl:hidden"
+        className="w-full absolute top-[-96px] -z-20 h-[130%] tablet-xl:hidden"
         src="/hero-bg.webp"
         width={320}
         height={700}
@@ -19,16 +16,14 @@ export default function Hero() {
         priority={true}
       />
 
-      <div>
-        <Image
-          className="w-full absolute top-0 -z-20 h-[100vh] hidden tablet-xl:block"
-          src="/desktop-bg.png"
-          width={1440}
-          height={680}
-          alt=""
-          priority={true}
-        />
-      </div>
+      <Image
+        className="w-full absolute top-[-96px] -z-20 h-[130%] hidden tablet-xl:block"
+        src="/desktop-bg.png"
+        width={1440}
+        height={680}
+        alt=""
+        priority={true}
+      />
 
       <div className="px-5 mobile-l:px-7 tablet-xl:px-12 flex flex-col desktop-l:px-[92px]">
         <div className="min-[600px]:mb-2 max-[899px]:block hidden">

@@ -28,10 +28,10 @@ export const MenuIcon = () => {
     <div>
       <div
         onClick={handleMenuClick}
-        className="rounded-full cursor-pointer bg-[#16171D] w-12 h-12 flex justify-center items-center"
+        className="rounded-full cursor-pointer bg-[#16171D] w-14 h-14 flex justify-center items-center"
       >
         <Image
-          className="w-7 pl-px pt-px cursor-pointer"
+          className="w-8 pl-px pt-px cursor-pointer"
           src={menuIcon}
           alt="Menu icon"
         />

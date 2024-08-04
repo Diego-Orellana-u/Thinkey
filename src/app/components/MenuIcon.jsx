@@ -25,16 +25,12 @@ export const MenuIcon = () => {
   };
 
   return (
-    <div>
+    <div className="desktop-s:hidden">
       <div
         onClick={handleMenuClick}
-        className="rounded-full cursor-pointer bg-[#16171D] w-14 h-14 flex justify-center items-center"
+        className="rounded-full bg-[#16171D] w-14 h-14 flex justify-center items-center"
       >
-        <Image
-          className="w-8 pl-px pt-px cursor-pointer"
-          src={menuIcon}
-          alt="Menu icon"
-        />
+        <Image className="w-8 pl-px pt-px" src={menuIcon} alt="Menu icon" />
       </div>
       <MobileMenu
         activeMenu={activeMenu}

@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative pt-5 tablet-xl:pt-10 desktop-l:pt-8 tablet-xl:pb-20">
+    <div className="relative pt-5 desktop-s:pt-10 desktop-l:pt-8 tablet-xl:pb-20">
       <Image
         className="w-full absolute top-[-96px] -z-20 h-[130%] tablet-xl:hidden"
         src="/hero-bg.webp"
@@ -25,11 +25,11 @@ export default function Hero() {
         priority={true}
       />
 
-      <div className="px-5 mobile-l:px-7 tablet-xl:px-12 flex flex-col desktop-l:px-[92px]">
-        <div className="min-[600px]:mb-2 max-[899px]:block hidden">
+      <div className="wrapper flex flex-col">
+        <div className="mb-2 max-[899px]:block hidden">
           <span className="text-[14px]">EVENTOS CIENTIFICOS Y EDUCATIVOS</span>
         </div>
-        <div className="max-[899px]:block hidden drop-shadow-2xl mb-3">
+        <div className="max-[899px]:block hidden drop-shadow-2xl mb-6">
           <Image
             src={heroInfo.img}
             width={1920}
@@ -40,7 +40,7 @@ export default function Hero() {
           />
         </div>
         <div className="flex tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">
-          <div className="flex desktop-s:mt-6 flex-col gap-4 tablet-l:gap-7 tablet-xl:w-[70%] tablet-xl:gap-4">
+          <div className="flex desktop-s:mt-6 flex-col gap-6 tablet-l:gap-7 tablet-xl:w-[70%] tablet-xl:gap-4">
             <div className="min-[600px]:mb-2 tablet-xl:block hidden tablet-xl:mb-0">
               <span className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] font-medium text-[#424142]">
                 EVENTOS Y EXPERIENCIAS CIENTIFICAS/EDUCATIVAS

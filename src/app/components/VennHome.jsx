@@ -5,7 +5,7 @@ import HighlightTitle from "./HighlightTitle";
 
 export default function VennHome() {
   return (
-    <div className="px-5 mobile-l:px-7 tablet-xl:px-12 desktop-l:px-[92px] py-32 text-center">
+    <div className="wrapper py-32 text-center">
       <div className="tablet-xl:hidden">
         <HighlightTitle />
       </div>

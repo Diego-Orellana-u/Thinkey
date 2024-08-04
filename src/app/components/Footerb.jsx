@@ -3,7 +3,7 @@ import LogoHeader from "./LogoHeader";
 export default function Footerb() {
   return (
     <footer className="bg-white">
-      <div className="mx-auto px-5 mobile-l:px-7 tablet-xl:px-12 desktop-l:px-[92px] space-y-8 pt-16 pb-8 min-[640px]:px-6 min-[1024px]:space-y-16 min-[1024px]:px-8">
+      <div className="mx-auto wrapper space-y-8 pt-16 pb-8 min-[640px]:px-6 min-[1024px]:space-y-16 min-[1024px]:px-8">
         <div className="grid grid-cols-1 gap-8 min-[1024px]:grid-cols-3">
           <div>
             <div>

@@ -10,7 +10,7 @@ import { testimonies } from "data/testimonies";
 
 export default function Testimonies() {
   return (
-    <div className="px-5 mobile-l:px-7 tablet-xl:px-12 desktop-l:px-[92px] text-p-l mb-28">
+    <div className="wrapper text-p-l mb-28">
       <h2 className="text-h2-s tablet-s:text-h2-l font-bold text-[#002A54] desktop-l:text-h2-xl mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center">
         What our clients say about us
       </h2>

@@ -8,7 +8,7 @@ export default function HomeServices() {
         A new way of approaching science to kids
       </h2>
 
-      <div className="flex flex-col tablet-s:flex-row tablet-s:flex-wrap tablet-s:justify-center gap-9 ">
+      <div className="flex flex-col tablet-s:flex-row tablet-s:flex-wrap tablet-s:justify-center desktop-s:justify-between gap-9 ">
         {homeServices.map((service) => (
           <ServicesCard key={service.keys} {...service} />
         ))}

@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative pt-5 desktop-s:pt-10 desktop-l:pt-8 tablet-xl:pb-20">
+    <section className="relative pt-5 desktop-l:pt-8 tablet-xl:pb-20 desktop-s:pb-24">
       <Image
         className="w-full absolute top-[-96px] -z-20 h-[130%] tablet-xl:hidden"
         src="/hero-bg.webp"

@@ -35,15 +35,6 @@ export const Header = () => {
 
         <div className="hidden desktop-s:flex items-center">
           <DesktopMenu />
-          {/* <button>
-            <Image
-              src="/world.svg"
-              width={28}
-              height={28}
-              className="w-7 mr-7"
-              alt=""
-            />
-          </button> */}
           <button
             className={`h-[50px] relative px-10 rounded-[50px] text-white font-medium gradient-header flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#EA624A] before:duration-500 before:ease-out hover:bg-[#EA624A] hover:before:h-56 hover:before:w-56`}
           >

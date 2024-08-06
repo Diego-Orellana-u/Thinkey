@@ -14,7 +14,7 @@ export default function ImpactNumbers() {
             <span className="text-h3-xl desktop-s:text-[4rem] desktop-l:text-[5rem] text-[#F2F2F2]">
               {statistic.number}
             </span>
-            <span className="text-h3-s text-[#16171D]/70">
+            <span className="text-h3-s text-[#16171D]/70 debug1">
               {statistic.title}
             </span>
           </div>

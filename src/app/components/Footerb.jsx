@@ -1,14 +1,20 @@
-import LogoHeader from "./LogoHeader";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../assets/logos/logo-thinkey.svg";
 
 export default function Footerb() {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto wrapper space-y-8 pt-16 pb-8 min-[640px]:px-6 min-[1024px]:space-y-16 min-[1024px]:px-8">
+    <footer className="bg-white wrapper">
+      <div className="mx-auto space-y-8 pt-16 pb-8 min-[1024px]:space-y-16">
         <div className="grid grid-cols-1 gap-8 min-[1024px]:grid-cols-3">
           <div>
-            <div>
-              <LogoHeader />
-            </div>
+            <Link href="/">
+              <Image
+                className="w-32 desktop-s:w-[150px] pt-1 desktop-s:pt-0"
+                src={logo}
+                alt="Logo of Thinkey school"
+              />
+            </Link>
 
             <p className="mt-4 max-w-xs text-gray-500">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
@@ -17,7 +23,7 @@ export default function Footerb() {
 
             <ul className="mt-8 flex gap-6">
               <li>
-                <a
+                <Link
                   href="#"
                   rel="noreferrer"
                   target="_blank"
@@ -37,11 +43,11 @@ export default function Footerb() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="#"
                   rel="noreferrer"
                   target="_blank"
@@ -61,7 +67,7 @@ export default function Footerb() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,43 +78,43 @@ export default function Footerb() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Ferias Cientificas{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Eventos para empresas{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Eventos para colegios{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Cumpleaños{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -118,43 +124,43 @@ export default function Footerb() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Sobre nosotros{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Conoce al equipo{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Testimonios{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Prensa{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -164,43 +170,43 @@ export default function Footerb() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Contacto{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     FAQs{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Socios{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Blog{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -210,43 +216,43 @@ export default function Footerb() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Accessibilidad{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Política de privacidad{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Política de devoluciones{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
                     Términos y condiciones{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

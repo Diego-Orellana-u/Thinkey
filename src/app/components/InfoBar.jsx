@@ -39,16 +39,32 @@ export default function InfoBar() {
         </div>
       </div>
       <div className="gap-3 items-center hidden tablet-s:flex">
-        <Link href="/" className="">
+        <Link
+          href="https://www.instagram.com/thinkeychile/"
+          className="mt-px"
+          target="_blank"
+        >
+          <span className="sr-only">Instagram</span>
           <Image
-            src="fb-icon.svg"
-            width={17}
-            height={17}
+            src="/instagram-icon.svg"
+            width={23}
+            height={23}
+            alt="icon of instagram"
+            priority={true}
+          />
+        </Link>
+        <Link href="https://www.facebook.com/thinkeychile/" target="_blank">
+          <span className="sr-only">Facebook</span>
+          <Image
+            src="/fb-icon.svg"
+            width={18}
+            height={18}
             alt="Icon of facebook"
             priority={true}
           />
         </Link>
-        <Link href="/" className="mb-">
+        <Link href="https://www.youtube.com/@ThinkeyClSTEAM" target="_blank">
+          <span className="sr-only">Youtube</span>
           <Image
             src="youtube.svg"
             width={22}
@@ -57,16 +73,8 @@ export default function InfoBar() {
             priority={true}
           />
         </Link>
-        <Link href="/" className="">
-          <Image
-            src="x.svg"
-            width={19}
-            height={19}
-            alt="icon of x/twitter"
-            priority={true}
-          />
-        </Link>
-        <Link href="/" className="">
+        <Link href="https://www.linkedin.com/company/thinkey/" target="_blank">
+          <span className="sr-only">Linkedin</span>
           <Image
             src="linkedin-icon.svg"
             width={17.06}

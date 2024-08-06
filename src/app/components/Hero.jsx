@@ -17,7 +17,7 @@ export default function Hero() {
 
       <Image
         className="w-full absolute top-[-96px] -z-20 h-[130%] hidden tablet-xl:block"
-        src="/desktop-bg.png"
+        src="/desktop-bg5.png"
         width={1440}
         height={680}
         alt="Background of the desktop hero section"
@@ -53,7 +53,7 @@ export default function Hero() {
                   href={heroInfo.mainBtnLink}
                   className={`${buttonVariants({
                     variant: "link",
-                  })} w-full rounded-[50px] bg-[#EA624A] border-[#EA624A] border-2 text-white font-normal`}
+                  })} w-full rounded-[50px] bg-[#9FCF00] border-[#9FCF00] border-2`}
                 >
                   {heroInfo.mainBtnText}
                 </Link>

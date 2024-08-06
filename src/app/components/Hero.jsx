@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { heroInfo } from "../../data/heroInfo";
+
 import { buttonVariants } from "@/components/ui/button";
 
-export default function Hero() {
+export default function Hero({
+  heroInfo,
+  bg = false,
+  bgColor = "bg-[#F2F2F2]",
+}) {
   return (
-    <section className="relative pt-5 desktop-l:pt-8 tablet-xl:pb-20 desktop-s:pb-24">
+    <section className="relative pt-5 desktop-l:pt-8 tablet-xl:pb-20 desktop-s:pb-24 ${}">
       <Image
         className="w-full absolute top-[-96px] -z-20 h-[130%] tablet-xl:hidden"
         src="/hero-bg.webp"
@@ -15,14 +19,16 @@ export default function Hero() {
         priority={true}
       />
 
-      <Image
-        className="w-full absolute top-[-96px] -z-20 h-[130%] hidden tablet-xl:block"
-        src="/desktop-bg5.png"
-        width={1440}
-        height={680}
-        alt="Background of the desktop hero section"
-        priority={true}
-      />
+      {bg && (
+        <Image
+          className="w-full absolute top-[-96px] -z-20 h-[130%] hidden tablet-xl:block"
+          src="/desktop-bg5.svg"
+          width={1440}
+          height={680}
+          alt="Background of the desktop hero section"
+          priority={true}
+        />
+      )}
 
       <div className="wrapper flex flex-col">
         <div className="tablet-xl:flex flex-row-reverse tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18">

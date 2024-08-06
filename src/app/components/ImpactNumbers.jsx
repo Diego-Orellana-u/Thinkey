@@ -5,7 +5,7 @@ export default function ImpactNumbers() {
       <h2 className="text-h2-s tablet-s:text-h2-l desktop-l:text-h2-xl font-bold text-[#16171D]/70 mb-7 desktop-l:mb-16 tracking-tight">
         Solving the education problem by the root
       </h2>
-      <div className="flex flex-col min-[700px]:flex-row gap-9 desktop-s:gap-20 desktop-l:gap-32 justify-center">
+      <div className="flex flex-col min-[700px]:flex-row gap-9 desktop-s:gap-20 desktop-l:gap-32 justify-center debug">
         {impactNumbers.map((statistic) => (
           <div
             key={statistic.keys}

@@ -14,9 +14,10 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
       >
         <Link href={link.link} className="relative">
           <span>{link.name}</span>
-          <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-[#8f1472]/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
+          <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-buttons-bg/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
         </Link>
         <Image
+          className="color-buttons-bg"
           src="/caret-down.svg"
           width={15}
           height={8}

@@ -5,15 +5,21 @@ import ImpactNumbers from "./components/ImpactNumbers";
 import VennHome from "./components/VennHome";
 import Testimonies from "./components/Testimonies";
 import Footerb from "./components/Footerb";
-import { heroInfo, heroInfo2 } from "data/heroInfo";
+import { homeHeroInfo } from "data/heroInfo";
+import { homeFiftyCards, homeFiftyTitleDesc } from "data/fifty";
+import { homeServices } from "data/services";
+import { homeImpactNumbers } from "data/impactNumbers";
 
 export default function Home() {
   return (
     <div className="font-sans">
-      <Hero heroInfo={heroInfo2} />
-      <HomeFifty />
-      <HomeServices />
-      <ImpactNumbers />
+      <Hero heroInfo={homeHeroInfo} />
+      <HomeFifty
+        fiftyCards={homeFiftyCards}
+        fiftyTitleDesc={homeFiftyTitleDesc}
+      />
+      <HomeServices services={homeServices} />
+      <ImpactNumbers data={homeImpactNumbers} />
       <VennHome />
       <Testimonies />
       <Footerb />

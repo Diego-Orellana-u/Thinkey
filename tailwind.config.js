@@ -26,7 +26,7 @@ module.exports = {
       "p-s": "1rem", //font-size: 16px, line-height: 24px
       "p-l": "1.125rem", //font-size: 18px, line-height: 27px-28px
       "h2-l": "2.375rem", //font-size: 38px, line-height: 45px
-      "h1-xl": "4rem", //font-size: 64px, line-height: 75px
+      "h1-xl": "3.25", //font-size: 52px, line-height: 63px
       "h2-xl": "3.5rem", //font-size: 56px, line-height: 67px
       "h3-xl": "2.5rem", //font-size: 40px, line-height: 48px
       "p-xl": "1.25rem", //font-size: 20px, line-height: 30px
@@ -43,39 +43,15 @@ module.exports = {
         sans: ["var(--font-generalSans)"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "#F8F8FC",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        "white-bg": "#F8F8FC",
+        "black-body-color": "#333333",
+        "white-body-color": "#F2F2F2",
+        "main-heading-color": "#002a54",
+        "black-heading-color": "#222222",
+        "buttons-bg": "#D32828",
+        "secondary-buttons-bg": "#9FCF00",
+        "secondary-500": "#9FCF00",
+        "accent-400": "#D32828",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,4 +1,4 @@
-export const impactNumbers = [
+export const homeImpactNumbers = [
   {
     title: "Niños impactados",
     number: "+3000",

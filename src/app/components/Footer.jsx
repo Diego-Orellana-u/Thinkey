@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/logos/logo-thinkey.svg";
 
-export default function Footerb() {
+export default function Footer() {
   return (
     <footer className="bg-white wrapper">
       <div className="mx-auto space-y-8 pt-16 pb-8 min-[1024px]:space-y-16">

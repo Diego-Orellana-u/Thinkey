@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import InfoBar from "./components/InfoBar";
 import { generalSans } from "./fonts";
 import { cn } from "@/lib/utils";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         {/* <InfoBar /> */}
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

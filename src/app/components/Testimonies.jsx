@@ -6,14 +6,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import TestimonyCard from "./TestimonyCard";
-import { testimonies } from "data/testimonies";
+import Heading2 from "./Heading2";
 
-export default function Testimonies() {
+export default function Testimonies({ title, testimonies }) {
   return (
     <div className="wrapper text-p-l mb-28">
-      <h2 className="text-h2-s tablet-s:text-h2-l font-bold text-[#002A54] desktop-l:text-h2-xl mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center">
-        What our clients say about us
-      </h2>
+      <Heading2
+        title={title.title}
+        padding="mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center"
+      />
       <Carousel>
         <CarouselContent className="tablet-l:-ml-10 desktop-s:-ml-6 desktop-l:-ml-12">
           {testimonies.map((testimony) => (

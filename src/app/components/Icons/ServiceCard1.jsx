@@ -1,10 +1,12 @@
-export default function ServiceCard1() {
+export default function ServiceCard1({ color, size }) {
   return (
     <svg
       width="57"
       height="54"
       viewBox="0 0 57 54"
-      className="fill-buttons-bg w-16 h-16"
+      className={`${color ? color : "fill-accent-900"} ${
+        size ? size : "w-16 h-16"
+      }`}
     >
       <path
         clip-rule="evenodd"

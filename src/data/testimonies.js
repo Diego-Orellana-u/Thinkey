@@ -1,4 +1,8 @@
-export const testimonies = [
+export const homeTestimoniesTitle = {
+  title: "What our clients say about us",
+};
+
+export const homeTestimonies = [
   {
     name: "Roberto John",
     testimony:

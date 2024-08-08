@@ -70,7 +70,7 @@ export default function Hero({ heroInfo }) {
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
                       variant: "link",
-                    })} w-full rounded-[50px] bg-buttons-bg border-buttons-bg text-white-body-color border-2 ${
+                    })} w-full rounded-[50px] bg-buttons-bg border-buttons-bg text-buttons-text border-2 ${
                       !heroInfo.secondBtnLink &&
                       "desktop-s:max-w-fit desktop-s:px-16"
                     }`}
@@ -84,7 +84,7 @@ export default function Hero({ heroInfo }) {
                     href={heroInfo.secondBtnLink}
                     className={`${buttonVariants({
                       variant: "link",
-                    })} hidden tablet-l:flex w-full rounded-[50px] bg-transparent border-[#16171D] border-2 text-[#424142] font-medium text-p-s`}
+                    })} hidden tablet-l:flex w-full rounded-[50px] bg-transparent border-black-heading-color border-2 text-black-body-color font-medium text-p-s`}
                   >
                     {heroInfo.secondBtnText}
                   </Link>

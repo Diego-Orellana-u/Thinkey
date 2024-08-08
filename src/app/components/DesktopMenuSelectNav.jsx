@@ -35,15 +35,15 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
         onMouseEnter={() => setSelected(true)}
         onMouseLeave={() => setSelected(false)}
       >
-        <ul className="group shadow-lg border-[1px] border-[#e5e7eb] rounded-[0.45rem] grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
+        <ul className="group shadow-lg border-[1px] border-white-border rounded-[0.45rem] grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
           {subnav.map((indiv) => (
             <li key={indiv.key}>
               <Link
                 href={indiv.href}
-                className="block select-none transition-colors rounded-[0.45rem] p-3 leading-none no-underline outline-none hover:bg-[#f1f1f1] focus:bg-[#f1f1f1]"
+                className="block select-none transition-colors rounded-[0.45rem] p-3 leading-none no-underline outline-none hover:bg-gray-200 focus:bg-gray-200"
               >
-                <div className="mb-2 text-[#16171D]">{indiv.title}</div>
-                <p className="mt-1 line-clamp-2 text-[14px] leading-snug text-[#71717a]">
+                <div className="mb-2 text-black-body-color">{indiv.title}</div>
+                <p className="mt-1 line-clamp-2 text-[14px] leading-snug text-gray-100">
                   {indiv.description}
                 </p>
               </Link>

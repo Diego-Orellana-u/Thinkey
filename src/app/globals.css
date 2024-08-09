@@ -236,3 +236,196 @@ p {
     animation: heightOut-3 0.2s linear forwards;
   }
 }
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: calc(100% + 96px);
+  z-index: -1;
+  opacity: 30%;
+}
+
+.hero::before {
+  background: #f8f8fc;
+  filter: url(#noiseFilter);
+}
+
+.blob-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  height: 120%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.blob-cont-two {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  height: 120%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.blob {
+  border-radius: 9990px;
+}
+.blurblob {
+  filter: blur(35px);
+  width: 600px;
+  height: 600px;
+  position: absolute;
+}
+.blurblob-two {
+  filter: blur(35px);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+.yellow {
+  background-color: #9fcf00;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  height: 350px;
+  width: 300px;
+
+  animation: yellow 8s infinite ease;
+}
+
+.green {
+  background-color: #002a54;
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  height: 300px;
+  width: 350px;
+
+  animation: green 8s infinite ease;
+}
+
+.red {
+  background-color: #d63c3d;
+  position: absolute;
+  right: 0;
+  top: 300px;
+  height: 300px;
+  width: 350px;
+
+  animation: red 8s infinite linear;
+}
+
+.red-two {
+  background-color: #d63c3d;
+  position: absolute;
+  right: 0;
+  height: 300px;
+  width: 350px;
+
+  animation: red-two 8s infinite linear;
+}
+
+@keyframes yellow {
+  0% {
+    top: 200px;
+    left: 100px;
+    transform: scale(1);
+  }
+  30% {
+    top: 300px;
+    left: 150px;
+    transform: scale(1.2);
+  }
+  60% {
+    top: 100px;
+    left: 200px;
+    transform: scale(1.3);
+  }
+  100% {
+    top: 200px;
+    left: 100px;
+    transform: scale(1);
+  }
+}
+
+@keyframes green {
+  0% {
+    top: 80px;
+    right: -20px;
+    transform: scale(1.2);
+  }
+  30% {
+    top: 300px;
+    right: -20px;
+    transform: scale(1);
+  }
+  60% {
+    top: 200px;
+    right: 100px;
+    transform: scale(1);
+  }
+  100% {
+    top: 80px;
+    right: -20px;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes red {
+  0% {
+    top: 250px;
+    right: 0px;
+    transform: scale(1);
+  }
+  30% {
+    top: 150px;
+    right: 150px;
+    transform: scale(1.2);
+  }
+  60% {
+    top: 250px;
+    right: 100px;
+    transform: scale(1);
+  }
+  100% {
+    top: 250px;
+    right: 0px;
+    transform: scale(1);
+  }
+}
+
+@keyframes red-two {
+  0% {
+    top: -200px;
+    right: 0px;
+    transform: scale(1);
+  }
+  30% {
+    top: -100px;
+    right: 200px;
+    transform: scale(1.2);
+  }
+  60% {
+    top: -200px;
+    right: 100px;
+    transform: scale(1);
+  }
+  100% {
+    top: -200px;
+    right: 0px;
+    transform: scale(1);
+  }
+}

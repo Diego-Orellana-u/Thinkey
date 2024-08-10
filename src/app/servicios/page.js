@@ -4,14 +4,17 @@ import Hero from "@/components/Hero";
 import ServicesGrid from "@/components/ServicesGrid";
 import { servicesFaq } from "data/faq";
 import { serviciosFiftyCards, serviciosFiftyTitleDesc } from "data/fifty";
-
 import { empresasHeroInfo } from "data/heroInfo";
+import { servicesGridBottom, servicesGridTop } from "data/services";
 
 export default function Servicios() {
   return (
     <>
       <Hero heroInfo={empresasHeroInfo} />
-      <ServicesGrid />
+      <ServicesGrid
+        servicesTop={servicesGridTop}
+        servicesBottom={servicesGridBottom}
+      />
       <Faq questions={servicesFaq} />
       <Fifty
         fiftyCards={serviciosFiftyCards}

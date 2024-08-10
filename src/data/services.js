@@ -31,4 +31,60 @@ export const homeServices = [
   },
 ];
 
-export const servicesGrid = [];
+//we can have min 2 cards and max 4 cards in each row
+
+export const servicesGridTop = [
+  {
+    title: "Service 1",
+    desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+    bgColor: "bg-indigo-500",
+    borderColor: "border-indigo-500",
+    lineColor: "text-indigo-500",
+    key: "service-1-grid-top",
+  },
+
+  {
+    title: "Service 2",
+    desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+    bgColor: "bg-purple-500",
+    borderColor: "border-purple-500",
+    lineColor: "text-purple-500",
+    key: "service-2-grid-top",
+  },
+  // {
+  //   title: "Service 2",
+  //   desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+  //   bgColor: "bg-purple-500",
+  //   borderColor: "border-purple-500",
+  //   lineColor: "text-purple-500",
+  //   key: "service-2-grid-top",
+  // },
+];
+
+export const servicesGridBottom = [
+  {
+    title: "Service 1",
+    desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+    bgColor: "bg-blue-500",
+    borderColor: "border-blue-500",
+    lineColor: "text-blue-500",
+    key: "service-1-grid-bottom",
+  },
+  {
+    title: "Service 2",
+    desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+    bgColor: "bg-yellow-500",
+    borderColor: "border-yellow-500",
+    lineColor: "text-yellow-500",
+    key: "service-2-grid-bottom",
+  },
+
+  {
+    title: "Service 2",
+    desc: "A decentralized application (dapp) is an application built on a decentralized network that combines a smart contract and a frontend user interface.",
+    bgColor: "bg-green-500",
+    borderColor: "border-green-500",
+    lineColor: "text-green-500",
+    key: "service-3-grid-bottom",
+  },
+];

@@ -32,12 +32,13 @@ export default function VennHome({ data }) {
           </p>
 
           <Link
-            href={data.btnLink}
+            href="/"
             className={`${buttonVariants({
-              variant: "link",
-            })} w-full min-[520px]:w-fit px-10 rounded-[50px] bg-buttons-bg border-buttons-bg border-2 text-buttons-text h-14`}
+              variant: "linkHover",
+            })} desktop-s:max-w-fit desktop-s:px-16
+        `}
           >
-            {data.btnText}
+            <span className="z-10">{data.btnText}</span>
           </Link>
         </div>
       </div>

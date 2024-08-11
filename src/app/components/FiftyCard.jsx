@@ -38,15 +38,17 @@ export default function FiftyCard({
           {desc}
         </p>
 
-        <Link
-          className="flex items-center gap-3 text-main-heading-color font-medium text-p-l tablet-xl:text-p-s desktop-l:text-p-l"
-          href={btnHref}
-        >
-          {btnText}
-          <div className="rounded-full bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px">
-            <RightArrow />
-          </div>
-        </Link>
+        {btnText && (
+          <Link
+            className="flex items-center gap-3 text-main-heading-color font-medium text-p-l tablet-xl:text-p-s desktop-l:text-p-l"
+            href={btnHref}
+          >
+            {btnText}
+            <div className="rounded-full bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px">
+              <RightArrow />
+            </div>
+          </Link>
+        )}
       </div>
     </div>
   );

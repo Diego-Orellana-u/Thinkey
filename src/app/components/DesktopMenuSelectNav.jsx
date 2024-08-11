@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import CaretDown from "./Icons/CaretDown";
 
 export default function DesktopMenuSelectNav({ link, subnav }) {
   const [selected, setSelected] = useState(false);
@@ -16,14 +16,7 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
           <span>{link.name}</span>
           <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
         </Link>
-        <Image
-          className="color-buttons-bg"
-          src="/caret-down.svg"
-          width={15}
-          height={8}
-          alt="down arrow for the dropdown menu"
-          priority={true}
-        />
+        <CaretDown />
       </div>
       <div
         className={`${
@@ -36,8 +29,11 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
         onMouseLeave={() => setSelected(false)}
       >
         <ul className="group shadow-lg border-[1px] border-white-border rounded-[0.45rem] grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
-          {subnav.map((indiv) => (
-            <li key={indiv.key}>
+          {subnav.map((indiv, index) => (
+            <li
+              key={indiv.key}
+              className={`${subnav.length % 3 === 0 ? "col-span-2" : ""}`}
+            >
               <Link
                 href={indiv.href}
                 className="block select-none transition-colors rounded-[0.45rem] p-3 leading-none no-underline outline-none hover:bg-gray-200 focus:bg-gray-200"

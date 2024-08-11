@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero({ heroInfo }) {
   return (
-    <section className="hero h-full pt-5 desktop-s:pt-16 desktop-l:pt-24 tablet-xl:pb-20 desktop-s:pb-24 ">
+    <section className="hero h-full pt-5 desktop-s:pt-16 desktop-l:pt-24">
       <div class="blob-cont">
         <div className="blurblob top-0 desktop-s:-right-16 desktop-l:right-[10%] desktop-s:top-12">
           <div class="yellow blob"></div>
@@ -21,14 +21,14 @@ export default function Hero({ heroInfo }) {
       </div>
       <div
         className={`wrapper ${
-          !heroInfo.img && "pt-16 desktop-s:pt-0"
+          !heroInfo.img && "pt-14 desktop-s:pb-10"
         } flex flex-col`}
       >
         <div
           className={`${
             !heroInfo.img
               ? "desktop-s:max-w-[50%]"
-              : "tablet-xl:flex flex-row-reverse tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18"
+              : "tablet-xl:flex flex-row-reverse tablet-xl:gap-8 desktop-s:gap-12 desktop-l:gap-18 desktop-s:items-center"
           }`}
         >
           {heroInfo.img && (
@@ -37,7 +37,9 @@ export default function Hero({ heroInfo }) {
                 src={heroInfo.img}
                 width={1920}
                 height={1280}
-                className="rounded-[10px] box-shadow-hero object-cover max-h-[430px] h-full"
+                className={`${heroInfo.shadow && heroInfo.shadow} ${
+                  heroInfo.imgCustomCss && heroInfo.imgCustomCss
+                } rounded-[10px] object-cover max-h-[430px] h-full`}
                 alt=""
                 priority={true}
               />
@@ -66,8 +68,8 @@ export default function Hero({ heroInfo }) {
                   <Link
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
-                      variant: "link",
-                    })} w-full max-w-fit px-16 rounded-[50px] h-[50px] relative font-medium bg-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-700 before:ease-out hover:bg-secondary-buttons-bg hover:text-black-heading-color hover:before:h-56 hover:before:w-56 ${
+                      variant: "linkHover",
+                    })} ${
                       !heroInfo.secondBtnLink &&
                       "desktop-s:max-w-fit desktop-s:px-16"
                     }`}
@@ -80,8 +82,8 @@ export default function Hero({ heroInfo }) {
                   <Link
                     href={heroInfo.secondBtnLink}
                     className={`${buttonVariants({
-                      variant: "link",
-                    })} hidden tablet-l:flex w-full rounded-[50px] bg-transparent border-black-heading-color border-2 text-black-body-color font-medium text-p-s`}
+                      variant: "linkHover",
+                    })}`}
                   >
                     {heroInfo.secondBtnText}
                   </Link>
@@ -95,7 +97,7 @@ export default function Hero({ heroInfo }) {
         <filter id="noiseFilter">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.7"
+            baseFrequency="0.6"
             stitchTiles="stitch"
           />
           <feColorMatrix

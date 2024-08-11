@@ -6,7 +6,7 @@ import ServiceCard3 from "./Icons/ServiceCard3";
 
 export default function ServicesCard(service) {
   return (
-    <div className="bg-white service-shadow items-center desktop-l:pt-16 px-4 mobile-l:px-8 desktop-l:px-12 py-10 flex flex-col gap-6 desktop-s:gap-0 rounded-[10px] desktop-l:pb-16 desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
+    <div className="bg-yellowish-white-bg service-shadow items-center desktop-l:pt-16 px-4 mobile-l:px-8 desktop-l:px-12 py-10 flex flex-col gap-6 desktop-s:gap-0 rounded-[10px] desktop-l:pb-16 desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
       {service.icon === "ServiceCard1" && (
         <ServiceCard1 color="fill-accent-900" size="w-16 h-16 mb-2" />
       )}
@@ -24,12 +24,13 @@ export default function ServicesCard(service) {
         {service.desc}
       </p>
       <Link
-        href={service.btnHref}
+        href="/"
         className={`${buttonVariants({
-          variant: "link",
-        })} w-9/12 rounded-[50px] bg-buttons-bg border-buttons-bg text-buttons-text border-2`}
+          variant: "linkHover",
+        })} desktop-s:max-w-fit desktop-s:px-16
+        `}
       >
-        {service.btnText}
+        <span className="z-10">BOOK NOW</span>
       </Link>
     </div>
   );

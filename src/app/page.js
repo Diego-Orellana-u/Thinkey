@@ -14,13 +14,13 @@ import { homeTestimonies } from "data/testimonies";
 
 export default function Home() {
   return (
-    <div className="font-sans">
+    <>
       <Hero heroInfo={homeHeroInfo} />
-      <Fifty fiftyCards={homeFiftyCards} fiftyTitleDesc={homeFiftyTitleDesc} />
       <Services services={homeServices} />
+      <Fifty fiftyCards={homeFiftyCards} fiftyTitleDesc={homeFiftyTitleDesc} />
       <ImpactNumbers data={homeImpactNumbers} />
       <VennHome data={homeVenn} />
       <Testimonies title={homeTestimoniesTitle} testimonies={homeTestimonies} />
-    </div>
+    </>
   );
 }

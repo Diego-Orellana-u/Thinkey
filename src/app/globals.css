@@ -237,20 +237,23 @@ p {
   }
 }
 
-.hero::before,
-.hero::after {
+body::before,
+body::after {
   position: absolute;
   left: 0;
   top: 0;
   content: "";
   width: 100%;
-  height: calc(100% + 96px);
+  height: 100%;
   z-index: -1;
   opacity: 30%;
 }
 
-.hero::before {
-  background: #f8f8fc;
+body::before {
+  /* background: #f3eab5; */
+  /* background: #e7d6735e; */
+  /* background: #e7d67344; */
+  background: #e7d67330;
   filter: url(#noiseFilter);
 }
 
@@ -260,7 +263,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: -2;
-  height: 120%;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -272,7 +275,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: -2;
-  height: 120%;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -283,7 +286,7 @@ p {
   border-radius: 9990px;
 }
 .blurblob {
-  filter: blur(35px);
+  filter: blur(65px);
   width: 600px;
   height: 600px;
   position: absolute;

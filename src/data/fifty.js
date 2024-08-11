@@ -3,7 +3,8 @@ export const homeFiftyTitleDesc = {
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 };
 
-// Important: The orientation determine if the text is on the left or the right
+// The orientation determine if the text is on the left or the right
+// If you don't want a button, put the boolean false in btnText
 
 export const homeFiftyCards = [
   {
@@ -21,7 +22,7 @@ export const homeFiftyCards = [
   {
     title: "Building steam experiences that teach and impact",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    btnText: "SEE MORE",
+    btnText: false,
     btnHref: "/",
     imgLink: "/fifty-img-3.webp",
     imgAlt: "test",

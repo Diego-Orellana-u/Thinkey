@@ -1,20 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/logos/logo-thinkey.svg";
+import LogoHeader from "./LogoHeader";
 
 export default function Footer() {
   return (
-    <footer className="bg-white wrapper">
+    <footer className="bg-white-bg wrapper">
       <div className="mx-auto space-y-8 pt-16 pb-8 min-[1024px]:space-y-16">
         <div className="grid grid-cols-1 gap-8 min-[1024px]:grid-cols-3">
           <div>
-            <Link href="/">
-              <Image
-                className="w-32 desktop-s:w-[150px] pt-1 desktop-s:pt-0"
-                src={logo}
-                alt="Logo of Thinkey school"
-              />
-            </Link>
+            <LogoHeader />
 
             <p className="mt-4 max-w-xs text-gray-500">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non

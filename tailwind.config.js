@@ -48,7 +48,7 @@ module.exports = {
         "black-body-color": "#333333",
         "white-body-color": "#F2F2F2",
         "main-heading-color": "#002a54e8",
-        "black-heading-color": "#222222",
+        "black-heading-color": "#333333",
         "buttons-bg": "#002a54e8",
         "buttons-text": "#9FCF00",
         "secondary-buttons-bg": "#9FCF00",

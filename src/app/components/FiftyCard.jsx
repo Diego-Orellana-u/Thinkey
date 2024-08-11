@@ -3,6 +3,8 @@ import Link from "next/link";
 import RightArrow from "./Icons/RightArrow";
 
 export default function FiftyCard({
+  type,
+  height,
   title,
   desc,
   btnText,
@@ -19,18 +21,32 @@ export default function FiftyCard({
         orientation === "reverse"
           ? "tablet-xl:flex-row-reverse"
           : "tablet-xl:flex-row"
-      } mb-24 tablet-xl:gap-12 desktop-l:gap-16`}
+      } ${
+        type === "full"
+          ? "mb-0"
+          : "wrapper mb-24 tablet-xl:gap-12 desktop-l:gap-16"
+      } ${height && `desktop-s:h-[75vh]`}`}
     >
-      <div className="mb-7 tablet-xl:w-2/4 tablet-xl:mb-0">
+      <div
+        className={`mb-7 tablet-xl:w-2/4 ${
+          type === "full" && "tablet-s:mb-0"
+        } tablet-xl:mb-0`}
+      >
         <Image
           src={imgLink}
           width={imgWidth}
           height={imgHeight}
-          className="rounded-[10px] tablet-xl:h-full object-cover shadow-lg"
+          className={`${
+            type === "original" && "rounded-[10px]"
+          } tablet-xl:h-full object-cover shadow-lg`}
           alt={imgAlt}
         />
       </div>
-      <div className="tablet-xl:w-2/4 tablet-xl:self-center">
+      <div
+        className={`${
+          type === "full" && "wrapper py-16"
+        } tablet-xl:w-2/4 tablet-xl:self-center`}
+      >
         <h3 className="text-main-heading-color text-h3-s font-bold leading-9 tracking-tight mb-5 desktop-l:mb-7 tablet-xl:text-h2-s desktop-l:text-h3-xl desktop-l:leading-[48px]">
           {title}
         </h3>
@@ -44,7 +60,7 @@ export default function FiftyCard({
             href={btnHref}
           >
             {btnText}
-            <div className="rounded-full bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px">
+            <div className="rounded-full w-7 h-7 bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px">
               <RightArrow />
             </div>
           </Link>

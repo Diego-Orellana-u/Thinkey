@@ -303,7 +303,7 @@ body::before {
   position: absolute;
 }
 
-.yellow {
+.green {
   background-color: #9fcf00;
   position: absolute;
   top: 200px;
@@ -314,7 +314,7 @@ body::before {
   animation: yellow 8s infinite ease;
 }
 
-.green {
+.blue {
   background-color: #002a54;
   position: absolute;
   top: 80px;
@@ -346,10 +346,10 @@ body::before {
   animation: red-two 8s infinite linear;
 }
 
-@keyframes yellow {
+@keyframes blue {
   0% {
     top: 200px;
-    left: 100px;
+    left: 50px;
     transform: scale(1);
   }
   30% {
@@ -364,7 +364,7 @@ body::before {
   }
   100% {
     top: 200px;
-    left: 100px;
+    left: 50px;
     transform: scale(1);
   }
 }
@@ -372,7 +372,7 @@ body::before {
 @keyframes green {
   0% {
     top: 80px;
-    right: -20px;
+    right: -50px;
     transform: scale(1.2);
   }
   30% {
@@ -387,7 +387,7 @@ body::before {
   }
   100% {
     top: 80px;
-    right: -20px;
+    right: -50px;
     transform: scale(1.2);
   }
 }
@@ -404,7 +404,7 @@ body::before {
     transform: scale(1.2);
   }
   60% {
-    top: 250px;
+    top: 350px;
     right: 100px;
     transform: scale(1);
   }

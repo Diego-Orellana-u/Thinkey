@@ -15,3 +15,26 @@ export const homeImpactNumbers = [
     keys: "empresas-impactadas",
   },
 ];
+
+export const servicesImpactTwo = [
+  {
+    title: "Active students",
+    data: "12,345",
+    key: "servicesImpactTwo-key-1",
+  },
+  {
+    title: "Active students",
+    data: "12,345",
+    key: "servicesImpactTwo-key-2",
+  },
+  {
+    title: "Active students",
+    data: "12,345",
+    key: "servicesImpactTwo-key-3",
+  },
+  {
+    title: "Active students",
+    data: "12,345",
+    key: "servicesImpactTwo-key-3",
+  },
+];

@@ -38,7 +38,7 @@ export const mobileNav = [
 export const desktopNav = [
   {
     name: "SERVICIOS",
-    link: "/servicios",
+    link: false,
     subnav: [
       {
         title: "Para colegios",

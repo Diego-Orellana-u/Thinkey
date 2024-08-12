@@ -20,7 +20,7 @@ export default function Testimonies({ title, testimonies }) {
           {testimonies.map((testimony) => (
             <CarouselItem
               key={testimony.name}
-              className="min-[600px]:basis-1/2 tablet-l:pl-10 desktop-s:basis-1/3 desktop-s:pl-6 desktop-l:pl-12"
+              className="min-[600px]:basis-1/2 tablet-l:pl-10 desktop-s:basis-1/3 desktop-s:pl-6 desktop-l:pl-12 pb-1"
             >
               <TestimonyCard {...testimony} />
             </CarouselItem>

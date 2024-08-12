@@ -8,7 +8,7 @@ export default function ServicesCard(service) {
   return (
     <div className="relative service-shadow rounded-[10px] desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
       <span
-        class={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
+        className={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
           service.color ? service.color : "bg-indigo-500"
         }  rounded-lg`}
       ></span>

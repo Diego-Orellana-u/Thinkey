@@ -8,15 +8,29 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
   return (
     <div className="group">
       <div
-        className="flex gap-1 h-16 items-center"
+        className="flex gap-1 h-16 "
         onMouseEnter={() => setSelected(true)}
         onMouseLeave={() => setSelected(false)}
       >
-        <Link href={link.link} className="relative">
-          <span>{link.name}</span>
-          <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
-        </Link>
-        <CaretDown />
+        {link.link ? (
+          <div className="flex items-center gap-1">
+            <Link href={link.link} className="relative">
+              <span>{link.name}</span>
+              <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
+            </Link>
+            <CaretDown />
+          </div>
+        ) : (
+          <>
+            <div className="flex items-center gap-1">
+              <div className="relative">
+                <span>{link.name}</span>
+                <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
+              </div>
+              <CaretDown />
+            </div>
+          </>
+        )}
       </div>
       <div
         className={`${

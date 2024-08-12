@@ -5,6 +5,8 @@ export const homeServices = [
     btnText: "SEE MORE",
     btnHref: "/",
     icon: "ServiceCard1",
+    color: "bg-secondary-100",
+    border: "border-secondary-100",
     keys: "Familias",
   },
   {
@@ -13,6 +15,8 @@ export const homeServices = [
     btnText: "SEE MORE",
     btnHref: "/",
     icon: "ServiceCard2",
+    color: "bg-secondary-100", //border and background have to be the same
+    border: "border-secondary-100",
     keys: "Cohete",
   },
   {
@@ -21,6 +25,10 @@ export const homeServices = [
     btnText: "SEE MORE",
     btnHref: "/",
     icon: "ServiceCard3",
+    color: "bg-secondary-100",
+    border: "border-secondary-100",
     keys: "Casa",
   },
 ];
+
+export const servicesGrid = [];

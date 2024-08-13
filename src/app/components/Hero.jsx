@@ -54,10 +54,10 @@ export default function Hero({ heroInfo }) {
             } text-black-body-color`}
           >
             <h1 className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] min-[600px]:mb-2 tablet-xl:mb-0">
-              EVENTOS Y EXPERIENCIAS CIENTIFICAS
+              {heroInfo.heading1}
             </h1>
             <div className="flex flex-col gap-6 tablet-l:gap-7 tablet-xl:gap-4">
-              <span className="text-main-heading-color desktop-s:max-w-[500px] text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:text-h1-xl desktop-l:leading-[63px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
+              <span className="text-black-heading-color text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:text-h1-xl desktop-l:leading-[63px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0">
                 {heroInfo.title}
               </span>
               <p className="text-p-l tablet-l:mb-2 desktop-s:max-w-[500px]">

@@ -34,13 +34,13 @@ export default function ServicesCard(service) {
           {service.desc}
         </p>
         <Link
-          href="/"
+          href={service.btnHref}
           className={`${buttonVariants({
             variant: "linkHover",
-          })} desktop-s:max-w-fit desktop-s:px-16
+          })} relative bottom-0 desktop-s:max-w-fit desktop-s:px-16
         `}
         >
-          <span className="z-10">BOOK NOW</span>
+          <span className="z-10">{service.btnText}</span>
         </Link>
       </div>
     </div>

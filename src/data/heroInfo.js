@@ -1,7 +1,8 @@
 export const homeHeroInfo = {
-  title: "Frase Catchy sobre lo que hacemos",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  mainBtnText: "SEE MORE",
+  heading1: "EVENTOS Y EXPERIENCIAS CIENTIFICAS PARA NIÑOS",
+  title: "Experiencias de aprendizaje únicas y relevantes para el futuro",
+  desc: "Somos pioneros en la creación de experiencias STEAM en Chile, transformando la forma en que niños y jóvenes aprenden y se relacionan con el mundo.",
+  mainBtnText: "CONÓCENOS",
   mainBtnLink: "/",
   secondBtnText: "SEE MORE 2",
   secondBtnLink: false,

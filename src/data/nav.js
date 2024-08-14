@@ -77,3 +77,7 @@ export const desktopNav = [
     key: "contactonav-desktop",
   },
 ];
+
+export const btn = {
+  title: "AGENDAR",
+};

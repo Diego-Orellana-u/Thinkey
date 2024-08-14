@@ -26,7 +26,7 @@ module.exports = {
       "p-s": "1rem", //font-size: 16px, line-height: 24px
       "p-l": "1.125rem", //font-size: 18px, line-height: 27px-28px
       "h2-l": "2.375rem", //font-size: 38px, line-height: 45px
-      "h1-xl": "3.25", //font-size: 52px, line-height: 63px
+      "h1-xl": "3.25rem", //font-size: 52px, line-height: 63px
       "h2-xl": "3.5rem", //font-size: 56px, line-height: 67px
       "h3-xl": "2.5rem", //font-size: 40px, line-height: 48px
       "p-xl": "1.25rem", //font-size: 20px, line-height: 30px
@@ -48,7 +48,7 @@ module.exports = {
         "black-body-color": "#333333",
         "white-body-color": "#F2F2F2",
         "main-heading-color": "#002a54e8",
-        "black-heading-color": "#333333",
+        "black-heading-color": "#222222",
         "buttons-bg": "#002a54e8",
         "buttons-text": "#9FCF00",
         "secondary-buttons-bg": "#9FCF00",

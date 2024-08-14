@@ -3,6 +3,8 @@ import { MenuIcon } from "./MenuIcon";
 import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
 import DesktopMenu from "./DesktopMenu";
+import { Button } from "./ui/button";
+import { btn } from "data/nav";
 
 export const Header = () => {
   const [headerColor, setHeaderColor] = useState(false);
@@ -37,11 +39,11 @@ export const Header = () => {
 
         <div className="hidden desktop-s:flex items-center">
           <DesktopMenu />
-          <button
-            className={`h-[50px] relative px-10 rounded-[50px] font-medium bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg  hover:text-black-heading-color hover:before:h-56 hover:before:w-56`}
+          <Button
+            className={`h-[50px] text-p-l relative px-10 rounded-[50px] font-medium bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg  hover:text-black-heading-color hover:before:h-56 hover:before:w-56`}
           >
-            <span className="z-10">BOOK NOW</span>
-          </button>
+            <span className="z-10">{btn.title}</span>
+          </Button>
         </div>
       </div>
     </header>

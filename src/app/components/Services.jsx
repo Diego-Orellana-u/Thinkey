@@ -5,7 +5,7 @@ export default function Services({ services }) {
   return (
     <div className="wrapper desktop-l:pb-24 text-center mb-24">
       <Heading2
-        title="A new way of approaching science to kids"
+        title="Una nueva forma de acercar la ciencia a los niños"
         padding="mb-10 desktop-s:mb-7 desktop-l:mb-14"
       />
 

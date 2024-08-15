@@ -27,7 +27,7 @@ export default function ServicesCard(service) {
           <ServiceCard3 color="fill-accent-900" size="w-16 h-16 mb-2" />
         )}
 
-        <h3 className="text-h3-s text-black-heading-color tablet-l:text-h2-s desktop-l:text-h3-xl font-semibold desktop-s:mb-4 desktop-l:mb-12">
+        <h3 className="text-h3-s text-black-heading-color tablet-l:text-h2-s desktop-l:text-h3-xl font-semibold desktop-s:mb-4 desktop-l:mb-6">
           {service.title}
         </h3>
         <p className="desktop-s:mb-8 desktop-l:mb-12 desktop-s:text-p-l">
@@ -37,7 +37,7 @@ export default function ServicesCard(service) {
           href={service.btnHref}
           className={`${buttonVariants({
             variant: "linkHover",
-          })} relative bottom-0 desktop-s:max-w-fit desktop-s:px-16
+          })} absolute desktop-s:max-w-fit desktop-s:px-16 bottom-10
         `}
         >
           <span className="z-10">{service.btnText}</span>

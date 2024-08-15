@@ -72,7 +72,7 @@ export default function Hero({ heroInfo }) {
                     })} ${
                       !heroInfo.secondBtnLink &&
                       "desktop-s:max-w-fit desktop-s:px-16"
-                    }`}
+                    } relative`}
                   >
                     <span className="z-10">{heroInfo.mainBtnText}</span>
                   </Link>
@@ -83,7 +83,7 @@ export default function Hero({ heroInfo }) {
                     href={heroInfo.secondBtnLink}
                     className={`${buttonVariants({
                       variant: "linkHover",
-                    })}`}
+                    })} relative`}
                   >
                     {heroInfo.secondBtnText}
                   </Link>

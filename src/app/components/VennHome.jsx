@@ -35,7 +35,7 @@ export default function VennHome({ data }) {
             href="/"
             className={`${buttonVariants({
               variant: "linkHover",
-            })} desktop-s:max-w-fit desktop-s:px-16
+            })} desktop-s:max-w-fit desktop-s:px-16 relative
         `}
           >
             <span className="z-10">{data.btnText}</span>

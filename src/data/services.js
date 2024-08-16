@@ -4,9 +4,10 @@ export const homeServices = [
     desc: "¿Buscas una celebración unica para tus hijos? En ThinKey ofrecemos experiencias únicas para familias que combinan diversión y aprendizaje, despertando la curiosidad de los pequeños con desafíos y actividades científicas creativas. Haz que tu hijo aprenda mientras se divierte.",
     btnText: "SABER MÁS",
     btnHref: "/servicios/familias",
-    icon: "ServiceCard1",
+    icon: false,
     color: "bg-secondary-100",
     border: "border-secondary-100",
+    imgLink: "/fifty-img-1.webp",
     keys: "Familias",
   },
   {
@@ -14,9 +15,10 @@ export const homeServices = [
     desc: "Eventos científicos en empresas para todas las edades. Mezclamos ciencia, teatro y educación para crear una experiencia única para tus empleados. Fortalece los lazos familiares de tus trabajadores, promueve el interés por la ciencia y destaca tu compromiso con la educación.",
     btnText: "SABER MÁS",
     btnHref: "/servicios/empresas",
-    icon: "ServiceCard2",
+    icon: false,
     color: "bg-secondary-100", //border and background have to be the same
     border: "border-secondary-100",
+    imgLink: "/fifty-img-2.webp",
     keys: "Cohete",
   },
   {
@@ -24,9 +26,10 @@ export const homeServices = [
     desc: "En ThinKey ofrecemos eventos y experiencias científicas innovadoras diseñadas para impulsar el interés por la ciencia en los niños de todas las edades. Garantizamos una experiencia segura y enriquecedora alineada con los objetivos curriculares.",
     btnText: "SABER MÁS",
     btnHref: "/servicios/escuelas",
-    icon: "ServiceCard3",
+    icon: false,
     color: "bg-secondary-100",
     border: "border-secondary-100",
+    imgLink: "/fifty-img-3.webp",
     keys: "Casa",
   },
 ];

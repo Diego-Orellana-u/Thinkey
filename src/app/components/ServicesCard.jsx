@@ -3,6 +3,7 @@ import { buttonVariants } from "./ui/button";
 import ServiceCard1 from "./Icons/ServiceCard1";
 import ServiceCard2 from "./Icons/ServiceCard2";
 import ServiceCard3 from "./Icons/ServiceCard3";
+import Image from "next/image";
 
 export default function ServicesCard(service) {
   return (
@@ -17,7 +18,7 @@ export default function ServicesCard(service) {
           service.color ? service.border : "border-indigo-500"
         } rounded-lg items-center flex flex-col gap-6 desktop-s:gap-0`}
       >
-        {service.icon === "ServiceCard1" && (
+        {service.icon && service.icon === "ServiceCard1" && (
           <ServiceCard1 color="fill-accent-900" size="w-16 h-16 mb-2" />
         )}
         {service.icon === "ServiceCard2" && (
@@ -30,14 +31,14 @@ export default function ServicesCard(service) {
         <h3 className="text-h3-s text-black-heading-color tablet-l:text-h2-s desktop-l:text-h3-xl font-semibold desktop-s:mb-4 desktop-l:mb-6">
           {service.title}
         </h3>
-        <p className="desktop-s:mb-8 desktop-l:mb-12 desktop-s:text-p-l">
+        <p className="mb-10 desktop-l:mb-12 desktop-s:text-p-l">
           {service.desc}
         </p>
         <Link
           href={service.btnHref}
           className={`${buttonVariants({
-            variant: "linkHover",
-          })} absolute desktop-s:max-w-fit desktop-s:px-16 bottom-10
+            variant: "linkHoverBlue",
+          })} absolute mobile-l:max-w-fit desktop-s:px-16 bottom-10
         `}
         >
           <span className="z-10">{service.btnText}</span>

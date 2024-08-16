@@ -34,7 +34,7 @@ export default function VennHome({ data }) {
           <Link
             href="/"
             className={`${buttonVariants({
-              variant: "linkHover",
+              variant: "linkHoverBlue",
             })} desktop-s:max-w-fit desktop-s:px-16 relative
         `}
           >

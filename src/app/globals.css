@@ -84,6 +84,10 @@ p {
   );
 }
 
+.hero-gradient {
+  background: linear-gradient(0deg, #9fcf009e 9%, #d63c3d40 80%, transparent);
+}
+
 .box-shadow-hero {
   box-shadow: 0px 4px 30px 50px rgba(0, 0, 0, 0.3) inset,
     0px 4px 50px 15px rgba(0, 0, 0, 0.15);

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TestimonyCard(info) {
   return (
     <div className="rounded-[20px] bg-yellowish-white-bg py-6 px-5 mobile-l:px-7 min-[490px]:h-[450px]">
-      <div className="flex justify-between mb-4 min-[490px]:mb-12">
+      <div className="flex justify-between mb-4 desktop-s:mb-4 desktop-l:mb-7">
         <div>
           <Image
             className="pt-6"

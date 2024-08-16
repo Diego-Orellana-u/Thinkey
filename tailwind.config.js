@@ -24,7 +24,7 @@ module.exports = {
       "h3-s": "1.5rem", //font-size: 24px, line-height: 28px
       "p-xs": "0.875rem", //font-size: 14px, line-height: 21px
       "p-s": "1rem", //font-size: 16px, line-height: 24px
-      "p-l": "1.125rem", //font-size: 18px, line-height: 27px-28px
+      "p-l": "1.25rem", //font-size: 20px, line-height: 30px
       "h2-l": "2.375rem", //font-size: 38px, line-height: 45px
       "h1-xl": "3.25rem", //font-size: 52px, line-height: 63px
       "h2-xl": "3.5rem", //font-size: 56px, line-height: 67px
@@ -47,10 +47,12 @@ module.exports = {
         "yellowish-white-bg": "#fdfdf9",
         "black-body-color": "#333333",
         "white-body-color": "#F2F2F2",
-        "main-heading-color": "#002a54e8",
+        "main-heading-color": "#333B68",
         "black-heading-color": "#222222",
-        "buttons-bg": "#002a54e8",
+        "buttons-bg": "#0240A3",
         "buttons-text": "#9FCF00",
+        "main-100": "#333B68",
+        "main-200": "#1A2357",
         "secondary-buttons-bg": "#9FCF00",
         "secondary-100": "#9FCF00",
         "accent-800": "#D63C3D",

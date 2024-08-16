@@ -68,7 +68,7 @@ export default function Hero({ heroInfo }) {
                   <Link
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
-                      variant: "linkHover",
+                      variant: "linkHoverBlue",
                     })} ${
                       !heroInfo.secondBtnLink &&
                       "desktop-s:max-w-fit desktop-s:px-16"
@@ -82,8 +82,8 @@ export default function Hero({ heroInfo }) {
                   <Link
                     href={heroInfo.secondBtnLink}
                     className={`${buttonVariants({
-                      variant: "linkHover",
-                    })} relative`}
+                      variant: "linkHoverBlue",
+                    })} relative max-w-fit`}
                   >
                     {heroInfo.secondBtnText}
                   </Link>

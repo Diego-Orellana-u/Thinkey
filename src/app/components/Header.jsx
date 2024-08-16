@@ -29,7 +29,7 @@ export const Header = () => {
     <header
       className={`sticky top-0 z-50 flex items-center h-24 ${
         headerColor
-          ? "bg-white-bg shadow-sm transition duration-300"
+          ? "bg-white shadow-sm transition duration-300"
           : "bg-[transparent] transition duration-300"
       }`}
     >

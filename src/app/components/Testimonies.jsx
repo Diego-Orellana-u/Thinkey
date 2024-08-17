@@ -8,9 +8,13 @@ import {
 import TestimonyCard from "./TestimonyCard";
 import Heading2 from "./Heading2";
 
-export default function Testimonies({ title, testimonies }) {
+export default function Testimonies({ title, testimonies, sectionPadding }) {
   return (
-    <div className="wrapper text-p-l mb-28">
+    <div
+      className={`wrapper text-p-l ${
+        sectionPadding ? sectionPadding : "mb-28"
+      }`}
+    >
       <Heading2
         title={title.title}
         padding="mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center"

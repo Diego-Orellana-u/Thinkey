@@ -22,9 +22,7 @@ export default function FiftyCard({
           ? "tablet-xl:flex-row-reverse"
           : "tablet-xl:flex-row"
       } ${
-        type === "full"
-          ? "mb-0"
-          : "wrapper mb-24 tablet-xl:gap-12 desktop-l:gap-16"
+        type === "full" ? "mb-0" : "wrapper tablet-xl:gap-12 desktop-l:gap-16"
       } ${height && `desktop-s:h-[75vh]`}`}
     >
       <div

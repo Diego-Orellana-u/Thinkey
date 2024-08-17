@@ -39,7 +39,7 @@ export const homeServices = [
 
 export const servicesGridTop = [
   {
-    title: "Service 1",
+    title: "Exploradores Espaciales",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     bgColor: "bg-indigo-500",
     borderColor: "border-indigo-500",
@@ -90,5 +90,51 @@ export const servicesGridBottom = [
     borderColor: "border-green-500",
     lineColor: "text-green-500",
     key: "service-3-grid-bottom",
+  },
+];
+
+export const familiasServices = [
+  {
+    title: "Exploradores del Espacio",
+    desc: "Desde la observación de estrellas hasta la construcción de cohetes, este bootcamp es ideal para los pequeños astronautas.",
+    outsideImgSrc: "/services-img-1.svg",
+    outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    outsideImgWidth: 500,
+    outsideImgHeight: 500,
+    insideImgSrc: "/familia-planets.webp",
+    insideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    insideImgWidth: 500,
+    insideImgHeight: 500,
+    serviceHref: "/",
+    key: "service-img-card-1",
+  },
+
+  {
+    title: "Ingenieros del Futuro",
+    desc: "Construye y programa robots, aprende sobre ingeniería y resuelve desafíos tecnológicos.",
+    outsideImgSrc: "/services-img-2.svg",
+    outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    outsideImgWidth: 500,
+    outsideImgHeight: 500,
+    insideImgSrc: "/familia-planets.webp",
+    insideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    insideImgWidth: 500,
+    insideImgHeight: 500,
+    serviceHref: "/",
+    key: "service-img-card-1",
+  },
+  {
+    title: "Artistas Científicos",
+    desc: "Combina arte y ciencia para crear proyectos que deslumbran y enseñan.",
+    outsideImgSrc: "/services-img-1.svg",
+    outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    outsideImgWidth: 500,
+    outsideImgHeight: 500,
+    insideImgSrc: "/familia-planets.webp",
+    insideImgAlt: "Imagen de un cientifico haciendo un experimento",
+    insideImgWidth: 500,
+    insideImgHeight: 500,
+    serviceHref: "/",
+    key: "service-img-card-1",
   },
 ];

@@ -49,7 +49,7 @@ module.exports = {
         "white-body-color": "#F2F2F2",
         "main-heading-color": "#333B68",
         "black-heading-color": "#222222",
-        "buttons-bg": "#0240A3",
+        "buttons-bg": "#322a89",
         "buttons-text": "#9FCF00",
         "main-100": "#333B68",
         "main-200": "#1A2357",

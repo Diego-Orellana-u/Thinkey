@@ -48,11 +48,6 @@ export const homeFiftyCards = [
   },
 ];
 
-export const familiasFiftyTitleDesc = {
-  title: "Cumpleaños Científicos",
-  desc: "Convierte la próxima fiesta de cumpleaños en una aventura científica. Nuestros cumpleaños científicos combinan la magia del aprendizaje con la diversión, permitiendo que los niños descubran la ciencia a través de experimentos interactivos y emocionantes.",
-};
-
 export const familiasFiftyCards = [
   {
     type: "original",

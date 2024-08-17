@@ -261,8 +261,8 @@ body::after {
 body::before {
   /* background: #f3eab5; */
   /* background: #e7d6735e; */
-  /* background: #e7d67344; */
-  background: #e7d67330;
+  background: #e7d67344;
+  /* background: #e7d67330; */
   filter: url(#noiseFilter);
 }
 
@@ -440,4 +440,11 @@ body::before {
     right: 0px;
     transform: scale(1);
   }
+}
+
+.family-hero-gradient {
+  background: linear-gradient(90deg, #02b50d 0%, #95c108 73.51%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

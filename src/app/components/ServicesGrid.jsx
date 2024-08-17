@@ -1,9 +1,17 @@
 import Heading2 from "./Heading2";
 
-export default function ServicesGrid({ servicesTop, servicesBottom }) {
+export default function ServicesGrid({
+  servicesTop,
+  servicesBottom,
+  title,
+  desc,
+}) {
   return (
     <div className="wrapper relative flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5">
-      <Heading2 title="Servicios" padding="pb-10" />
+      <Heading2
+        title="Aventuras educativas con Bootcamps STEAM"
+        padding="pb-10"
+      />
       <div className="w-full">
         {servicesTop && (
           <div className="flex flex-col w-full tablet-l:mb-10 desktop-s:mb-16 tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-16">

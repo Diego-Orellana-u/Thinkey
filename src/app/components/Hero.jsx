@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
-import ButtonTest from "./ButtonTest";
 
 export default function Hero({ heroInfo, headingSize, gradientClass }) {
   return (
@@ -58,8 +57,12 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
               !heroInfo.heading1 ? "" : "desktop-s:mt-6"
             } tablet-xl:w-[81%] ${
               !heroInfo.img
-                ? "desktop-s:w-[100%] desktop-l:w-9/12 text-center desktop-s:text-left"
+                ? "desktop-s:w-[100%] desktop-l:w-9/12"
                 : "desktop-l:w-9/12"
+            } ${
+              heroInfo.orientation === "left"
+                ? "text-left"
+                : "text-center desktop-s:text-left"
             } text-black-body-color`}
           >
             <h1 className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] min-[600px]:mb-2 tablet-xl:mb-0">
@@ -81,11 +84,11 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
                         headingSize
                           ? headingSize
                           : "desktop-l:text-h1-xl desktop-l:leading-[63px]"
-                      } block ${
+                      } ${
                         gradientClass
                           ? gradientClass
                           : "text-black-heading-color"
-                      } text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px]  desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
+                      } ml-[10px] desktop-s:ml-[15px] desktop-s:block desktop-s:ml-0 text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-3 leading-[42px] font-bold`}
                     >
                       {heroInfo.separatedTitle2}
                     </span>
@@ -106,20 +109,22 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
               <p className="text-p-l tablet-l:mb-2 desktop-s:max-w-[700px]">
                 {heroInfo.desc}
               </p>
-              <div className="flex gap-8 justify-center desktop-s:justify-start desktop-l:w-[80%]">
+              <div
+                className={`flex gap-8 ${
+                  heroInfo.orientation === "left"
+                    ? "justify-start"
+                    : "justify-center"
+                } desktop-s:justify-start desktop-l:w-[80%]`}
+              >
                 {heroInfo.mainBtnLink && (
                   <Link
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
                       variant: "linkHoverBlue",
-                    })} ${
-                      !heroInfo.secondBtnLink &&
-                      "desktop-s:max-w-fit desktop-s:px-16"
-                    } relative`}
+                    })} ${!heroInfo.secondBtnLink && ""} relative`}
                   >
                     <span className="z-10">{heroInfo.mainBtnText}</span>
                   </Link>
-                  // <ButtonTest />
                 )}
 
                 {heroInfo.secondBtnLink && (

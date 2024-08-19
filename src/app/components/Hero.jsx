@@ -3,13 +3,17 @@ import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
 
-export default function Hero({ heroInfo, headingSize, gradientClass }) {
+export default function Hero({
+  heroInfo,
+  headingSize,
+  gradientClass,
+  paddingTop,
+}) {
+  console.log(paddingTop);
   return (
     <section
       className={`hero h-full ${
-        !heroInfo.heading1
-          ? "pt-5 desktop-s:pt-24 desktop-l:pt-28"
-          : "pt-5 desktop-s:pt-16 desktop-l:pt-24"
+        paddingTop ? paddingTop : "pt-5 desktop-s:pt-16 desktop-l:pt-24"
       }`}
     >
       <div className="blob-cont">
@@ -38,14 +42,14 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
           }`}
         >
           {heroInfo.img && (
-            <div className="drop-shadow-2xl tablet-xl:self-center mb-6 tablet-xl:mb-0 tablet-xl:min-h-[700px]:pt-10 tablet-xl:w-[75%]">
+            <div className="drop-shadow-2xl flex justify-center tablet-xl:self-center mb-6 tablet-xl:mb-0 tablet-xl:min-h-[700px]:pt-10 tablet-xl:w-[75%]">
               <Image
                 src={heroInfo.img}
                 width={1920}
                 height={1280}
                 className={`${heroInfo.shadow && heroInfo.shadow} ${
                   heroInfo.imgCustomCss && heroInfo.imgCustomCss
-                } rounded-[10px] object-cover max-h-[430px] h-full`}
+                } rounded-[10px] object-cover w-[350px] desktop-s:w-full max-w-[600px] h-full`}
                 alt=""
                 priority={true}
               />
@@ -76,7 +80,7 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
                       headingSize
                         ? headingSize
                         : "desktop-l:text-h1-xl desktop-l:leading-[63px]"
-                    } block text-black-heading-color text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px]  desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
+                    } block text-black-heading-color text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-3 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
                   >
                     {heroInfo.separatedTitle1}
                     <span
@@ -88,7 +92,7 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
                         gradientClass
                           ? gradientClass
                           : "text-black-heading-color"
-                      } ml-[10px] desktop-s:ml-[15px] desktop-s:block desktop-s:ml-0 text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-3 leading-[42px] font-bold`}
+                      } ml-[8px] desktop-s:block desktop-s:ml-0 text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-3 leading-[42px] font-bold`}
                     >
                       {heroInfo.separatedTitle2}
                     </span>
@@ -120,7 +124,7 @@ export default function Hero({ heroInfo, headingSize, gradientClass }) {
                   <Link
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
-                      variant: "linkHoverBlue",
+                      variant: "hover",
                     })} ${!heroInfo.secondBtnLink && ""} relative`}
                   >
                     <span className="z-10">{heroInfo.mainBtnText}</span>

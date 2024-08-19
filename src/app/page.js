@@ -15,7 +15,7 @@ import { homeTestimonies } from "data/testimonies";
 export default function Home() {
   return (
     <>
-      <Hero heroInfo={homeHeroInfo} />
+      <Hero heroInfo={homeHeroInfo} paddingTop="pt-0" />
       <Services services={homeServices} />
       <Fifty fiftyCards={homeFiftyCards} fiftyTitleDesc={homeFiftyTitleDesc} />
       <ImpactNumbers data={homeImpactNumbers} />

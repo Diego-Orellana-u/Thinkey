@@ -30,13 +30,15 @@ export default function ServicesImg({ data, title, sectionPadding }) {
                 </div>
 
                 <div className="h-full p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 tablet-s:p-6 desktop-s:p-8">
-                  <Image
-                    className="object-cover rounded-[10px]"
-                    src={card.insideImgSrc}
-                    width={card.insideImgWidth}
-                    height={card.insideImgHeight}
-                    alt={card.insideImgAlt}
-                  />
+                  <div className="flex justify-center">
+                    <Image
+                      className="object-cover rounded-[10px] w-fit max-h-52"
+                      src={card.insideImgSrc}
+                      width={card.insideImgWidth}
+                      height={card.insideImgHeight}
+                      alt={card.insideImgAlt}
+                    />
+                  </div>
                   <h3 className="mt-4 text-xl font-medium tablet-s:text-2xl">
                     {card.title}
                   </h3>
@@ -47,7 +49,7 @@ export default function ServicesImg({ data, title, sectionPadding }) {
 
                   <Link
                     href={card.serviceHref}
-                    className="absolute bottom-5 font-bold"
+                    className="absolute bottom-5 tablet-s:bottom-6 desktop-s:bottom-8 font-bold"
                   >
                     Read more
                   </Link>

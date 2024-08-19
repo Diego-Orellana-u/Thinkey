@@ -97,7 +97,7 @@ export const familiasServices = [
   {
     title: "Exploradores del Espacio",
     desc: "Desde la observación de estrellas hasta la construcción de cohetes, este bootcamp es ideal para los pequeños astronautas.",
-    outsideImgSrc: "/services-img-1.svg",
+    outsideImgSrc: "/personajes-lampara.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
     outsideImgHeight: 500,
@@ -112,7 +112,7 @@ export const familiasServices = [
   {
     title: "Ingenieros del Futuro",
     desc: "Construye y programa robots, aprende sobre ingeniería y resuelve desafíos tecnológicos.",
-    outsideImgSrc: "/services-img-2.svg",
+    outsideImgSrc: "/personajes-arduino.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
     outsideImgHeight: 500,
@@ -126,7 +126,7 @@ export const familiasServices = [
   {
     title: "Artistas Científicos",
     desc: "Combina arte y ciencia para crear proyectos que deslumbran y enseñan.",
-    outsideImgSrc: "/services-img-1.svg",
+    outsideImgSrc: "/personajes-nubelluviosa.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
     outsideImgHeight: 500,

@@ -7,7 +7,8 @@ export const homeHeroInfo = {
   secondBtnText: "SEE MORE 2",
   secondBtnLink: false,
   img: "/g10.svg",
-  blob: true,
+  blobTop: true,
+  blobCenter: true,
   // img: "/fotoHero.webp",
   // img: false,
   shadow: false,
@@ -29,6 +30,7 @@ export const empresasHeroInfo = {
 };
 
 export const familiasHeroInfo = {
+  paddingTop: "desktop-s:pt-16 desktop-l:pt-0",
   separatedTitle1: "Aprendiendo en familia con",
   separatedTitle2: "ciencia divertida",
   title: false,
@@ -41,7 +43,7 @@ export const familiasHeroInfo = {
   img: false,
   blobTop: true,
   blobCenter: false,
-  // img: "/g10.svg",
+  img: "/personajes-insectos.webp",
   // img: false,
   shadow: false,
   imgCustomCss: false,

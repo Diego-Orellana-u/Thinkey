@@ -39,9 +39,7 @@ export const Header = () => {
 
         <div className="hidden desktop-s:flex items-center">
           <DesktopMenu />
-          <Button
-            className={`h-[50px] text-p-l relative px-10 rounded-[50px] font-medium bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg  hover:text-black-heading-color hover:before:h-56 hover:before:w-56`}
-          >
+          <Button variant="hover" className={``}>
             <span className="z-10">{btn.title}</span>
           </Button>
         </div>

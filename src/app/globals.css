@@ -83,11 +83,6 @@ p {
     #7062c4 100%
   );
 }
-
-.hero-gradient {
-  background: linear-gradient(0deg, #9fcf009e 9%, #d63c3d40 80%, transparent);
-}
-
 .box-shadow-hero {
   box-shadow: 0px 4px 30px 50px rgba(0, 0, 0, 0.3) inset,
     0px 4px 50px 15px rgba(0, 0, 0, 0.15);
@@ -144,18 +139,6 @@ p {
   left: 0;
   z-index: 100;
 }
-
-.gradient-header {
-  background: linear-gradient(
-      90deg,
-      #4b3ba2 0%,
-      #8f1472 35.52%,
-      #e11723 71.8%,
-      #fc7800 100%
-    ),
-    #ea624a;
-}
-
 .shadow-menu {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
@@ -308,7 +291,6 @@ body::before {
 }
 
 .green {
-  background-color: #9fcf00;
   position: absolute;
   top: 200px;
   left: 100px;
@@ -318,8 +300,16 @@ body::before {
   animation: green 8s infinite ease;
 }
 
+.red {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  height: 300px;
+  width: 350px;
+
+  animation: red 8s infinite linear;
+}
 .blue {
-  background-color: #002a54;
   position: absolute;
   top: 80px;
   right: -20px;
@@ -329,19 +319,7 @@ body::before {
   animation: blue 8s infinite ease;
 }
 
-.red {
-  background-color: #d63c3d;
-  position: absolute;
-  right: 0;
-  top: 300px;
-  height: 300px;
-  width: 350px;
-
-  animation: red 8s infinite linear;
-}
-
 .red-two {
-  background-color: #d63c3d;
   position: absolute;
   right: 0;
   height: 300px;
@@ -443,7 +421,6 @@ body::before {
 }
 
 .family-hero-gradient {
-  background: linear-gradient(90deg, #02b50d 0%, #95c108 73.51%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;

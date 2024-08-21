@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TestimonyCard(info) {
   return (
-    <div className="rounded-[20px] bg-yellowish-white-bg py-6 px-5 mobile-l:px-7 min-[490px]:h-[450px]">
+    <div className="rounded-xl bg-yellowish-white-bg py-6 px-5 mobile-l:px-7 min-[490px]:h-[450px]">
       <div className="flex justify-between mb-4 desktop-s:mb-4 desktop-l:mb-7">
         <div>
           <Image
@@ -20,7 +20,9 @@ export default function TestimonyCard(info) {
 
       <div className="flex flex-col gap-3">
         <span className="font-medium text-h3-s">{info.name}</span>
-        <p className="mb-3">{info.testimony}</p>
+        <p className="mb-3 text-black-body-color tablet-l:text-p-xl tablet-l:leading-7">
+          {info.testimony}
+        </p>
         <span className="text-p-xs">{info.position}</span>
       </div>
     </div>

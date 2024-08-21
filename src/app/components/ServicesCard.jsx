@@ -9,14 +9,14 @@ export default function ServicesCard(service) {
   return (
     <div className="relative service-shadow rounded-[10px] desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
       <span
-        className={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
+        className={`absolute top-0 left-0 w-full h-full mt-1 ml-[6px] ${
           service.color ? service.color : "bg-indigo-500"
-        }  rounded-lg`}
+        }  rounded-xl`}
       ></span>
       <div
-        className={`py-20 bg-yellowish-white-bg relative h-full p-5  border-2 ${
+        className={`py-20 rounded-[10px] bg-yellowish-white-bg relative h-full p-5  border-2 ${
           service.color ? service.border : "border-indigo-500"
-        } rounded-lg items-center flex flex-col gap-6 desktop-s:gap-0`}
+        } items-center flex flex-col gap-6 desktop-s:gap-0`}
       >
         {service.icon && service.icon === "ServiceCard1" && (
           <ServiceCard1 color="fill-accent-900" size="w-16 h-16 mb-2" />

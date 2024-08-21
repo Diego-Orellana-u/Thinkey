@@ -29,6 +29,7 @@ export const empresasHeroInfo = {
   imgCustomCss: "b-10",
 };
 
+// Updated object with all info needed
 export const familiasHeroInfo = {
   paddingTop: "desktop-s:pt-16 desktop-l:pt-0",
   separatedTitle1: "Aprendiendo en familia con",

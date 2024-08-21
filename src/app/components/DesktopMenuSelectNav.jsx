@@ -38,11 +38,11 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
             ? "opacity-100 visible ease-in-out duration-300"
             : "opacity-0 invisible ease-in-out duration-300"
         }
-          absolute z-10 bg-white rounded-[0.45rem] left-0`}
+          absolute z-10 bg-white rounded-xl left-0`}
         onMouseEnter={() => setSelected(true)}
         onMouseLeave={() => setSelected(false)}
       >
-        <ul className="group shadow-lg border-[1px] border-white-border rounded-[0.45rem] grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
+        <ul className="group shadow-lg border-[1px] border-white-border rounded-xl grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
           {subnav.map((indiv, index) => (
             <li
               key={indiv.key}
@@ -50,7 +50,7 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
             >
               <Link
                 href={indiv.href}
-                className="block select-none transition-colors rounded-[0.45rem] p-3 leading-none no-underline outline-none hover:bg-gray-200 focus:bg-gray-200"
+                className="block select-none transition-colors rounded-xl p-3 leading-none no-underline outline-none hover:bg-gray-200 focus:bg-gray-200"
               >
                 <div className="mb-2 text-black-body-color">{indiv.title}</div>
                 <p className="mt-1 line-clamp-2 text-[14px] leading-snug text-gray-100">

@@ -9,7 +9,6 @@ export default function Hero({
   gradientClass,
   paddingTop,
 }) {
-  console.log(paddingTop);
   return (
     <section
       className={`hero h-full ${
@@ -49,7 +48,7 @@ export default function Hero({
                 height={1280}
                 className={`${heroInfo.shadow && heroInfo.shadow} ${
                   heroInfo.imgCustomCss && heroInfo.imgCustomCss
-                } rounded-[10px] object-cover w-[350px] desktop-s:w-full max-w-[600px] h-full`}
+                } rounded-[10px] object-cover w-full desktop-s:w-full max-w-[350px] tablet-l:max-w-[600px] h-full`}
                 alt=""
                 priority={true}
               />

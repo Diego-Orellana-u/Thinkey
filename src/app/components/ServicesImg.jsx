@@ -11,11 +11,11 @@ export default function ServicesImg({ data, title, sectionPadding }) {
           data.map((card) => (
             <div
               key={card.key}
-              className="w-full max-w-96 group relative block h-fit"
+              className="box-shadow-testimonies w-full max-w-96 group relative block h-fit"
             >
-              <span className="absolute inset-0 border-2 border-dashed border-black"></span>
+              <span className="absolute inset-0 border-2 border-dashed border-zinc-400 rounded-xl"></span>
 
-              <div className="h-[28rem] min-h-fit relative flex transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+              <div className="h-[28rem] rounded-xl min-h-fit relative flex transform items-end border-2 border-zinc-500 bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="flex justify-end flex-col gap-8 absolute w-full p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 tablet-s:p-6 desktop-s:p-8">
                   <Image
                     src={card.outsideImgSrc}
@@ -32,7 +32,7 @@ export default function ServicesImg({ data, title, sectionPadding }) {
                 <div className="h-full p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 tablet-s:p-6 desktop-s:p-8">
                   <div className="flex justify-center">
                     <Image
-                      className="object-cover rounded-[10px] w-fit max-h-52"
+                      className="object-cover rounded-xl w-fit max-h-52"
                       src={card.insideImgSrc}
                       width={card.insideImgWidth}
                       height={card.insideImgHeight}
@@ -51,7 +51,7 @@ export default function ServicesImg({ data, title, sectionPadding }) {
                     href={card.serviceHref}
                     className="absolute bottom-5 tablet-s:bottom-6 desktop-s:bottom-8 font-bold"
                   >
-                    Read more
+                    {card.linkText}
                   </Link>
                 </div>
               </div>

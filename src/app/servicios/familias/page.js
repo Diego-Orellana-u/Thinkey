@@ -16,6 +16,7 @@ export default function Familias() {
         heroInfo={familiasHeroInfo}
         headingSize="desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
         gradientClass="family-hero-gradient"
+        paddingTop="pt-0"
       />
       <Fifty
         fiftyCards={familiasFiftyCards}

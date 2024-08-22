@@ -32,7 +32,10 @@ export default function Home() {
       />
       <ImpactNumbers data={homeImpactNumbers} />
       <VennHome data={homeVenn} />
-      <Testimonies title={homeTestimoniesTitle} testimonies={homeTestimonies} />
+      <Testimonies
+        title="Lo que opinan los colegios con los que hemos trabajado"
+        testimonies={homeTestimonies}
+      />
     </>
   );
 }

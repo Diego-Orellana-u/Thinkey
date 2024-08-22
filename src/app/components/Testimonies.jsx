@@ -16,7 +16,7 @@ export default function Testimonies({ title, testimonies, sectionPadding }) {
       }`}
     >
       <Heading2
-        title={title.title}
+        title={title}
         padding="mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center"
       />
       <Carousel>

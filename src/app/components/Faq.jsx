@@ -14,7 +14,7 @@ export default function Faq({ questions }) {
         padding={"pb-5 tablet-l:pb-10"}
       />
 
-      <div className="shadow-lg flex p-5 rounded-[20px] desktop-s:py-20 bg-yellowish-white-bg relative h-full flex-col items-center">
+      <div className="box-shadow-testimonies flex p-5 rounded-[20px] desktop-s:py-20 bg-yellowish-white-bg relative h-full flex-col items-center">
         {questions &&
           questions.map((question) => (
             <Accordion

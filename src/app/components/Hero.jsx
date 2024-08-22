@@ -6,7 +6,6 @@ import { buttonVariants } from "@/components/ui/button";
 export default function Hero({
   heroInfo,
   headingSize,
-  gradientClass,
   paddingTop,
   titlePaddingTop,
   firstBlobColor,
@@ -101,20 +100,20 @@ export default function Hero({
                     className={`${
                       headingSize
                         ? headingSize
-                        : "desktop-l:text-h1-xl desktop-l:leading-[63px]"
-                    } block text-black-heading-color text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
+                        : "text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-l:text-h1-xl desktop-l:leading-[63px]"
+                    } block text-black-heading-color tablet-s:leading-[57px] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
                   >
                     {heroInfo.separatedTitle1}
                     <span
                       className={`${
                         headingSize
                           ? headingSize
-                          : "desktop-l:text-h1-xl desktop-l:leading-[63px]"
+                          : "text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-l:text-h1-xl desktop-l:leading-[63px]"
                       } ${
                         heroInfo.titleGradient
                           ? heroInfo.titleGradient
                           : "text-black-heading-color"
-                      } family-hero-gradient ml-[8px] desktop-s:block desktop-s:ml-0 text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
+                      } family-hero-gradient ml-[8px] desktop-s:block desktop-s:ml-0 text-h1-s tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
                     >
                       {heroInfo.separatedTitle2}
                     </span>

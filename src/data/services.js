@@ -144,8 +144,8 @@ export const familiasServices = [
 
 export const colegiosServices = [
   {
-    title: "Exploradores del Espacio",
-    desc: "Desde la observación de estrellas hasta la construcción de cohetes, este bootcamp es ideal para los pequeños astronautas.",
+    title: "Ferias Científicas",
+    desc: "Lleva la ciencia a tu colegio con nuestras ferias educativas llenas de experimentos.",
     outsideImgSrc: "/personajes-lampara.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
@@ -154,14 +154,14 @@ export const colegiosServices = [
     insideImgAlt: "Imagen de un cientifico haciendo un experimento",
     insideImgWidth: 500,
     insideImgHeight: 500,
-    serviceHref: "/",
-    linkText: "Agendar",
+    serviceHref: "/servicios/colegios/ferias-cientificas",
+    linkText: "Saber más",
     key: "service-img-card-1",
   },
 
   {
-    title: "Ingenieros del Futuro",
-    desc: "Construye y programa robots, aprende sobre ingeniería y resuelve desafíos tecnológicos.",
+    title: "Programas After School",
+    desc: "Complementa la educación con nuestros programas After School centrados en STEAM.",
     outsideImgSrc: "/personajes-arduino.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
@@ -171,12 +171,12 @@ export const colegiosServices = [
     insideImgWidth: 500,
     insideImgHeight: 500,
     serviceHref: "/",
-    linkText: "Agendar",
+    linkText: "Saber más",
     key: "service-img-card-1",
   },
   {
-    title: "Artistas Científicos",
-    desc: "Combina arte y ciencia para crear proyectos que deslumbran y enseñan.",
+    title: "Desarrollo Profesional",
+    desc: "Capacita a los educadores con nuestras sesiones de desarrollo profesional en metodologías STEAM.",
     outsideImgSrc: "/personajes-nubelluviosa.webp",
     outsideImgAlt: "Imagen de un cientifico haciendo un experimento",
     outsideImgWidth: 500,
@@ -186,7 +186,7 @@ export const colegiosServices = [
     insideImgWidth: 500,
     insideImgHeight: 500,
     serviceHref: "/",
-    linkText: "Agendar",
+    linkText: "Saber más",
     key: "service-img-card-1",
   },
 ];

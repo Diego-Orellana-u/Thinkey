@@ -5,7 +5,7 @@ import ImpactTwo from "@/components/ImpactTwo";
 import ServicesGrid from "@/components/ServicesGrid";
 import Team from "@/components/Team";
 import { servicesFaq } from "data/faq";
-import { serviciosFiftyCards, serviciosFiftyTitleDesc } from "data/fifty";
+import { serviciosFiftyCards } from "data/fifty";
 import { empresasHeroInfo } from "data/heroInfo";
 import { servicesImpactTwo } from "data/impactNumbers";
 import { servicesGridBottom, servicesGridTop } from "data/services";
@@ -14,7 +14,6 @@ export default function Servicios() {
   return (
     <>
       <Hero heroInfo={empresasHeroInfo} />
-      {/* <Team /> */}
       <ImpactTwo
         data={servicesImpactTwo}
         borderColor="border-indigo-500"
@@ -25,10 +24,7 @@ export default function Servicios() {
         servicesBottom={servicesGridBottom}
       />
       <Faq questions={servicesFaq} />
-      <Fifty
-        fiftyCards={serviciosFiftyCards}
-        fiftyTitleDesc={serviciosFiftyTitleDesc}
-      />
+      <Fifty fiftyCards={serviciosFiftyCards} />
     </>
   );
 }

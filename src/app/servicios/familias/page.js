@@ -14,8 +14,9 @@ export default function Familias() {
     <>
       <Hero
         heroInfo={familiasHeroInfo}
-        headingSize="desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
+        headingSize="text-h1-s tablet-s:text-[3rem] desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
         paddingTop="pt-0"
+        topBlobColor="bg-orange-500"
       />
       <Fifty
         fiftyCards={familiasFiftyCards}
@@ -29,7 +30,7 @@ export default function Familias() {
         title="Aventuras educativas con nuestros Bootcamps cientificos"
       />
       <Testimonies
-        title={homeTestimoniesTitle}
+        title="Las experiencias de los colegios con los que hemos trabajado"
         testimonies={homeTestimonies}
         sectionPadding="pt-20 pb-32"
       />

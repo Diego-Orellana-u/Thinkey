@@ -5,14 +5,14 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "rounded-[50px] flex items-center text-[18px] desktop-s:text-p-l font-normal disabled:pointer-events-none disabled:opacity-50",
+  "rounded-[50px] flex items-center text-[18px] desktop-s:text-p-l font-medium disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         link: "text-p-s desktop-s:text-p-l",
         linkHoverBlue: "bg-buttons-bg text-buttons-text",
         hover:
-          "h-[50px] text-p-l relative px-10 rounded-[50px] font-medium bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg  hover:text-black-heading-color hover:before:h-56 hover:before:w-56",
+          "h-[50px] text-p-l relative px-10 rounded-[50px] bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg  hover:text-black-heading-color hover:before:h-56 hover:before:w-56",
       },
       size: {
         default: "h-12 px-7",

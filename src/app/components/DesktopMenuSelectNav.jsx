@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import CaretDown from "./Icons/CaretDown";
+import { ChevronDown } from "lucide-react";
 
 export default function DesktopMenuSelectNav({ link, subnav }) {
   const [selected, setSelected] = useState(false);
@@ -18,7 +18,8 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
               <span>{link.name}</span>
               <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
             </Link>
-            <CaretDown />
+            {/* <CaretDown /> */}
+            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
           </div>
         ) : (
           <>
@@ -27,7 +28,8 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
                 <span>{link.name}</span>
                 <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
               </div>
-              <CaretDown />
+              {/* <CaretDown /> */}
+              <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
             </div>
           </>
         )}

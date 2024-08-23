@@ -1,9 +1,9 @@
 import Heading2 from "./Heading2";
 import ServicesCard from "./ServicesCard";
 
-export default function Services({ services }) {
+export default function Services({ services, sectionPadding }) {
   return (
-    <div className="wrapper desktop-l:pb-24 text-center mb-24">
+    <div className={`wrapper text-center mb-24 ${sectionPadding}`}>
       <Heading2
         title="Una nueva forma de acercar la ciencia a los niños"
         padding="mb-10 desktop-s:mb-7 desktop-l:mb-14"

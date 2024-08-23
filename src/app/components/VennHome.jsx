@@ -2,9 +2,13 @@ import Image from "next/image";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 
-export default function VennHome({ data }) {
+export default function VennHome({ data, sectionPadding }) {
   return (
-    <div className="wrapper pb-32 pt-56 tablet-xl:pt-32 text-center relative">
+    <div
+      className={`wrapper ${
+        sectionPadding ? sectionPadding : "pb-32 pt-56 tablet-xl:pt-32"
+      } text-center relative`}
+    >
       <div className="flex flex-col items-center gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12 desktop-l:gap-32">
         <Image
           src="/VennDiagram.svg"
@@ -34,7 +38,7 @@ export default function VennHome({ data }) {
           <Link
             href="/"
             className={`${buttonVariants({
-              variant: "linkHoverBlue",
+              variant: "hover",
             })} desktop-s:max-w-fit desktop-s:px-16 relative
         `}
           >

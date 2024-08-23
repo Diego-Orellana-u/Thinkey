@@ -1,8 +1,12 @@
 import Heading2 from "./Heading2";
 
-export default function ImpactNumbers({ data }) {
+export default function ImpactNumbers({ data, sectionPadding }) {
   return (
-    <div className="wrapper bg-[#1A2357] desktop-s:h-[400px] desktop-l:h-[550px] desktop-l:pt-24 py-14 mobile-l:py-20 text-center">
+    <div
+      className={`wrapper ${
+        sectionPadding ? sectionPadding : "desktop-l:pt-24 py-14 mobile-l:py-20"
+      } bg-[#1A2357] desktop-s:h-[400px] desktop-l:h-[550px] text-center`}
+    >
       <Heading2
         title="Solving the education problem by the root"
         color="text-white-body-color"

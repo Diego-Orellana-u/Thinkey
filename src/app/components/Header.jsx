@@ -39,7 +39,7 @@ export const Header = () => {
 
         <div className="hidden desktop-s:flex items-center">
           <DesktopMenu />
-          <Button variant="hover" className={``}>
+          <Button variant="hover" className={`relative`}>
             <span className="z-10">{btn.title}</span>
           </Button>
         </div>

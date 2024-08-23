@@ -18,12 +18,19 @@ export default function Servicios() {
         data={servicesImpactTwo}
         borderColor="border-indigo-500"
         backgroundColor="bg-indigo-500"
+        title="Otra sección de estadisticas"
+        desc="Our platform is trusted by organizations worldwide to boost
+            productivity, streamline operations, and enhance customer
+            experiences."
+        sectionPadding="pt-0"
       />
       <ServicesGrid
         servicesTop={servicesGridTop}
         servicesBottom={servicesGridBottom}
+        title="Aventuras educativas con Bootcamps STEAM"
+        sectionPadding="pt-24"
       />
-      <Faq questions={servicesFaq} />
+      <Faq questions={servicesFaq} sectionPadding="pb-10" />
       <Fifty fiftyCards={serviciosFiftyCards} />
     </>
   );

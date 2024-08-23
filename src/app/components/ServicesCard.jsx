@@ -3,18 +3,17 @@ import { buttonVariants } from "./ui/button";
 import ServiceCard1 from "./Icons/ServiceCard1";
 import ServiceCard2 from "./Icons/ServiceCard2";
 import ServiceCard3 from "./Icons/ServiceCard3";
-import Image from "next/image";
 
 export default function ServicesCard(service) {
   return (
-    <div className="relative service-shadow rounded-[10px] desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
+    <div className="relative service-shadow rounded-xl desktop-s:max-w-[30%] tablet-s:flex-[0_0_40%]">
       <span
         className={`absolute top-0 left-0 w-full h-full mt-1 ml-[6px] ${
           service.color ? service.color : "bg-indigo-500"
         }  rounded-xl`}
       ></span>
       <div
-        className={`py-20 rounded-[10px] bg-yellowish-white-bg relative h-full p-5  border-2 ${
+        className={`py-20 rounded-xl bg-yellowish-white-bg relative h-full p-5  border-2 ${
           service.color ? service.border : "border-indigo-500"
         } items-center flex flex-col gap-6 desktop-s:gap-0`}
       >
@@ -37,7 +36,7 @@ export default function ServicesCard(service) {
         <Link
           href={service.btnHref}
           className={`${buttonVariants({
-            variant: "linkHoverBlue",
+            variant: "hover",
           })} absolute mobile-l:max-w-fit desktop-s:px-16 bottom-10
         `}
         >

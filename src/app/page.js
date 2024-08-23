@@ -23,18 +23,22 @@ export default function Home() {
         thirdBlobColor="bg-main-100"
         topBlobColor="bg-orange-500"
       />
-      <Services services={homeServices} />
+      <Services services={homeServices} sectionPadding="desktop-l:pb-24" />
       <Fifty
         fiftyCards={homeFiftyCards}
         title="Catchy title solving the problem"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         sectionPadding="pb-36"
       />
-      <ImpactNumbers data={homeImpactNumbers} />
-      <VennHome data={homeVenn} />
+      <ImpactNumbers
+        data={homeImpactNumbers}
+        sectionPadding="desktop-l:pt-24 py-14 mobile-l:py-20"
+      />
+      <VennHome data={homeVenn} sectionPadding="pb-32 pt-56 tablet-xl:pt-32" />
       <Testimonies
         title="Lo que opinan los colegios con los que hemos trabajado"
         testimonies={homeTestimonies}
+        sectionPadding="mb-28"
       />
     </>
   );

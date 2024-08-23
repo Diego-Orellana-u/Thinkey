@@ -3,15 +3,16 @@ import Heading2 from "./Heading2";
 export default function ServicesGrid({
   servicesTop,
   servicesBottom,
+  sectionPadding,
   title,
-  desc,
 }) {
   return (
-    <div className="wrapper relative flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5">
-      <Heading2
-        title="Aventuras educativas con Bootcamps STEAM"
-        padding="pb-10"
-      />
+    <div
+      className={`wrapper ${
+        sectionPadding ? sectionPadding : ""
+      } relative flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5`}
+    >
+      <Heading2 title={title} padding="pb-16" />
       <div className="w-full">
         {servicesTop && (
           <div className="flex flex-col w-full tablet-l:mb-10 desktop-s:mb-16 tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-16">
@@ -25,12 +26,12 @@ export default function ServicesGrid({
                     <span
                       className={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
                         card.bgColor && card.bgColor
-                      } rounded-lg`}
+                      } rounded-xl`}
                     ></span>
                     <div
                       className={`relative h-full p-5 bg-white border-2 ${
                         card.borderColor && card.borderColor
-                      }  rounded-lg`}
+                      }  rounded-xl`}
                     >
                       <div className="flex items-center -mt-1">
                         <h3 className="my-2 text-lg font-bold text-gray-800">
@@ -64,12 +65,12 @@ export default function ServicesGrid({
                     <span
                       className={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
                         card.bgColor && card.bgColor
-                      } rounded-lg`}
+                      } rounded-xl`}
                     ></span>
                     <div
                       className={`relative h-full p-5 bg-white border-2 ${
                         card.borderColor && card.borderColor
-                      }  rounded-lg`}
+                      }  rounded-xl`}
                     >
                       <div className="flex items-center -mt-1">
                         <h3 className="my-2 text-lg font-bold text-gray-800">

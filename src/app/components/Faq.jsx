@@ -6,15 +6,15 @@ import {
 } from "@/components/ui/accordion";
 import Heading2 from "./Heading2";
 
-export default function Faq({ questions }) {
+export default function Faq({ questions, sectionPadding }) {
   return (
-    <div className="wrapper pb-10">
+    <div className={`wrapper ${sectionPadding ? sectionPadding : "pb-10"}`}>
       <Heading2
         title={"Preguntas frecuentes"}
         padding={"pb-5 tablet-l:pb-10"}
       />
 
-      <div className="box-shadow-testimonies flex p-5 rounded-[20px] desktop-s:py-20 bg-yellowish-white-bg relative h-full flex-col items-center">
+      <div className="box-shadow-testimonies flex p-5 rounded-xl desktop-s:py-20 bg-yellowish-white-bg relative h-full flex-col items-center">
         {questions &&
           questions.map((question) => (
             <Accordion

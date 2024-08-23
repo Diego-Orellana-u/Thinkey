@@ -13,7 +13,11 @@ export default function Fifty({ fiftyCards, title, desc, sectionPadding }) {
         )}
       </div>
 
-      <div className="flex flex-col gap-24">
+      <div
+        className={`flex flex-col ${
+          fiftyCards[0].type === "full" ? "" : "gap-24"
+        }`}
+      >
         {fiftyCards.map((card) => (
           <FiftyCard key={card.keys} {...card} />
         ))}

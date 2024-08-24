@@ -45,7 +45,7 @@ export default function FiftyCard({
           type === "full" && "wrapper py-16"
         } tablet-xl:w-2/4 tablet-xl:self-center`}
       >
-        <h3 className="text-main-heading-color text-h3-s font-bold leading-9 tracking-tight mb-5 desktop-l:mb-7 tablet-xl:text-h2-s desktop-l:text-h3-xl desktop-l:leading-[48px]">
+        <h3 className="text-main-heading-color text-h3-s font-bold leading-8 tracking-tight mb-5 desktop-l:mb-7 tablet-xl:text-h2-s desktop-l:text-h3-xl desktop-l:leading-[48px]">
           {title}
         </h3>
         <p className="text-p-l tablet-l:text-p-xl tablet-l:leading-7 text-black-body-color mb-5">

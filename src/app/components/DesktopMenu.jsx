@@ -1,4 +1,4 @@
-import { desktopNav } from "data/nav";
+import { desktopNav } from "data/nav.js";
 import Link from "next/link";
 import DesktopMenuSelectNav from "./DesktopMenuSelectNav";
 

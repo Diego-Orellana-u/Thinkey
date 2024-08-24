@@ -3,12 +3,13 @@ import Fifty from "@/components/Fifty";
 import Hero from "@/components/Hero";
 import ServicesImg from "@/components/ServicesImg";
 import Testimonies from "@/components/Testimonies";
+import LeadsForm from "@/components/LeadsForm";
 import { servicesFaq } from "data/faq";
 import { colegiosEquipoFiftyCards } from "data/fifty";
 
 import { colegiosHeroInfo } from "data/heroInfo";
 import { colegiosServices } from "data/services";
-import { homeTestimonies, homeTestimoniesTitle } from "data/testimonies";
+import { homeTestimonies } from "data/testimonies";
 
 export default function Colegios() {
   return (
@@ -37,6 +38,7 @@ export default function Colegios() {
         sectionPadding="pt-20 pb-32"
       />
       <Faq questions={servicesFaq} />
+      <LeadsForm sectionPadding="py-20" />
     </>
   );
 }

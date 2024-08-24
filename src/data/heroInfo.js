@@ -1,12 +1,14 @@
 export const homeHeroInfo = {
   heading1: "EVENTOS Y EXPERIENCIAS CIENTIFICAS PARA NIÑOS",
-  title: "Experiencias de aprendizaje únicas y relevantes para el futuro",
+  separatedTitle1: "Mejorando lo académico con",
+  separatedTitle2: "ciencia divertida",
+  titleGradient: "bg-[linear-gradient(90deg,_#322a89_0%,_#85388D_73.51%)]",
   desc: "Somos pioneros en la creación de experiencias STEAM en Chile, transformando la forma en que niños y jóvenes aprenden y se relacionan con el mundo.",
   mainBtnText: "CONÓCENOS",
   mainBtnLink: "/",
   secondBtnText: "SEE MORE 2",
   secondBtnLink: false,
-  img: "/g10.svg",
+  img: "/personajes-nubelluviosa.webp",
   blobTop: true,
   blobCenter: true,
   // img: "/fotoHero.webp",
@@ -16,6 +18,7 @@ export const homeHeroInfo = {
 };
 
 // Updated object with all info needed
+// if you don't want to use a gradient, just use title instead of separatedTitle1 and separatedTitle2
 export const familiasHeroInfo = {
   heading1: false,
   title: false,
@@ -41,7 +44,7 @@ export const colegiosHeroInfo = {
   title: false,
   separatedTitle1: "Mejora los resultados de tus estudiantes con",
   separatedTitle2: "ciencia divertida",
-  titleGradient: "bg-[linear-gradient(90deg,_#0240A3_0%,_#85388D_73.51%)]",
+  titleGradient: "bg-[linear-gradient(90deg,_#322a89_0%,_#85388D_73.51%)]",
   desc: "Innovamos la enseñanza a través de experiencias científicas y creativas para cada estudiante.",
   mainBtnText: "Agendar Una Reunión",
   orientation: "left",

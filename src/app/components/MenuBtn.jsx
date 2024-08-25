@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import menuIcon from "../../assets/icons/menu-icon.svg";
 import { useEffect, useState } from "react";
 import { MobileMenu } from "./MobileMenu";
+import MenuIcon from "./Icons/MenuIcon";
+import { Button } from "./ui/button";
 
-export const MenuIcon = () => {
+export const MenuBtn = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [overlayClicked, setOverlayClicked] = useState(false);
 
@@ -26,12 +27,14 @@ export const MenuIcon = () => {
 
   return (
     <div className="desktop-s:hidden">
-      <div
+      <Button
+        variant="testSmall"
         onClick={handleMenuClick}
-        className="rounded-full bg-black-heading-color w-14 h-14 flex justify-center items-center"
+        className="rounded-full bg-btns-test px-0 w-14 h-14 flex justify-center items-center"
       >
-        <Image className="w-8 pl-px pt-px" src={menuIcon} alt="Menu icon" />
-      </div>
+        <MenuIcon />
+        {/* <Image className="w-8 pl-px pt-px" src={menuIcon} alt="Menu icon" /> */}
+      </Button>
       <MobileMenu
         activeMenu={activeMenu}
         setActiveMenu={setActiveMenu}

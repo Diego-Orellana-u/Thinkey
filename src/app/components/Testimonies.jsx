@@ -30,8 +30,8 @@ export default function Testimonies({ title, testimonies, sectionPadding }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious variant="testSmall" />
+        <CarouselNext variant="testSmall" />
       </Carousel>
     </div>
   );

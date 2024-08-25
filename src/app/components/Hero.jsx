@@ -113,7 +113,7 @@ export default function Hero({
                         heroInfo.titleGradient
                           ? heroInfo.titleGradient
                           : "text-black-heading-color"
-                      } family-hero-gradient ml-[8px] desktop-s:block desktop-s:ml-0 text-h1-s tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
+                      } family-hero-gradient ml-[8px] mobile-m:ml-0 mobile-m:block desktop-s:ml-0 text-h1-s tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
                     >
                       {heroInfo.separatedTitle2}
                     </span>
@@ -145,7 +145,7 @@ export default function Hero({
                   <Link
                     href={heroInfo.mainBtnLink}
                     className={`${buttonVariants({
-                      variant: "hover",
+                      variant: "testLarge",
                     })} ${!heroInfo.secondBtnLink && ""} relative`}
                   >
                     <span className="z-10">{heroInfo.mainBtnText}</span>
@@ -156,7 +156,7 @@ export default function Hero({
                   <Link
                     href={heroInfo.secondBtnLink}
                     className={`${buttonVariants({
-                      variant: "linkHoverBlue",
+                      variant: "testLarge",
                     })} relative max-w-fit`}
                   >
                     {heroInfo.secondBtnText}

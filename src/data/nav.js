@@ -79,5 +79,5 @@ export const desktopNav = [
 ];
 
 export const btn = {
-  title: "AGENDAR",
+  title: "Agendar",
 };

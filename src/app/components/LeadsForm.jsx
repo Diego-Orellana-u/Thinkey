@@ -8,10 +8,10 @@ export default function LeadsForm({ sectionPadding }) {
         sectionPadding && sectionPadding
       } flex flex-col items-center tablet-xl:flex-row`}
     >
-      <div className="w-full mb-7">
+      <div className="w-full mb-7 tablet-s:mb-12">
         <Image
           src="/a.png"
-          className="object-cover max-h-96"
+          className="object-cover max-h-96 tablet-l:max-h-full w-full"
           width={613}
           height={1313}
         />
@@ -19,7 +19,7 @@ export default function LeadsForm({ sectionPadding }) {
 
       <div className="wrapper">
         <div>
-          <span className="text-h2-s font-bold text-main-heading-color leading-9 block mb-6">
+          <span className="text-h2-s tablet-s:text-h2-xl tablet-s:leading-[58px] font-bold text-main-heading-color leading-9 block mb-6 w-4/5">
             We Love to Hear From You
           </span>
         </div>

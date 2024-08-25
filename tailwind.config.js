@@ -60,6 +60,7 @@ module.exports = {
         "gray-100": "#71717a",
         "gray-200": "#F1F1F1",
         "gray-300": "#777777",
+        "btns-test": "#F69837",
         "white-border": "#E5E7EB",
       },
       borderRadius: {

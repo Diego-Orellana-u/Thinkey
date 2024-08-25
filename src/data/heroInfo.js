@@ -5,6 +5,7 @@ export const homeHeroInfo = {
   titleGradient: "bg-[linear-gradient(90deg,_#322a89_0%,_#85388D_73.51%)]",
   desc: "Somos pioneros en la creación de experiencias STEAM en Chile, transformando la forma en que niños y jóvenes aprenden y se relacionan con el mundo.",
   mainBtnText: "CONÓCENOS",
+  orientation: "left",
   mainBtnLink: "/",
   secondBtnText: "SEE MORE 2",
   secondBtnLink: false,

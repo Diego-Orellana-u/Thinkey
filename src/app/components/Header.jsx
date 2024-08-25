@@ -1,5 +1,5 @@
 "use client";
-import { MenuIcon } from "./MenuIcon";
+import { MenuBtn } from "./MenuBtn";
 import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
 import DesktopMenu from "./DesktopMenu";
@@ -35,11 +35,11 @@ export const Header = () => {
     >
       <div className="wrapper w-full flex justify-between items-center bg-transparent">
         <LogoHeader />
-        <MenuIcon />
+        <MenuBtn />
 
         <div className="hidden desktop-s:flex items-center">
           <DesktopMenu />
-          <Button variant="hover" className={`relative`}>
+          <Button variant="testLarge" className={`relative large-btn-card`}>
             <span className="z-10">{btn.title}</span>
           </Button>
         </div>

@@ -19,9 +19,9 @@ export default function Home() {
         heroInfo={homeHeroInfo}
         headingSize="text-h1-s tablet-s:text-[3rem] desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
         paddingTop="pt-0"
-        firstBlobColor="bg-accent-900"
-        secondBlobColor="bg-secondary-100"
-        thirdBlobColor="bg-main-100"
+        firstBlobColor="bg-accent-900/50"
+        secondBlobColor="bg-secondary-100/30"
+        thirdBlobColor="bg-main-100/50"
         topBlobColor="bg-orange-500"
       />
       <Services services={homeServices} sectionPadding="desktop-l:pb-24" />

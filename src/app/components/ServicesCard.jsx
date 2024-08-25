@@ -36,7 +36,7 @@ export default function ServicesCard(service) {
         <Link
           href={service.btnHref}
           className={`${buttonVariants({
-            variant: "hover",
+            variant: "testLarge",
           })} absolute mobile-l:max-w-fit desktop-s:px-16 bottom-10
         `}
         >

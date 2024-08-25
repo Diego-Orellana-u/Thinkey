@@ -77,7 +77,9 @@ export default function ServicesForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button variant="testLarge" type="submit" className={`relative`}>
+          <span className="z-10">Contactarme</span>
+        </Button>
       </form>
     </Form>
   );

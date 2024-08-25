@@ -420,6 +420,10 @@ body::before {
   }
 }
 
+.small-btn-card {
+  box-shadow: 3px 0px 0px 0px #4b1e1e;
+}
+
 .family-hero-gradient {
   background-clip: text;
   -webkit-text-fill-color: transparent;

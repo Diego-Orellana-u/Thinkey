@@ -38,7 +38,7 @@ export default function VennHome({ data, sectionPadding }) {
           <Link
             href="/"
             className={`${buttonVariants({
-              variant: "hover",
+              variant: "testLarge",
             })} desktop-s:max-w-fit desktop-s:px-16 relative
         `}
           >

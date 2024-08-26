@@ -27,7 +27,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex items-center h-24 ${
+      className={`sticky  top-0 z-50 flex items-center h-24 ${
         headerColor
           ? "bg-white shadow-sm transition duration-300"
           : "bg-[transparent] transition duration-300"

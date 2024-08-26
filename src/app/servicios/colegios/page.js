@@ -33,7 +33,7 @@ export default function Colegios() {
         title="Aventuras educativas con nuestros Bootcamps cientificos"
       />
       <LeadsForm
-        sectionMargin="my-24"
+        sectionMargin="my-10"
         title="We Love to Hear From You"
         desc="Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad educativa. Escríbenos y nos pondremos en contacto contigo."
       />
@@ -42,7 +42,7 @@ export default function Colegios() {
         testimonies={homeTestimonies}
         sectionPadding="pt-20 pb-32"
       />
-      <Faq questions={servicesFaq} />
+      <Faq questions={servicesFaq} title="Preguntas Frecuentes" />
     </>
   );
 }

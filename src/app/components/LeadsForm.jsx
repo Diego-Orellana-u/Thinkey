@@ -6,7 +6,7 @@ export default function LeadsForm({ sectionMargin, title, desc }) {
     <section
       className={` ${
         sectionMargin && sectionMargin
-      } flex flex-col items-center tablet-xl:flex-row tablet-xl:h-[900px]`}
+      } flex flex-col bg-white items-center tablet-xl:flex-row tablet-xl:h-[900px]`}
     >
       <Image
         src="/a.png"

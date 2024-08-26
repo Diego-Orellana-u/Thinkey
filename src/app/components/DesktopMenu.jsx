@@ -9,7 +9,7 @@ export default function DesktopMenu() {
         {desktopNav &&
           desktopNav.map((link) => {
             return (
-              <li key={link.key} className="m-auto">
+              <li key={link.key} className="m-auto font-normal text-black">
                 {link.subnav.length === 0 && (
                   <Link href={link.link} className="group relative">
                     <span>{link.name}</span>

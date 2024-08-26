@@ -16,9 +16,8 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
           <div className="flex items-center gap-1">
             <Link href={link.link} className="relative">
               <span>{link.name}</span>
-              <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
+              <span className="w-full h-[10px] absolute bottom-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
             </Link>
-            {/* <CaretDown /> */}
             <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
           </div>
         ) : (
@@ -26,9 +25,8 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
             <div className="flex items-center gap-1">
               <div className="relative">
                 <span>{link.name}</span>
-                <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-300 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
+                <span className="w-full h-[10px] absolute bottom-0 left-0 translate-y-2 duration-500 ease-in-out opacity-0 bg-accent-900/20 group-hover:-translate-y-[0.01rem] group-hover:opacity-100"></span>
               </div>
-              {/* <CaretDown /> */}
               <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
             </div>
           </>
@@ -40,12 +38,12 @@ export default function DesktopMenuSelectNav({ link, subnav }) {
             ? "opacity-100 visible ease-in-out duration-300"
             : "opacity-0 invisible ease-in-out duration-300"
         }
-          absolute z-10 bg-white rounded-xl left-0`}
+          absolute z-10 bg-white rounded-xl -left-7`}
         onMouseEnter={() => setSelected(true)}
         onMouseLeave={() => setSelected(false)}
       >
-        <ul className="group shadow-lg border-[1px] border-white-border rounded-xl grid grid-cols-2 gap-3 p-4 w-[400px] desktop-l:w-[600px]">
-          {subnav.map((indiv, index) => (
+        <ul className="group shadow-lg border-[1px] border-white-border rounded-xl grid grid-cols-2 gap-3 p-4 w-[450px] desktop-l:w-[550px]">
+          {subnav.map((indiv) => (
             <li
               key={indiv.key}
               className={`${subnav.length % 3 === 0 ? "col-span-2" : ""}`}

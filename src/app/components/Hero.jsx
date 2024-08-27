@@ -89,7 +89,7 @@ export default function Hero({
             } text-black-body-color`}
           >
             {heroInfo.heading1 && (
-              <h1 className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] min-[600px]:mb-2 tablet-xl:mb-0">
+              <h1 className="text-[14px] desktop-l:text-p-s desktop-s:pl-[3px] mb-2 tablet-xl:mb-0 desktop-s:mb-2">
                 {heroInfo.heading1}
               </h1>
             )}

@@ -89,8 +89,7 @@ export const familiasFiftyCards = [
 export const colegiosEquipoFiftyCards = [
   {
     type: "original",
-    title:
-      "Equipo multidiscipliniario experto en crear experiencias cientificas",
+    title: "Equipo experto en crear experiencias cientificas",
     desc: "Viaja por el cosmos con actividades de astronomía y cohetes. Personaliza la experiencia para hacerla única.",
     btnText: "MÁS SOBRE NOSOTROS",
     btnHref: "/nosotros",

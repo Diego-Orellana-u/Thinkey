@@ -32,13 +32,17 @@ export default function Colegios() {
         sectionPadding="py-20"
         title="Aventuras educativas con nuestros Bootcamps cientificos"
       />
+      <LeadsForm
+        sectionMargin="my-24"
+        title="We Love to Hear From You"
+        desc="Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad educativa. Escríbenos y nos pondremos en contacto contigo."
+      />
       <Testimonies
         title="Opiniones de los colegios con los que hemos trabajado"
         testimonies={homeTestimonies}
         sectionPadding="pt-20 pb-32"
       />
       <Faq questions={servicesFaq} />
-      <LeadsForm sectionPadding="py-20" />
     </>
   );
 }

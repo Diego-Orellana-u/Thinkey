@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RightArrow from "./Icons/RightArrow";
+import { Button } from "./ui/button";
 
 export default function FiftyCard({
   type,
@@ -58,9 +59,12 @@ export default function FiftyCard({
             href={btnHref}
           >
             {btnText}
-            <div className="rounded-full w-7 h-7 bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px">
+            <Button
+              variant="testSmall"
+              className="rounded-full w-7 h-7 px-0 bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px"
+            >
               <RightArrow />
-            </div>
+            </Button>
           </Link>
         )}
       </div>

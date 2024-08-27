@@ -20,14 +20,14 @@ const formSchema = z.object({
 });
 
 export default function ServicesForm() {
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
@@ -39,9 +39,7 @@ export default function ServicesForm() {
           control={form.control}
           name="username"
           render={({ field }) => (
-            // {/* @ts-ignore */}
             <FormItem>
-              {/* @ts-ignore */}
               <FormControl>
                 <Input
                   className="outline-none"
@@ -58,9 +56,7 @@ export default function ServicesForm() {
           control={form.control}
           name="Correo"
           render={({ field }) => (
-            // {/* @ts-ignore */}
             <FormItem>
-              {/* @ts-ignore */}
               <FormControl>
                 <Input placeholder="Correo Electrónico" {...field} />
               </FormControl>
@@ -73,9 +69,7 @@ export default function ServicesForm() {
           control={form.control}
           name="teléfono"
           render={({ field }) => (
-            // {/* @ts-ignore */}
             <FormItem>
-              {/* @ts-ignore */}
               <FormControl>
                 <Input placeholder="Teléfono" {...field} />
               </FormControl>
@@ -83,7 +77,6 @@ export default function ServicesForm() {
             </FormItem>
           )}
         />
-        {/* @ts-ignore */}
         <Button variant="testLarge" type="submit" className={`relative`}>
           <span className="z-10">Contactarme</span>
         </Button>

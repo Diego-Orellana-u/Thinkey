@@ -1,13 +1,12 @@
 import Fifty from "@/components/Fifty";
 import Hero from "@/components/Hero";
-import HeroTwo from "@/components/HeroTwo";
 import ServicesImg from "@/components/ServicesImg";
 import Testimonies from "@/components/Testimonies";
 import { familiasFiftyCards } from "data/fifty";
 
 import { familiasHeroInfo } from "data/heroInfo";
 import { familiasServices } from "data/services";
-import { homeTestimonies, homeTestimoniesTitle } from "data/testimonies";
+import { homeTestimonies } from "data/testimonies";
 
 export default function Familias() {
   return (
@@ -15,8 +14,10 @@ export default function Familias() {
       <Hero
         heroInfo={familiasHeroInfo}
         headingSize="text-h1-s tablet-s:text-[3rem] desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
-        paddingTop="pt-0"
+        paddingTop="pt-12"
         topBlobColor="bg-orange-500"
+        headingWidth="desktop-s:w-[580px] desktop-l:w-[630px]"
+        separatedHeadingDisplay="mobile-m:block"
       />
       <Fifty
         fiftyCards={familiasFiftyCards}

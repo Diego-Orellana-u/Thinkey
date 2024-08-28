@@ -42,7 +42,11 @@ export default function Colegios() {
         testimonies={homeTestimonies}
         sectionPadding="pt-20 pb-32"
       />
-      <Faq questions={servicesFaq} title="Preguntas Frecuentes" />
+      <Faq
+        desc="Entendemos que buscar una experiencia que mejore la calidad de tu establecimiento puede ser un desafío. Por este motivo, hemos creado una lista de preguntas frecuentes para guiarte. Queremos que este proceso sea lo más fácil posible para ti."
+        questions={servicesFaq}
+        title="Preguntas Frecuentes"
+      />
     </>
   );
 }

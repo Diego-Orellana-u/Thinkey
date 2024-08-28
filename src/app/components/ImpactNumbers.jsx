@@ -5,7 +5,7 @@ export default function ImpactNumbers({ data, sectionPadding }) {
     <div
       className={`wrapper ${
         sectionPadding ? sectionPadding : "desktop-l:pt-24 py-14 mobile-l:py-20"
-      } bg-[#1A2357] desktop-s:h-[400px] desktop-l:h-[550px] text-center`}
+      } bg-main-200 desktop-s:h-[400px] desktop-l:h-[550px] text-center`}
     >
       <Heading2
         title="Solving the education problem by the root"

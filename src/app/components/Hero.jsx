@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import LineOne from "./Icons/LineOne";
+import Star from "./Icons/Star";
+import DibujoAtomo from "./Icons/DibujoAtomo";
+import DibujoPocion from "./Icons/DibujoPocion";
+import DibujoPlaneta from "./Icons/DibujoPlaneta";
 
 import { buttonVariants } from "@/components/ui/button";
 
@@ -15,10 +20,16 @@ export default function Hero({
 }) {
   return (
     <section
-      className={`hero h-full ${
+      className={`hero relative top-[-96px] pt-[96px] h-full overflow-x-hidden ${
         paddingTop ? paddingTop : "pt-5 desktop-s:pt-16 desktop-l:pt-24"
       }`}
     >
+      <LineOne />
+      <Star fillColor="fill-accent-900" />
+      <DibujoAtomo />
+      <DibujoPocion />
+      <DibujoPlaneta />
+
       <div className="blob-cont">
         {heroInfo.blobCenter && (
           <div className="blurblob top-0 desktop-s:w-2/4 desktop-s:-right-16 desktop-l:right-[10%] desktop-s:top-12">
@@ -61,7 +72,7 @@ export default function Hero({
           }`}
         >
           {heroInfo.img && (
-            <div className="drop-shadow-2xl flex justify-center tablet-xl:self-center mb-6 tablet-xl:mb-0 tablet-xl:min-h-[700px]:pt-10 tablet-xl:w-[75%]">
+            <div className="drop-shadow-2xl flex justify-center desktop-s:justify-end tablet-xl:self-center mb-6 tablet-xl:mb-0 tablet-xl:min-h-[700px]:pt-10 tablet-xl:w-[75%]">
               <Image
                 src={heroInfo.img}
                 width={1920}
@@ -113,7 +124,7 @@ export default function Hero({
                         heroInfo.titleGradient
                           ? heroInfo.titleGradient
                           : "text-black-heading-color"
-                      } family-hero-gradient ml-[8px] mobile-m:ml-0 mobile-m:block desktop-s:ml-0 text-h1-s tablet-s:leading-[57px] tablet-xl:text-[2.25rem] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
+                      } family-hero-gradient ml-[8px] tablet-s:text-[3rem] mobile-m:ml-0 mobile-m:block desktop-s:inline desktop-s:ml-4 min-[1280px]:block min-[1280px]:ml-0 text-h1-s tablet-s:leading-[57px] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
                     >
                       {heroInfo.separatedTitle2}
                     </span>

@@ -102,6 +102,61 @@ export const colegiosEquipoFiftyCards = [
   },
 ];
 
+export const cumpleañosFiftyCards = [
+  {
+    type: "original",
+    title: "Exploradores Espaciales",
+    desc: "Lleva a los niños en un viaje por el espacio con experimentos de astronomía y cohetes. Incluye actividades como la construcción de cohetes y la creación de constelaciones.",
+    btnText: "MÁS INFORMACIÓN",
+    btnHref: "/",
+    imgLink: "/familia-planets.webp",
+    imgAlt: "Imagen de un niño disfrazado de cientifico con planetas al lado",
+    imgWidth: 2253,
+    imgHeight: 1502,
+    orientation: "reverse",
+    keys: "familias-fifty-card1",
+  },
+  {
+    type: "original",
+    title: "Científicos Locos",
+    desc: "Desata el poder de la química con experimentos como la pasta de dientes para elefantes y el slime pegajoso. Perfecto para los pequeños químicos en formación.",
+    btnText: "MÁS INFORMACIÓN",
+    btnHref: "/",
+    imgLink: "/familias-science-kit.webp",
+    imgAlt: "Imagen de nuestro kit de ciencia para cumpleaños cientificos",
+    imgWidth: 1600,
+    imgHeight: 1061,
+    orientation: "original",
+    keys: "familias-fifty-card2",
+  },
+  {
+    type: "original",
+    title: "Robótica para Niños",
+    desc: "Introduce a los niños al emocionante mundo de la robótica con desafíos de construcción y programación de robots simples. Ideal para futuros ingenieros.",
+    btnText: "MÁS INFORMACIÓN",
+    btnHref: "/",
+    imgLink: "/kidsRobotics.webp",
+    imgAlt: "Imagen de niños jugando con robots",
+    imgWidth: 1280,
+    imgHeight: 670,
+    orientation: "reverse",
+    keys: "familias-fifty-card3",
+  },
+  {
+    type: "original",
+    title: "Fiesta del Slime",
+    desc: "Una fiesta donde los niños crearán sus propios slimes personalizados, aprendiendo sobre polímeros y reacciones químicas mientras se divierten.",
+    btnText: "MÁS INFORMACIÓN",
+    btnHref: "/",
+    imgLink: "/familias-slime.webp",
+    imgAlt: "Imagen de una niña sosteniendo un vaso con slime",
+    imgWidth: 1280,
+    imgHeight: 818,
+    orientation: "original",
+    keys: "familias-fifty-card3",
+  },
+];
+
 export const serviciosFiftyCards = [
   {
     type: "full",

@@ -1,12 +1,24 @@
-export default function Star({ fillColor }) {
+export default function Star({
+  fillColor,
+  x,
+  y,
+  starOpacity,
+  zIndex,
+  anyCss,
+  position,
+  width,
+  height,
+}) {
   return (
     <svg
-      width="50"
-      height="50"
+      width={`${width ? width : "50"}`}
+      height={`${height ? height : "50"}`}
       viewBox="0 0 145 145"
-      className={`${
-        fillColor && fillColor
-      } absolute top-[450px] tablet-l:top-[630px] right-10 opacity-50 -z-20`}
+      className={`${fillColor && fillColor} ${
+        position ? position : "absolute"
+      } ${y && y} ${x && x} ${starOpacity && starOpacity} ${zIndex && zIndex} ${
+        anyCss && anyCss
+      }`}
     >
       <rect x="65.7355" width="14.0291" height="144.5" />
       <rect

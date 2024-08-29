@@ -109,7 +109,6 @@ export const familiasServices = [
     linkText: "Agendar",
     key: "service-img-card-1",
   },
-
   {
     title: "Ingenieros del Futuro",
     desc: "Construye y programa robots, aprende sobre ingeniería y resuelve desafíos tecnológicos.",

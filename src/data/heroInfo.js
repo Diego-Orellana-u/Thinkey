@@ -82,3 +82,23 @@ export const empresasHeroInfo = {
   shadow: false,
   imgCustomCss: false,
 };
+
+export const cumpleañosHeroInfo = {
+  heading1: false,
+  title: false,
+  separatedTitle1: "¡Celebra un cumpleaños inolvidable",
+  separatedTitle2: "con ciencia!",
+  titleGradient: "bg-[linear-gradient(90deg,_#F69837_0%,_#C6400B_73.51%)]",
+  desc: "Transforma la fiesta de cumpleaños de tu hijo en una aventura educativa llena de diversión y descubrimientos.",
+  mainBtnText: "Agendar Un Cumpleaños",
+  orientation: "left",
+  mainBtnLink: "#",
+  secondBtnText: "SEE MORE 2",
+  secondBtnLink: false,
+  blobTop: true,
+  blobCenter: false,
+  img: "/personajes-nubelluviosa.webp",
+  // img: false,
+  shadow: false,
+  imgCustomCss: false,
+};

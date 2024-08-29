@@ -8,7 +8,7 @@ import Heading2 from "./Heading2";
 
 export default function Faq({ questions, sectionPadding, title, desc }) {
   return (
-    <div
+    <section
       className={` ${
         sectionPadding ? sectionPadding : "py-20"
       } bg-main-200 text-white flex flex-col tablet-l:flex-row`}
@@ -38,6 +38,6 @@ export default function Faq({ questions, sectionPadding, title, desc }) {
             </Accordion>
           ))}
       </div>
-    </div>
+    </section>
   );
 }

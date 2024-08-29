@@ -5,7 +5,7 @@ export default function DibujoMolecula() {
       height="180"
       viewBox="0 0 90 99"
       fill="none"
-      className="hidden desktop-s:block absolute top-[130px] right-[37%] desktop-l:right-[31%] opacity-40"
+      className="hidden desktop-s:block absolute top-[130px] right-[37%] desktop-l:right-[35%] opacity-40"
     >
       <path
         d="M31.8708 26.762C33.101 32.6552 35.1974 38.0567 36.9832 43.5755C37.4703 45.0791 37.8728 46.8457 38.3427 48.5937C38.8151 50.3448 39.3494 52.0807 40.1651 53.5635L41.9114 52.5995C41.2364 51.3791 40.7239 49.7739 40.2692 48.0765C39.8114 46.3765 39.4067 44.5885 38.8813 42.9609C37.0693 37.3713 35.0078 32.0405 33.8239 26.3552L31.8708 26.762Z"

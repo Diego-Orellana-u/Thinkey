@@ -28,7 +28,14 @@ export default function Hero({
       }`}
     >
       <LineOne />
-      <Star fillColor="fill-accent-900" />
+      <Star
+        fillColor="fill-accent-900"
+        y="top-[450px] tablet-l:top-[630px]"
+        x="right-10"
+        starOpacity="opacity-50"
+        zIndex="-z-20"
+        position="absolute"
+      />
       <DibujoAtomo />
       <DibujoPocion />
       <DibujoPlaneta />
@@ -40,17 +47,17 @@ export default function Hero({
             <div
               className={`${
                 firstBlobColor ? firstBlobColor : "bg-secondary-100"
-              } green blob`}
+              } green opacity-40 desktop-s:opacity-100 blob`}
             ></div>
             <div
               className={`${
                 secondBlobColor ? secondBlobColor : "bg-accent-900"
-              } red blob`}
+              } red opacity-40 desktop-s:opacity-100 blob`}
             ></div>
             <div
               className={`${
                 thirdBlobColor ? thirdBlobColor : "bg-main-100"
-              } blue blob`}
+              } blue opacity-40 desktop-s:opacity-100 blob`}
             ></div>
           </div>
         )}
@@ -83,7 +90,7 @@ export default function Hero({
                 height={1280}
                 className={`${heroInfo.shadow && heroInfo.shadow} ${
                   heroInfo.imgCustomCss && heroInfo.imgCustomCss
-                } rounded-xl object-cover w-full desktop-s:w-full max-w-[350px] tablet-l:max-w-[600px] h-full`}
+                } rounded-full object-cover w-full desktop-s:w-full max-w-[350px] tablet-l:max-w-[600px] h-full`}
                 alt=""
                 priority={true}
               />

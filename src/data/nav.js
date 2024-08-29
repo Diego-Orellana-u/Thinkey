@@ -42,21 +42,21 @@ export const desktopNav = [
     subnav: [
       {
         title: "Para colegios",
-        href: "/servicios/colegios",
+        href: "/colegios",
         description:
           "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
         key: "progess-subnav",
       },
       {
         title: "Para empresas",
-        href: "/servicios/empresas",
+        href: "/empresas",
         description:
           "For sighted users to preview content available behind a link.",
         key: "hover-card-subnav",
       },
       {
         title: "Para familias",
-        href: "/servicios/familias",
+        href: "/familias",
         description:
           "A modal dialog that interrupts the user with important content and expects a response.",
         key: "alert-dialog-subnav",

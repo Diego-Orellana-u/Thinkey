@@ -1,6 +1,6 @@
 export default function DibujoPocion() {
   return (
-    <div className="absolute w-[150px] h-[150px] top-0 right-0 overflow-x-hidden">
+    <div className="absolute w-[120px] h-[120px] top-0 right-0 overflow-x-hidden">
       <svg
         width="102"
         height="123"

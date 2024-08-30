@@ -61,9 +61,9 @@ export default function FiftyCard({
             {btnText}
             <Button
               variant="testSmall"
-              className="rounded-full w-7 h-7 px-0 bg-accent-900 tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px"
+              className="rounded-full w-7 h-7 px-0  tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px"
             >
-              <RightArrow />
+              <RightArrow strokeColor="white" />
             </Button>
           </Link>
         )}

@@ -14,9 +14,9 @@ const buttonVariants = cva(
         hover:
           "h-[50px] text-p-l px-10 bg-buttons-bg border-buttons-bg text-buttons-text flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-buttons-bg before:duration-700 duration-1000 before:ease-out hover:bg-secondary-buttons-bg hover:text-black-heading-color hover:before:h-56 hover:before:w-56",
         testLarge:
-          "bg-btns-test text-black-heading-color hover:bg-[#CB6CE6] transition-all  border border-[#4b1e1e] shadow-[3px_3px_0_0_rgba(75,30,30,1)] flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-[#CB6CE6] before:duration-700 duration-1000 before:ease-out hover:bg-[#CB6CE6] hover:text-black-heading-color hover:before:h-56 hover:before:w-56",
+          "bg-main-100 text-white-body-color hover:bg-secondary-100 transition-all border border-btns-border shadow-[3px_3px_0_0_#9d5b5d] flex items-center justify-center overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-secondary-100 before:duration-700 duration-1000 before:ease-out hover:bg-secondary-100 hover:text-black-heading-color hover:before:h-56 hover:before:w-56",
         testSmall:
-          "bg-btns-test text-black-heading-color hover:bg-accent-900 transition-all duration-200 border border-[#4b1e1e] shadow-[3px_0_0_0_rgba(75,30,30,1)]",
+          "bg-btns-test text-black-heading-color hover:bg-accent-900 transition-all duration-200 border border-btns-border shadow-[3px_0_0_0_rgba(103,43,48,1)]",
       },
       size: {
         default: "h-12 px-7",

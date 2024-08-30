@@ -2,9 +2,10 @@ import Faq from "@/components/Faq";
 import Fifty from "@/components/Fifty";
 import Hero from "@/components/Hero";
 import Testimonies from "@/components/Testimonies";
-import PureTextOne from "@/components/PureTextOne";
+import OnlyTextOne from "@/components/OnlyTextOne";
 import { servicesFaq } from "data/faq";
 import { cumpleañosFiftyCards } from "data/fifty";
+import { onlyTextCumpleaños } from "data/onlyText";
 
 import { cumpleañosHeroInfo } from "data/heroInfo";
 import { homeTestimonies } from "data/testimonies";
@@ -20,10 +21,19 @@ export default function Cumpleanos() {
         headingWidth="desktop-s:w-[580px] desktop-l:w-[630px]"
         separatedHeadingDisplay="mobile-m:block"
       />
-      <PureTextOne sectionPadding="py-20 desktop-s:py-32" sectionMargin="" />
+      <OnlyTextOne
+        sectionPadding="py-20 desktop-s:py-32"
+        sectionMargin=""
+        bgColor="bg-main-100"
+        starColor="fill-secondary-100"
+        generalText={onlyTextCumpleaños}
+        highlight="Cada cumpleaños es dirigido por nuestros entusiastas 'científicos
+            locos', que se aseguran de que cada niño participe y se divierta
+            mientras aprende."
+      />
       <Fifty
         fiftyCards={cumpleañosFiftyCards}
-        sectionPadding="pt-16 pb-20"
+        sectionPadding="pt-32 pb-20"
         title="Paquetes de Cumpleaños Científicos"
         desc=""
       />

@@ -171,7 +171,7 @@ const CarouselPrevious = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full bg-accent-900",
+          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full ",
           orientation === "horizontal"
             ? "right-[4rem] -bottom-20 -translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -199,7 +199,7 @@ const CarouselNext = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full bg-accent-900",
+          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full",
           orientation === "horizontal"
             ? "right-[1rem] -bottom-20 -translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

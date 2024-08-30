@@ -2,7 +2,7 @@ export const homeHeroInfo = {
   heading1: "EVENTOS Y EXPERIENCIAS CIENTIFICAS PARA NIÑOS",
   separatedTitle1: "Mejorando lo académico con",
   separatedTitle2: "ciencia divertida",
-  titleGradient: "bg-[linear-gradient(90deg,_#F69837_0%,_#C6400B_73.51%)]",
+  titleGradient: "bg-[linear-gradient(90deg,_#322a89_0%,_#85388D_73.51%)]",
   desc: "Somos pioneros en la creación de experiencias STEAM en Chile, transformando la forma en que niños y jóvenes aprenden y se relacionan con el mundo.",
   mainBtnText: "CONÓCENOS",
   orientation: "left",

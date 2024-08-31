@@ -30,8 +30,8 @@ export default function Testimonies({ title, testimonies, sectionPadding }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious variant="testSmall" />
-        <CarouselNext variant="testSmall" />
+        <CarouselPrevious variant="testSmall" component="testimonials" />
+        <CarouselNext variant="testSmall" component="testimonials" />
       </Carousel>
     </div>
   );

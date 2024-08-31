@@ -65,7 +65,7 @@ export default function Product({}) {
           </div>
 
           <div className="py-7">
-            <div className="mb-4">
+            <div className="mb-5">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -74,7 +74,7 @@ export default function Product({}) {
               </p>
             </div>
 
-            <div>
+            <div className="mb-5">
               <ul className="grid grid-cols-3 gap-x-4 gap-y-6 margin-0">
                 <li className="flex flex-col items-center gap-1 max-w-32 w-full">
                   <Clock />
@@ -123,14 +123,18 @@ export default function Product({}) {
             <div>
               <Accordion type="single" collapsible className="w-full max-w-4xl">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>Pregunta 1</AccordionTrigger>
+                  <AccordionTrigger triggerPadding="py-2" iconSize="h-5 w-5">
+                    Pregunta 1
+                  </AccordionTrigger>
                   <AccordionContent>
                     Esta es la respuesta de la pregunta 1
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>Pregunta 2</AccordionTrigger>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger triggerPadding="py-2" iconSize="h-5 w-5">
+                    Pregunta 2
+                  </AccordionTrigger>
                   <AccordionContent>
                     Esta es la respuesta de la pregunta 2
                   </AccordionContent>

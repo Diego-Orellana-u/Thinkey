@@ -18,13 +18,17 @@ const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
 AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef(
-  ({ className, children, triggerPadding, iconSize, ...props }, ref) => (
+  (
+    { className, children, triggerPadding, iconSize, fontSize, ...props },
+    ref
+  ) => (
     <AccordionPrimitive.Header className="flex">
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex flex-1 items-center justify-between font-medium tablet-l:text-h2-s transition-all [&[data-state=open]>svg]:rotate-180",
+          "flex flex-1 items-center justify-between font-medium transition-all [&[data-state=open]>svg]:rotate-180",
           triggerPadding ? triggerPadding : "py-6",
+          fontSize ? fontSize : "tablet-l:text-h2-s",
           className
         )}
         {...props}

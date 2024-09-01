@@ -177,13 +177,13 @@ const CarouselPrevious = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full ",
+          "absolute border-2 flex justify-center border-transparent rounded-full ",
           orientation === "horizontal"
             ? "-translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
           component === "testimonials"
-            ? "right-[4rem] -bottom-20"
-            : "left-[.9rem] top-2/4 disabled:hidden",
+            ? "right-[4rem] -bottom-20 h-9 w-9"
+            : "left-[.9rem] top-2/4 disabled:hidden h-9 w-9 desktop-s:h-12 desktop-s:w-12",
           className
         )}
         disabled={!canScrollPrev}
@@ -211,13 +211,13 @@ const CarouselNext = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-2 flex justify-center border-transparent h-9 w-9 rounded-full",
+          "absolute border-2 flex justify-center border-transparent rounded-full",
           orientation === "horizontal"
             ? "-translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
           component === "testimonials"
-            ? "right-[1rem] -bottom-20"
-            : "right-[1rem] top-2/4 disabled:hidden",
+            ? "right-[1rem] -bottom-20 h-9 w-9"
+            : "right-[1rem] top-2/4 disabled:hidden h-9 w-9 desktop-s:h-12 desktop-s:w-12",
           className
         )}
         disabled={!canScrollNext}

@@ -17,7 +17,25 @@ export const productOne = {
       key: "image-product-slime-2",
     },
   ],
+  iconsSection: [
+    {
+      iconHref: "/clock.svg",
+      text: "Shade for up to 6 people",
+      key: "li-product-slime-1",
+    },
+    {
+      iconHref: "/clock.svg",
+      text: "Shade for up to 6 people",
+      key: "li-product-slime-2",
+    },
+    {
+      iconHref: "/clock.svg",
+      text: "Shade for up to 6 people",
+      key: "li-product-slime-3",
+    },
+  ],
   productTitle: "Cumpleaños Cientifico Slime",
+  warningPill: "Hasta 6 personas precio inicial, luego $5.000 más por c/u",
   hasDiscount: true,
   previousPrice: "$35.000",
   currentPrice: "$25.000",

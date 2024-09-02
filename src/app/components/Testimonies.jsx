@@ -8,20 +8,22 @@ import {
 import TestimonyCard from "./TestimonyCard";
 import Heading2 from "./Heading2";
 
-export default function Testimonies({ title, testimonies, sectionPadding }) {
+export default function Testimonies({ testimoniesInfo }) {
   return (
     <div
       className={`wrapper text-p-l ${
-        sectionPadding ? sectionPadding : "mb-28"
+        testimoniesInfo.sectionPadding
+          ? testimoniesInfo.sectionPadding
+          : "mb-28"
       }`}
     >
       <Heading2
-        title={title}
+        title={testimoniesInfo.title}
         padding="mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center"
       />
       <Carousel>
         <CarouselContent className="tablet-l:-ml-10 desktop-s:-ml-6 desktop-l:-ml-12">
-          {testimonies.map((testimony) => (
+          {testimoniesInfo.testimonies.map((testimony) => (
             <CarouselItem
               key={testimony.name}
               className="min-[600px]:basis-1/2 tablet-l:pl-10 desktop-s:basis-1/3 desktop-s:pl-6 desktop-l:pl-12 pb-1"

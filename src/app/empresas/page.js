@@ -2,10 +2,10 @@ import Fifty from "@/components/Fifty";
 import Hero from "@/components/Hero";
 import ServicesImg from "@/components/ServicesImg";
 import Testimonies from "@/components/Testimonies";
-import { colegiosEquipoFiftyCards } from "data/fifty";
+import { empresasFiftyInfo } from "data/fifty";
 import { empresasHeroInfo } from "data/heroInfo";
 import { colegiosServices } from "data/services";
-import { homeTestimonies } from "data/testimonies";
+import { empresasTestimonies } from "data/testimonies";
 
 export default function Empresas() {
   return (
@@ -19,22 +19,13 @@ export default function Empresas() {
         headingWidth="desktop-s:w-[580px] desktop-l:w-[630px]"
         separatedHeadingDisplay="mobile-m:block"
       />
-      <Fifty
-        fiftyCards={colegiosEquipoFiftyCards}
-        sectionPadding="pb-20"
-        title="Cumpleaños Científicos"
-        desc="Convierte la próxima fiesta de cumpleaños en una aventura científica. Nuestros cumpleaños científicos combinan la magia del aprendizaje con la diversión, permitiendo que los niños descubran la ciencia a través de experimentos interactivos y emocionantes."
-      />
+      <Fifty fiftyInfo={empresasFiftyInfo} />
       <ServicesImg
         data={colegiosServices}
         sectionPadding="py-20"
         title="Aventuras educativas con nuestros Bootcamps cientificos"
       />
-      <Testimonies
-        title="Lo que opinan los colegios con los que hemos trabajado"
-        testimonies={homeTestimonies}
-        sectionPadding="pt-20 pb-32"
-      />
+      <Testimonies testimoniesInfo={empresasTestimonies} />
     </>
   );
 }

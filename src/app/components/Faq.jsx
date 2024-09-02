@@ -6,25 +6,27 @@ import {
 } from "@/components/ui/accordion";
 import Heading2 from "./Heading2";
 
-export default function Faq({ questions, sectionPadding, title, desc }) {
+export default function Faq({ faqInfo }) {
   return (
     <section
       className={` ${
-        sectionPadding ? sectionPadding : "py-20"
-      } bg-main-200 text-white flex flex-col tablet-l:flex-row`}
+        faqInfo.sectionPadding ? faqInfo.sectionPadding : "py-20"
+      } ${faqInfo.bgColor ? faqInfo.bgColor : "bg-main-200"} ${
+        faqInfo.textColor ? faqInfo.textColor : "text-white"
+      } flex flex-col tablet-l:flex-row`}
     >
       <div className="wrapper text-left tablet-l:w-3/4">
         <Heading2
           orientation="text-left"
-          color="text-white"
-          title={title}
+          color={faqInfo.titleColor ? faqInfo.titleColor : "text-white"}
+          title={faqInfo.title}
           padding={"pb-5 tablet-l:pb-10"}
         />
-        <p className="">{desc}</p>
+        <p className="">{faqInfo.desc}</p>
       </div>
       <div className="flex wrapper py-5 tablet-l:py-0 tablet-l:pl-0 desktop-s:py-10 relative h-full flex-col items-center w-full">
-        {questions &&
-          questions.map((question, index) => (
+        {faqInfo.questions &&
+          faqInfo.questions.map((question, index) => (
             <Accordion
               key={question.key}
               type="single"

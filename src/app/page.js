@@ -5,11 +5,10 @@ import ImpactNumbers from "./components/ImpactNumbers";
 import VennHome from "./components/VennHome";
 import Testimonies from "./components/Testimonies";
 import { homeHeroInfo } from "data/heroInfo";
-import { homeFiftyCards } from "data/fifty";
+import { homeFiftyInfo } from "data/fifty";
 import { homeServices } from "data/services";
 import { homeImpactNumbers } from "data/impactNumbers";
 import { homeVenn } from "data/vennSection";
-import { homeTestimoniesTitle } from "data/testimonies";
 import { homeTestimonies } from "data/testimonies";
 
 export default function Home() {
@@ -25,22 +24,13 @@ export default function Home() {
         topBlobColor="bg-purple-100"
       />
       <Services services={homeServices} sectionPadding="desktop-l:pb-24" />
-      <Fifty
-        fiftyCards={homeFiftyCards}
-        title="Catchy title solving the problem"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        sectionPadding="pb-36"
-      />
+      <Fifty fiftyInfo={homeFiftyInfo} />
       <ImpactNumbers
         data={homeImpactNumbers}
         sectionPadding="desktop-l:pt-24 py-14 mobile-l:py-20"
       />
       <VennHome data={homeVenn} sectionPadding="pb-32 pt-56 tablet-xl:pt-32" />
-      <Testimonies
-        title="Lo que opinan los colegios con los que hemos trabajado"
-        testimonies={homeTestimonies}
-        sectionPadding="mb-28"
-      />
+      <Testimonies testimoniesInfo={homeTestimonies} />
     </>
   );
 }

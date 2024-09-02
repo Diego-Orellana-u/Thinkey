@@ -5,11 +5,11 @@ import ServicesImg from "@/components/ServicesImg";
 import Testimonies from "@/components/Testimonies";
 import LeadsForm from "@/components/LeadsForm";
 import { servicesFaq } from "data/faq";
-import { colegiosEquipoFiftyCards } from "data/fifty";
+import { colegiosEquipoFiftyInfo } from "data/fifty";
 
 import { colegiosHeroInfo } from "data/heroInfo";
 import { colegiosServices } from "data/services";
-import { homeTestimonies } from "data/testimonies";
+import { colegiosTestimonies } from "data/testimonies";
 
 export default function Colegios() {
   return (
@@ -23,12 +23,7 @@ export default function Colegios() {
         headingWidth="desktop-s:w-[580px] desktop-l:w-[630px]"
         separatedHeadingDisplay="mobile-m:block" //this is to adjust the gradient heading depending on the length. Switch between inline and block. If you are using inline, add ml-[14px].
       />
-      <Fifty
-        fiftyCards={colegiosEquipoFiftyCards}
-        sectionPadding="pb-20"
-        title="Conoce al Equipo Detrás de THINKey"
-        desc="Somos un equipo apasionado por la educación STEAM, liderado por expertos en ciencia y tecnología, dedicados a transformar la manera en que los niños y jóvenes aprenden."
-      />
+      <Fifty fiftyCards={colegiosEquipoFiftyInfo} />
       <ServicesImg
         data={colegiosServices}
         sectionPadding="py-20"
@@ -39,16 +34,8 @@ export default function Colegios() {
         title="We Love to Hear From You"
         desc="Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad educativa. Escríbenos y nos pondremos en contacto contigo."
       />
-      <Testimonies
-        title="Opiniones de los colegios con los que hemos trabajado"
-        testimonies={homeTestimonies}
-        sectionPadding="pt-20 pb-32"
-      />
-      <Faq
-        desc="Entendemos que buscar una experiencia que mejore la calidad de tu establecimiento puede ser un desafío. Por este motivo, hemos creado una lista de preguntas frecuentes para guiarte. Queremos que este proceso sea lo más fácil posible para ti."
-        questions={servicesFaq}
-        title="Preguntas Frecuentes"
-      />
+      <Testimonies testimoniesInfo={colegiosTestimonies} />
+      <Faq faqInfo={servicesFaq} />
     </>
   );
 }

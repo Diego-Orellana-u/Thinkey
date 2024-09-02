@@ -1,18 +1,13 @@
 import Heading2 from "./Heading2";
 import Star from "./Icons/Star";
 
-export default function OnlyTextOne({
-  sectionPadding,
-  sectionMargin,
-  bgColor,
-  starColor,
-  generalText,
-  highlight,
-}) {
+export default function OnlyTextOne({ onlyTextInfo }) {
   return (
     <section
-      className={` ${sectionPadding ? sectionPadding : "py-20"} ${
-        bgColor ? bgColor : "bg-accent-800"
+      className={` ${
+        onlyTextInfo.sectionPadding ? onlyTextInfo.sectionPadding : "py-20"
+      } ${
+        onlyTextInfo.bgColor ? onlyTextInfo.bgColor : "bg-accent-800"
       } flex flex-col wrapper text-white`}
     >
       <div className="text-left mb-4 mobile-l:mb-7 tablet-l:max-w-[450px] desktop-l:max-w-[850px]">
@@ -25,8 +20,8 @@ export default function OnlyTextOne({
       </div>
 
       <div className="flex flex-col gap-5 mobile-m:pl-20 items-end">
-        {generalText &&
-          generalText.map((text) => (
+        {onlyTextInfo.texts &&
+          onlyTextInfo.texts.map((text) => (
             <p
               key={text.key}
               className="max-w-[450px] desktop-s:max-w-full desktop-s:w-[588px] text-p-l tablet-l:text-p-xl tablet-l:leading-7 text-white-body-color"
@@ -34,10 +29,12 @@ export default function OnlyTextOne({
               {text.text}
             </p>
           ))}
-        {highlight && (
+        {onlyTextInfo.highlight && (
           <div className="relative flex justify-end left-0">
             <Star
-              fillColor={`${starColor ? starColor : "fill-[#333]"}`}
+              fillColor={`${
+                onlyTextInfo.starColor ? onlyTextInfo.starColor : "fill-[#333]"
+              }`}
               y="top-1/4 desktop-s:bottom-0"
               x="-left-[90px] tablet-l:-left-10"
               starOpacity="opacity-90"
@@ -48,7 +45,7 @@ export default function OnlyTextOne({
               height="70"
             />
             <p className="max-w-[450px] desktop-s:max-w-full desktop-s:w-[588px] text-p-l tablet-l:text-p-xl tablet-l:leading-7 text-white-body-color">
-              {highlight}
+              {onlyTextInfo.highlight}
             </p>
           </div>
         )}

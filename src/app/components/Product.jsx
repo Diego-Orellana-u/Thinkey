@@ -48,9 +48,15 @@ export default function Product({ productInfo }) {
         <div className="text-blue-900 px-2 desktop-s:ml-10 desktop-s:w-2/5 desktop-s:pt-4">
           <div className="py-4 border-b border-gray-300/30">
             <div className="py-3">
-              <h2 className="font-bold text-h1-s leading-10">
+              <h2 className="font-bold text-h1-s desktop-s:text-h2-l leading-10">
                 {productInfo.productTitle}
               </h2>
+            </div>
+
+            <div className="mt-3 mb-5">
+              <div className="bg-blue-100 rounded-3xl px-3 tablet-l:px-6 py-2 text-p-s w-fit">
+                <span>{productInfo.warningPill}</span>
+              </div>
             </div>
 
             <div>
@@ -71,52 +77,23 @@ export default function Product({ productInfo }) {
             <div className="mb-5 desktop-s:mb-8">
               <p>{productInfo.productDesc}</p>
             </div>
-
-            <div className="mb-5 desktop-s:mb-8">
-              <ul className="grid grid-cols-3 w-full items-center gap-x-4 gap-y-6 margin-0">
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-
-                <li className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full">
-                  <Clock />
-                  <span className="text-center text-[14px] leading-4 font-semibold">
-                    Shade for up to 6 people
-                  </span>
-                </li>
-              </ul>
-            </div>
+            {productInfo.iconsSection && (
+              <div className="mb-5 desktop-s:mb-8">
+                <ul className="grid grid-cols-3 w-full items-center gap-x-4 gap-y-6 margin-0">
+                  {productInfo.iconsSection.map((li) => (
+                    <li
+                      key={li.key}
+                      className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full"
+                    >
+                      <Image src={li.iconHref} width={25} height={25} />
+                      <span className="text-center text-[14px] leading-4 font-semibold">
+                        {li.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <div className="flex flex-col min-[650px]:flex-row desktop-s:flex-col">
               <div className="mb-6 font-medium text-[15px] min-[650px]:w-2/4 desktop-s:w-full">

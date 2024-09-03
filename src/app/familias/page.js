@@ -5,7 +5,7 @@ import Testimonies from "@/components/Testimonies";
 import { familiasFiftyInfo } from "data/fifty";
 
 import { familiasHeroInfo } from "data/heroInfo";
-import { familiasServices } from "data/services";
+import { familiasServicesInfo } from "data/services";
 import { familiasTestimonies } from "data/testimonies";
 
 export default function Familias() {
@@ -20,11 +20,7 @@ export default function Familias() {
         separatedHeadingDisplay="mobile-m:block"
       />
       <Fifty fiftyInfo={familiasFiftyInfo} />
-      <ServicesImg
-        data={familiasServices}
-        sectionPadding="py-20"
-        title="Aventuras educativas con nuestros Bootcamps cientificos"
-      />
+      <ServicesImg servicesInfo={familiasServicesInfo} />
       <Testimonies testimoniesInfo={familiasTestimonies} />
     </>
   );

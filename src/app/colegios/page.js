@@ -8,7 +8,8 @@ import { servicesFaq } from "data/faq";
 import { colegiosEquipoFiftyInfo } from "data/fifty";
 
 import { colegiosHeroInfo } from "data/heroInfo";
-import { colegiosServices } from "data/services";
+import { colegiosServicesInfo } from "data/services";
+import { colegiosFormInfo } from "data/forms";
 import { colegiosTestimonies } from "data/testimonies";
 
 export default function Colegios() {
@@ -23,17 +24,9 @@ export default function Colegios() {
         headingWidth="desktop-s:w-[580px] desktop-l:w-[630px]"
         separatedHeadingDisplay="mobile-m:block" //this is to adjust the gradient heading depending on the length. Switch between inline and block. If you are using inline, add ml-[14px].
       />
-      <Fifty fiftyCards={colegiosEquipoFiftyInfo} />
-      <ServicesImg
-        data={colegiosServices}
-        sectionPadding="py-20"
-        title="Aventuras educativas con nuestros Bootcamps cientificos"
-      />
-      <LeadsForm
-        sectionMargin="my-10"
-        title="We Love to Hear From You"
-        desc="Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad educativa. Escríbenos y nos pondremos en contacto contigo."
-      />
+      <Fifty fiftyInfo={colegiosEquipoFiftyInfo} />
+      <ServicesImg servicesInfo={colegiosServicesInfo} />
+      <LeadsForm formInfo={colegiosFormInfo} />
       <Testimonies testimoniesInfo={colegiosTestimonies} />
       <Faq faqInfo={servicesFaq} />
     </>

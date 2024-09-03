@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,7 +18,7 @@ const formSchema = z.object({
   username: z.string().min(2).max(50),
 });
 
-export default function ServicesForm() {
+export default function ServicesForm({ formFields, btnText }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -32,53 +31,33 @@ export default function ServicesForm() {
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input
-                  className="outline-none"
-                  placeholder="Nombre"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        {formFields.map((fieldInfo) => (
+          <>
+            <FormField
+              control={form.control}
+              name={fieldInfo.name}
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input
+                      className="outline-none"
+                      placeholder={fieldInfo.placeholder}
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </>
+        ))}
 
-        <FormField
-          control={form.control}
-          name="Correo"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="Correo Electrónico" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="teléfono"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <Input placeholder="Teléfono" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
         <Button variant="testLarge" type="submit" className={`relative`}>
-          <span className="z-10">Contactarme</span>
+          <span className="z-10">{btnText}</span>
         </Button>
       </form>
     </Form>

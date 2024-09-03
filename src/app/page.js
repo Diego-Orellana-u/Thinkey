@@ -6,8 +6,8 @@ import VennHome from "./components/VennHome";
 import Testimonies from "./components/Testimonies";
 import { homeHeroInfo } from "data/heroInfo";
 import { homeFiftyInfo } from "data/fifty";
-import { homeServices } from "data/services";
-import { homeImpactNumbers } from "data/impactNumbers";
+import { homeServicesInfo } from "data/services";
+import { homeImpactSectionInfo } from "data/impactNumbers";
 import { homeVenn } from "data/vennSection";
 import { homeTestimonies } from "data/testimonies";
 
@@ -23,12 +23,9 @@ export default function Home() {
         thirdBlobColor="bg-main-100/50"
         topBlobColor="bg-purple-100"
       />
-      <Services services={homeServices} sectionPadding="desktop-l:pb-24" />
+      <Services servicesInfo={homeServicesInfo} />
       <Fifty fiftyInfo={homeFiftyInfo} />
-      <ImpactNumbers
-        data={homeImpactNumbers}
-        sectionPadding="desktop-l:pt-24 py-14 mobile-l:py-20"
-      />
+      <ImpactNumbers impactSectionInfo={homeImpactSectionInfo} />
       <VennHome data={homeVenn} sectionPadding="pb-32 pt-56 tablet-xl:pt-32" />
       <Testimonies testimoniesInfo={homeTestimonies} />
     </>

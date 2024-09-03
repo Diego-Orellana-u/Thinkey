@@ -2,13 +2,17 @@ import Image from "next/image";
 import Heading2 from "./Heading2";
 import Link from "next/link";
 
-export default function ServicesImg({ data, title, sectionPadding }) {
+export default function ServicesImg({ servicesInfo }) {
   return (
-    <div className={`wrapper ${sectionPadding ? sectionPadding : "py-20"}`}>
-      <Heading2 title={title} />
+    <div
+      className={`wrapper ${
+        servicesInfo.sectionPadding ? servicesInfo.sectionPadding : "py-20"
+      }`}
+    >
+      <Heading2 title={servicesInfo.title} />
       <div className="flex flex-col desktop-s:flex-row items-center justify-between mt-20 gap-5">
-        {data &&
-          data.map((card) => (
+        {servicesInfo.servicesCard &&
+          servicesInfo.servicesCard.map((card) => (
             <div
               key={card.key}
               className="box-shadow-testimonies w-full max-w-96 group relative block h-fit"

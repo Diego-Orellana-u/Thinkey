@@ -56,10 +56,11 @@ export default function ServicesForm({ formFields, btnText }) {
             />
           </>
         ))}
-
-        <Button variant="testLarge" type="submit" className={`relative`}>
-          <span className="z-10">{btnText}</span>
-        </Button>
+        <div className="flex justify-end">
+          <Button variant="testLarge" type="submit" className={`relative`}>
+            <span className="z-10">{btnText}</span>
+          </Button>
+        </div>
       </form>
     </Form>
   );

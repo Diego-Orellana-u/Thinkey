@@ -30,7 +30,7 @@ export const onlyTextProduct = {
   ],
   highlight:
     "Cada cumpleaños es dirigido por nuestros entusiastas 'científicos locos', que se aseguran de que cada niño participe y se divierta mientras aprende.",
-  sectionPadding: "py-20 desktop-s:pt-32 desktop-s:pb-0",
+  sectionPadding: "pt-5 tablet-l:pt-12 desktop-s:pt-32 desktop-s:pb-0",
   sectionMargin: "",
   bgColor: "bg-transparent",
   starColor: "fill-btns-test",

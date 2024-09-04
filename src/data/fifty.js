@@ -303,7 +303,7 @@ export const colegiosEquipoFiftyInfo = {
 };
 
 export const productFiftyTwoInfo = {
-  sectionMargin: "mt-32 mb-20",
+  sectionMargin: "mt-20 desktop-s:mt-32 desktop-s:mb-10",
   imgHref: "/elephantTooth.webp",
   bgColor: "",
   imgWidth: 613,

@@ -1,12 +1,18 @@
-export default function LineOne() {
+export default function LineOne({ width, height, x, y, opacity }) {
   return (
-    <div className="absolute w-[490px] h-[425px] -top-16 right-0 overflow-hidden">
+    <div
+      className={`absolute ${width ? width : "w-[490px]"} ${
+        height ? height : "h-[425px]"
+      } ${x ? x : "right-0"} ${y ? y : "-top-16"} overflow-hidden`}
+    >
       <svg
         width="1169"
         height="237"
         viewBox="0 0 1169 237"
         fill="none"
-        className="absolute -top-24 right-[-67px] h-full opacity-40 rotate-45 -z-20"
+        className={`absolute -top-24 right-[-67px] h-full ${
+          opacity ? opacity : "opacity-40"
+        } rotate-45 -z-20`}
       >
         <path
           d="M5.43555 35.5366C15.6918 47.075 26.0078 58.7668 37.3502 69.7491C59.9611 91.6422 92.4147 105.888 120.456 119.408C162.013 139.445 203.083 149.882 247.987 159.621C303.65 171.692 361.385 181.149 418.028 187.195C500.239 195.97 594.965 207.321 669.26 161.919C686.491 151.389 698.628 133.825 693.515 112.642C687.715 88.6141 659.834 85.2778 639.643 83.2809C599.101 79.2713 500.745 88.0287 497.304 144.812C492.88 217.801 589.092 227.625 641.43 230.344C759.14 236.458 878.165 203.646 980.619 146.727C1022.28 123.583 1059.05 85.8552 1093.34 53.0259C1114.47 32.7974 1141.94 24.1865 1163.55 5.66455"

@@ -183,7 +183,7 @@ export const productsTestimonies = {
     },
   ],
   title: "Lo que opinan los colegios con los que hemos trabajado",
-  sectionPadding: "pt-20 pb-32",
+  sectionPadding: "pt-10 desktop-s:pt-20 pb-32",
 };
 
 export const empresasTestimonies = {

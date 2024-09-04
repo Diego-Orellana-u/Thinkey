@@ -46,7 +46,7 @@ module.exports = {
         "white-bg": "#F8F8FC",
         "yellowish-white-bg": "#fdfdf9",
         "black-body-color": "#333333",
-        "gray-body-color": "#6b7280",
+        "gray-body-color": "#4b5563",
         "white-body-color": "#F2F2F2",
         "main-heading-color": "#333B68",
         "black-heading-color": "#222222",

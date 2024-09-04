@@ -90,7 +90,7 @@ export default function Hero({
                 height={1280}
                 className={`${heroInfo.shadow && heroInfo.shadow} ${
                   heroInfo.imgCustomCss && heroInfo.imgCustomCss
-                } rounded-full object-cover w-full desktop-s:w-full max-w-[350px] tablet-l:max-w-[600px] h-full`}
+                } rounded-full object-cover w-full desktop-s:w-full aspect-square max-w-[350px] tablet-l:max-w-[600px] h-full`}
                 alt=""
                 priority={true}
               />

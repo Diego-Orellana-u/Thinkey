@@ -39,6 +39,7 @@ export default function ServicesForm({ formFields, btnText }) {
           <>
             <FormField
               control={form.control}
+              key={fieldInfo.key}
               name={fieldInfo.name}
               render={({ field }) => (
                 <FormItem>

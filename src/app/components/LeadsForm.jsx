@@ -10,10 +10,11 @@ export default function LeadsForm({ formInfo }) {
     >
       <div className="relative w-full h-full tablet-xl:flex-[0_0_50%]">
         <Image
-          src="/a.png"
+          src={formInfo.imgHref}
           className="w-full mb-7 tablet-s:mb-12 tablet-xl:mb-0  object-cover max-h-96 tablet-l:max-h-full tablet-l:h-[500px] tablet-xl:h-full"
           width={613}
           height={1313}
+          alt={formInfo.imgAlt}
         />
       </div>
 

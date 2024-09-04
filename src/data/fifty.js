@@ -301,3 +301,36 @@ export const colegiosEquipoFiftyInfo = {
   title: "Conoce al Equipo Detrás de THINKey",
   desc: "Somos un equipo apasionado por la educación STEAM, liderado por expertos en ciencia y tecnología, dedicados a transformar la manera en que los niños y jóvenes aprenden.",
 };
+
+export const productFiftyTwoInfo = {
+  sectionMargin: "mt-32 mb-20",
+  imgHref: "/elephantTooth.webp",
+  bgColor: "",
+  imgWidth: 613,
+  imgHeight: 1313,
+  headingTwo: "Cumpleaños cientificos para niños",
+  bigTitle: "Un cumpleaños que enseña",
+  desc: "We've obsessed over every detail of this handcrafted journal to bring you the best materials for daily use.",
+  points: [
+    {
+      title: "Durable",
+      desc: "The leather cover and machined steel disc binding stand up to daily use for years to come.",
+      key: "example-key-for-product-fifty",
+    },
+    {
+      title: "Durable",
+      desc: "The leather cover and machined steel disc binding stand up to daily use for years to come.",
+      key: "example-key-for-product-fifty2",
+    },
+    {
+      title: "Durable",
+      desc: "The leather cover and machined steel disc binding stand up to daily use for years to come.",
+      key: "example-key-for-product-fifty3",
+    },
+    {
+      title: "Durable",
+      desc: "The leather cover and machined steel disc binding stand up to daily use for years to come.",
+      key: "example-key-for-product-fifty4",
+    },
+  ],
+};

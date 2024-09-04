@@ -21,7 +21,7 @@ export default function Product({ productInfo }) {
     <section>
       <div className="wrapper flex flex-col desktop-s:flex-row">
         <div className="desktop-s:w-3/5 desktop-l:pr-10">
-          <Carousel>
+          <Carousel position="sticky top-5">
             <CarouselContent className="max-h-96 desktop-s:max-h-full h-[650px]">
               {productInfo &&
                 productInfo.images.map((image) => (
@@ -60,7 +60,6 @@ export default function Product({ productInfo }) {
             </div>
 
             <div>
-              {/* Add conditional here for previous price and new price */}
               <span className="flex gap-3 font-semibold text-h2-s mb-2">
                 {productInfo.hasDiscount && (
                   <s className="opacity-50">{productInfo.previousPrice}</s>
@@ -85,7 +84,12 @@ export default function Product({ productInfo }) {
                       key={li.key}
                       className="my-0 mx-auto flex flex-col items-center gap-1 max-w-32 w-full"
                     >
-                      <Image src={li.iconHref} width={25} height={25} />
+                      <Image
+                        src={li.iconHref}
+                        width={25}
+                        height={25}
+                        className="mb-1"
+                      />
                       <span className="text-center text-[14px] leading-4 font-semibold">
                         {li.text}
                       </span>

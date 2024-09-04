@@ -100,10 +100,17 @@ p {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 720px) {
   .wrapper {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
   }
 }
 

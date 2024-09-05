@@ -13,16 +13,20 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "./ui/label";
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+  Nombre: z.string().min(2).max(50),
+  Apellido: z.string().min(2).max(50),
+  Correo: z.string().min(7).max(50),
 });
 
 export default function ServicesForm({ formFields, btnText }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      Nombre: "",
     },
   });
 
@@ -35,8 +39,36 @@ export default function ServicesForm({ formFields, btnText }) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        {formFields.map((fieldInfo) => (
-          <>
+        {formFields.map((fieldInfo) =>
+          Array.isArray(fieldInfo) ? (
+            <div className="flex flex-col tablet-l:flex-row space-y-8 tablet-l:space-y-0 tablet-l:gap-5">
+              {fieldInfo.map((subField) => (
+                <FormField
+                  control={form.control}
+                  key={subField.key}
+                  name={subField.name}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <>
+                          <Label htmlFor={subField.key}>
+                            {subField.placeholder}
+                          </Label>
+                          <Input
+                            className="outline-none"
+                            id={subField.key}
+                            placeholder={subField.placeholder}
+                            {...field}
+                          />
+                        </>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              ))}
+            </div>
+          ) : (
             <FormField
               control={form.control}
               key={fieldInfo.key}
@@ -44,18 +76,36 @@ export default function ServicesForm({ formFields, btnText }) {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input
-                      className="outline-none"
-                      placeholder={fieldInfo.placeholder}
-                      {...field}
-                    />
+                    {fieldInfo.name === "Mensaje" ? (
+                      <>
+                        <Label htmlFor={fieldInfo.key}>
+                          {fieldInfo.placeholder}
+                        </Label>
+                        <Textarea
+                          placeholder={fieldInfo.placeholder}
+                          id={fieldInfo.key}
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <Label htmlFor={fieldInfo.key}>
+                          {fieldInfo.placeholder}
+                        </Label>
+                        <Input
+                          id={fieldInfo.key}
+                          className="outline-none"
+                          placeholder={fieldInfo.placeholder}
+                          {...field}
+                        />
+                      </>
+                    )}
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-          </>
-        ))}
+          )
+        )}
         <div className="flex justify-end">
           <Button variant="testLarge" type="submit" className={`relative`}>
             <span className="z-10">{btnText}</span>

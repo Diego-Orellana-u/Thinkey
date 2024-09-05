@@ -38,10 +38,10 @@ export default function ServicesForm({ formFields, btnText }) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)}>
         {formFields.map((fieldInfo) =>
           Array.isArray(fieldInfo) ? (
-            <div className="flex flex-col tablet-l:flex-row space-y-8 tablet-l:space-y-0 tablet-l:gap-5">
+            <div className="flex flex-col tablet-l:flex-row mb-9 tablet-l:gap-10">
               {fieldInfo.map((subField) => (
                 <FormField
                   control={form.control}
@@ -107,7 +107,11 @@ export default function ServicesForm({ formFields, btnText }) {
           )
         )}
         <div className="flex justify-end">
-          <Button variant="testLarge" type="submit" className={`relative`}>
+          <Button
+            variant="testLarge"
+            type="submit"
+            className={`relative mt-10`}
+          >
             <span className="z-10">{btnText}</span>
           </Button>
         </div>

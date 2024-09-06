@@ -1,12 +1,12 @@
 import ContactForm from "@/components/ContactForm";
-import Map from "@/components/Map";
+import BusinessInfo from "@/components/BusinessInfo";
 import { contactFormInfo } from "data/forms";
 
 export default function Contacto() {
   return (
     <>
       <ContactForm formInfo={contactFormInfo} />
-      <Map />
+      <BusinessInfo />
     </>
   );
 }

@@ -15,6 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "./ui/label";
+import Link from "next/link";
 
 const formSchema = z.object({
   Nombre: z.string().min(2).max(50),
@@ -41,7 +42,7 @@ export default function ServicesForm({ formFields, btnText }) {
       <form onSubmit={form.handleSubmit(onSubmit)}>
         {formFields.map((fieldInfo) =>
           Array.isArray(fieldInfo) ? (
-            <div className="flex flex-col tablet-l:flex-row mb-9 tablet-l:gap-10">
+            <div className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5">
               {fieldInfo.map((subField) => (
                 <FormField
                   control={form.control}
@@ -51,7 +52,7 @@ export default function ServicesForm({ formFields, btnText }) {
                     <FormItem>
                       <FormControl>
                         <>
-                          <Label htmlFor={subField.key}>
+                          <Label htmlFor={subField.key} className="mb-4 block">
                             {subField.placeholder}
                           </Label>
                           <Input
@@ -78,7 +79,7 @@ export default function ServicesForm({ formFields, btnText }) {
                   <FormControl>
                     {fieldInfo.name === "Mensaje" ? (
                       <>
-                        <Label htmlFor={fieldInfo.key}>
+                        <Label htmlFor={fieldInfo.key} className="mb-4 block">
                           {fieldInfo.placeholder}
                         </Label>
                         <Textarea
@@ -88,7 +89,7 @@ export default function ServicesForm({ formFields, btnText }) {
                       </>
                     ) : (
                       <>
-                        <Label htmlFor={fieldInfo.key}>
+                        <Label htmlFor={fieldInfo.key} className="mb-4 block">
                           {fieldInfo.placeholder}
                         </Label>
                         <Input
@@ -106,11 +107,21 @@ export default function ServicesForm({ formFields, btnText }) {
             />
           )
         )}
-        <div className="flex justify-end">
+        <div className="flex flex-col justify-end items-end">
+          <span className="block ">
+            By clicking “Submit” I agree to the{" "}
+            <Link href="/" className="text-orange-600">
+              Terms of Use
+            </Link>{" "}
+            and the{" "}
+            <Link href="/" className="text-orange-600">
+              Privacy Statement
+            </Link>
+          </span>
           <Button
             variant="testLarge"
             type="submit"
-            className={`relative mt-10`}
+            className={`relative mt-5 w-2/4`}
           >
             <span className="z-10">{btnText}</span>
           </Button>

@@ -3,7 +3,7 @@ import BuildingIcon from "./Icons/BuildingIcon";
 import MailIcon from "./Icons/MailIcon";
 import PhoneIcon from "./Icons/PhoneIcon";
 
-export default function BusinessInfo() {
+export default function BusinessInfo({ businessInfo }) {
   return (
     <div className="flex flex-col-reverse desktop-l:flex-row-reverse desktop-s:gap-16 mt-16 desktop-s:mt-0 desktop-l:mt-32 wrapper">
       <iframe
@@ -16,30 +16,28 @@ export default function BusinessInfo() {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div className="w-full mb-12 desktop-s:mt-16">
+      <div className="w-full mb-12 desktop-s:mb-0 desktop-s:mt-16">
         <span
           className={`relative text-h2-s tablet-l:text-h2-l font-semibold leading-7 text-main-heading-color z-20`}
         >
-          Pongamonos en contacto
+          {businessInfo.title}
         </span>
         <p className={`mt-6 text-p-l leading-8 text-black-body-color`}>
-          Proin volutpat consequat porttitor cras nullam gravida at. Orci
-          molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu
-          sed malesuada et magna.
+          {businessInfo.desc}
         </p>
         <div className="flex flex-col gap-4 mt-8 text-p-l leading-8 text-black-body-color">
           <div className="flex gap-5 items-center">
             <BuildingIcon />
-            <span>Almte. Zegers 672, Oficina C</span>
+            <span>{businessInfo.direction}</span>
           </div>
           <div className="flex gap-5 items-center">
             <PhoneIcon width="24" height="24" />
-            <span>+1 (555) 234-5678</span>
+            <span>{businessInfo.phone}</span>
           </div>
           <div className="flex gap-5 items-center">
             <MailIcon />
-            <Link href="/" className="pb-[2px]">
-              hello@example.com
+            <Link href={businessInfo.mailHref} className="pb-[2px]">
+              {businessInfo.mailText}
             </Link>
           </div>
         </div>

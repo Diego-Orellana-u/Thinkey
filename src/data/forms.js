@@ -20,7 +20,7 @@ export const colegiosFormInfo = {
 export const contactFormInfo = {
   sectionMargin: false,
   title: "We Love to Hear From You",
-  desc: "Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad educativa. Escríbenos y nos pondremos en contacto contigo.",
+  desc: "Estamos aquí para ayudarte a llevar la ciencia y la creatividad a tu comunidad. No importa si es para preguntarnos algo o para cotizar, escríbenos y nos pondremos en contacto contigo apenas podamos.",
   imgHref: "/a.png",
   imgAlt: "",
   formFields: [

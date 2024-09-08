@@ -32,7 +32,7 @@ export const MobileMenu = ({
       >
         <div className="h-14 flex justify-between items-center px-5 mobile-l:px-7 relative">
           <Image
-            className="cursor-pointer absolute right-6"
+            className={`cursor-pointer absolute right-6`}
             src={x}
             onClick={handleOverlayClick}
             alt=""

@@ -5,120 +5,156 @@ import HeadingTwoHighlight from "./HeadingTwoHighlight";
 import CloseIcon from "./Icons/CloseIcon";
 import { useState } from "react";
 
-export function TeamInfo({ openInfo, setOpenInfo }) {
+export function TeamInfo({
+  openInfo,
+  setOpenInfo,
+  overlayClicked,
+  setOverlayClicked,
+}) {
+  const handleOverlayClick = () => {
+    setOverlayClicked(!overlayClicked);
+    setOpenInfo(false);
+  };
   return (
-    <div
-      className={`fixed  top-0 ${
-        openInfo ? "right-0" : "-right-[100%]"
-      } ease-in-out text-black-body-color duration-500 transition-all w-full h-full overflow-x-hidden overflow-y-auto overscroll-contain pointer-events-none z-[999] bg-[#e9e2cd] `}
-    >
-      <div className="pointer-events-auto relative">
-        <div className="flex flex-col h-full px-4 tablet-l:px-10">
-          <div
-            className={`h-[65px] fixed top-0 pointer-events-none w-full pr-8 tablet-l:pr-20 bg-[#e9e2cd]`}
-          >
-            <div className="flex items-center h-full justify-between border-b border-black">
+    <>
+      <span
+        onClick={handleOverlayClick}
+        className={`drawer__overlay ${
+          openInfo ? "animate-in overflow-hidden" : ""
+        } ${overlayClicked ? "animate-out" : ""}`}
+      ></span>
+      <div
+        className={`fixed top-0 ${
+          openInfo ? "right-0" : "-right-[100%]"
+        } ease-in-out text-black-body-color duration-500 transition-all w-full desktop-s:w-4/5 desktop-l:w-3/5 desktop-l:max-w-[870px] h-full overflow-x-hidden overflow-y-auto overscroll-contain z-[999] bg-[#e9e2cd] `}
+      >
+        <div className="pointer-events-auto relative">
+          <div className="px-4 tablet-l:px-10">
+            {/* top container with close button */}
+            <div
+              className={`h-[65px] flex items-center justify-between border-b border-black tablet-l:h-20 sticky top-0 pointer-events-none w-full bg-[#e9e2cd]`}
+            >
               <span className="text-p-l font-medium">Biografía</span>
               <div
-                className="h-[37px] pb-px w-[37px] flex items-center justify-center pointer-events-auto rounded-full cursor-pointer bg-[#fdf7e7]"
-                onClick={() => setOpenInfo(false)}
+                className="h-[37px] w-[37px] tablet-l:h-12 tablet-l:w-12 flex items-center justify-center pointer-events-auto rounded-full cursor-pointer bg-[#fdf7e7]"
+                onClick={handleOverlayClick}
               >
-                <CloseIcon />
-              </div>
-            </div>
-          </div>
-          <div className="pt-32 flex flex-col">
-            <div>
-              <div>
-                <Image src="/suit.webp" width={1280} height={720} />
+                <CloseIcon w="w-5 tablet-xl:w-7" h="h-5 tablet-xl:h-7" />
               </div>
             </div>
 
-            <div className="pt-7 flex flex-col gap-5">
-              <span className="block font-semibold text-h2-l leading-10">
-                Rob van de Beeten
-              </span>
-
-              <div className="flex items-center gap-3">
-                <div className="rounded-full h-[15px] w-[15px] bg-green-900 mb-[2px]"></div>
-                <span className="block font-medium">CEO & Co-founder</span>
+            <div className="flex flex-col tablet-xl:flex-row tablet-xl:gap-10">
+              <div className="tablet-xl:flex-[0_0_40%] tablet-xl:relative">
+                <Image
+                  src="/suit.webp"
+                  width={1280}
+                  height={720}
+                  className="tablet-xl:sticky tablet-xl:top-32"
+                />
               </div>
 
-              <div className="flex flex-col gap-5 tablet-l:gap-7">
-                <div>
-                  <span className="block mb-2 text-p-xs">Correo:</span>
-                  <Link href="/">correoprueba123@gmail.com</Link>
+              <div className="pt-7 flex flex-col gap-5 ">
+                <span className="block font-semibold text-h2-l leading-10">
+                  Rob van de Beeten
+                </span>
+
+                <div className="flex items-center gap-3">
+                  <div className="rounded-full h-[15px] w-[15px] bg-green-900 mb-[2px]"></div>
+                  <span className="block font-medium">CEO & Co-founder</span>
                 </div>
 
-                <div>
-                  <span className="block mb-2 text-p-xs">Social:</span>
+                <div className="flex flex-col gap-5 tablet-l:gap-7">
+                  <div>
+                    <span className="block mb-2 text-p-xs">Correo:</span>
+                    <Link href="/">correoprueba123@gmail.com</Link>
+                  </div>
 
-                  <div className="flex gap-4 tablet-l:gap-7 flex-wrap">
-                    <Link
-                      href="/"
-                      className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
-                    >
-                      LinkedIn
-                    </Link>
-                    <Link
-                      href="/"
-                      className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
-                    >
-                      Instagram
-                    </Link>
-                    <Link
-                      href="/"
-                      className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
-                    >
-                      Instagram
-                    </Link>
-                    <Link
-                      href="/"
-                      className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
-                    >
-                      Instagram
-                    </Link>
+                  <div>
+                    <span className="block mb-2 text-p-xs">Social:</span>
+
+                    <div className="flex gap-4 tablet-l:gap-7 flex-wrap">
+                      <Link
+                        href="/"
+                        className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
+                      >
+                        LinkedIn
+                      </Link>
+                      <Link
+                        href="/"
+                        className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
+                      >
+                        Instagram
+                      </Link>
+                      <Link
+                        href="/"
+                        className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
+                      >
+                        Instagram
+                      </Link>
+                      <Link
+                        href="/"
+                        className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
+                      >
+                        Instagram
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex flex-col gap-5 tablet-l:gap-7 pb-10 ">
-                <p>
-                  Werken voor ondernemers garandeert veel afwisseling. De één is
-                  handelaar, de ander ontwerpt software en weer een derde
-                  produceert halffabricaten voor industriële afnemers. Iedere
-                  cliënt heeft zijn of haar deskundigheid en verwacht die ook
-                  van een advocaat. Die deskundigheid zit hem mijns inziens in
-                  de
-                </p>
+                <div className="flex flex-col gap-5 tablet-l:gap-7 pb-16">
+                  <p>
+                    Werken voor ondernemers garandeert veel afwisseling. De één
+                    is handelaar, de ander ontwerpt software en weer een derde
+                    produceert halffabricaten voor industriële afnemers. Iedere
+                    cliënt heeft zijn of haar deskundigheid en verwacht die ook
+                    van een advocaat. Die deskundigheid zit hem mijns inziens in
+                    de
+                  </p>
 
-                <div className="">
-                  <span className="font-semibold text-main-heading-color">
-                    Fun fact -{" "}
-                  </span>
-                  <span>Le gusta ir de trekking!</span>
+                  <div className="">
+                    <span className="font-semibold text-main-heading-color">
+                      Fun fact -{" "}
+                    </span>
+                    <span>Le gusta ir de trekking!</span>
+                  </div>
+
+                  <p>
+                    Ik ben advocaat sinds 1981 en ben gespecialiseerd in
+                    ondernemingsrecht en erfrecht. Ik sta voornamelijk
+                    ondernemers uit het MKB bij, maar werk in erfrechtszaken ook
+                    voor particulieren.
+                  </p>
+
+                  <p>
+                    Ik ben advocaat sinds 1981 en ben gespecialiseerd in
+                    ondernemingsrecht en erfrecht. Ik sta voornamelijk
+                    ondernemers uit het MKB bij, maar werk in erfrechtszaken ook
+                    voor particulieren.
+                  </p>
+
+                  <p>
+                    Ik ben advocaat sinds 1981 en ben gespecialiseerd in
+                    ondernemingsrecht en erfrecht. Ik sta voornamelijk
+                    ondernemers uit het MKB bij, maar werk in erfrechtszaken ook
+                    voor particulieren.
+                  </p>
                 </div>
-
-                <p>
-                  Ik ben advocaat sinds 1981 en ben gespecialiseerd in
-                  ondernemingsrecht en erfrecht. Ik sta voornamelijk ondernemers
-                  uit het MKB bij, maar werk in erfrechtszaken ook voor
-                  particulieren.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
 export default function Team({ teamInfo }) {
   const [openInfo, setOpenInfo] = useState();
+  const [overlayClicked, setOverlayClicked] = useState(false);
 
   const handleOpenInfo = (name) => {
     setOpenInfo(name);
+    setOverlayClicked(false);
   };
 
   return (
@@ -148,6 +184,7 @@ export default function Team({ teamInfo }) {
                   width={member.imgWidth}
                   height={member.imgHeight}
                   className="rounded-xl"
+                  onClick={handleOpenInfo}
                 />
               </div>
 
@@ -177,7 +214,12 @@ export default function Team({ teamInfo }) {
             </div>
           ))}
       </div>
-      <TeamInfo openInfo={openInfo} setOpenInfo={setOpenInfo} />
+      <TeamInfo
+        openInfo={openInfo}
+        setOpenInfo={setOpenInfo}
+        overlayClicked={overlayClicked}
+        setOverlayClicked={setOverlayClicked}
+      />
     </section>
   );
 }

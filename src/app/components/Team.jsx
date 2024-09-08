@@ -10,12 +10,12 @@ export function TeamInfo({ openInfo, setOpenInfo }) {
     <div
       className={`fixed  top-0 ${
         openInfo ? "right-0" : "-right-[100%]"
-      } ease-in-out duration-500 transition-all w-full h-full overflow-x-hidden overflow-y-auto overscroll-contain pointer-events-none z-[999] bg-[#e9e2cd] `}
+      } ease-in-out text-black-body-color duration-500 transition-all w-full h-full overflow-x-hidden overflow-y-auto overscroll-contain pointer-events-none z-[999] bg-[#e9e2cd] `}
     >
       <div className="pointer-events-auto relative">
-        <div className="flex flex-col h-full px-4 ">
+        <div className="flex flex-col h-full px-4 tablet-l:px-10">
           <div
-            className={`h-[65px] fixed top-0 pointer-events-none w-full pr-8 bg-[#e9e2cd]`}
+            className={`h-[65px] fixed top-0 pointer-events-none w-full pr-8 tablet-l:pr-20 bg-[#e9e2cd]`}
           >
             <div className="flex items-center h-full justify-between border-b border-black">
               <span className="text-p-l font-medium">Biografía</span>
@@ -44,7 +44,7 @@ export function TeamInfo({ openInfo, setOpenInfo }) {
                 <span className="block font-medium">CEO & Co-founder</span>
               </div>
 
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 tablet-l:gap-7">
                 <div>
                   <span className="block mb-2 text-p-xs">Correo:</span>
                   <Link href="/">correoprueba123@gmail.com</Link>
@@ -53,7 +53,7 @@ export function TeamInfo({ openInfo, setOpenInfo }) {
                 <div>
                   <span className="block mb-2 text-p-xs">Social:</span>
 
-                  <div className="flex gap-4 flex-wrap">
+                  <div className="flex gap-4 tablet-l:gap-7 flex-wrap">
                     <Link
                       href="/"
                       className="bg-red-200 px-3 py-[2px] text-black font-medium w-fit left-4 rounded-[7rem]"
@@ -82,27 +82,30 @@ export function TeamInfo({ openInfo, setOpenInfo }) {
                 </div>
               </div>
 
-              <p>
-                Werken voor ondernemers garandeert veel afwisseling. De één is
-                handelaar, de ander ontwerpt software en weer een derde
-                produceert halffabricaten voor industriële afnemers. Iedere
-                cliënt heeft zijn of haar deskundigheid en verwacht die ook van
-                een advocaat. Die deskundigheid zit hem mijns inziens in de
-              </p>
+              <div className="flex flex-col gap-5 tablet-l:gap-7 pb-10 ">
+                <p>
+                  Werken voor ondernemers garandeert veel afwisseling. De één is
+                  handelaar, de ander ontwerpt software en weer een derde
+                  produceert halffabricaten voor industriële afnemers. Iedere
+                  cliënt heeft zijn of haar deskundigheid en verwacht die ook
+                  van een advocaat. Die deskundigheid zit hem mijns inziens in
+                  de
+                </p>
 
-              <div className="">
-                <span className="font-semibold text-main-heading-color">
-                  Fun fact -{" "}
-                </span>
-                <span>Le gusta ir de trekking!</span>
+                <div className="">
+                  <span className="font-semibold text-main-heading-color">
+                    Fun fact -{" "}
+                  </span>
+                  <span>Le gusta ir de trekking!</span>
+                </div>
+
+                <p>
+                  Ik ben advocaat sinds 1981 en ben gespecialiseerd in
+                  ondernemingsrecht en erfrecht. Ik sta voornamelijk ondernemers
+                  uit het MKB bij, maar werk in erfrechtszaken ook voor
+                  particulieren.
+                </p>
               </div>
-
-              <p>
-                Ik ben advocaat sinds 1981 en ben gespecialiseerd in
-                ondernemingsrecht en erfrecht. Ik sta voornamelijk ondernemers
-                uit het MKB bij, maar werk in erfrechtszaken ook voor
-                particulieren.
-              </p>
             </div>
           </div>
         </div>

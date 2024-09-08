@@ -35,8 +35,11 @@ export const homeServicesInfo = {
     },
   ],
   sectionPadding: "desktop-l:pb-24",
-  title: "Una nueva forma de acercar la ciencia a los niños",
-  titleCss: "wrapper mb-10 desktop-s:mb-7 desktop-l:mb-14",
+  title: "Una nueva forma de acercar",
+  titleCss: "wrapper mb-10 desktop-s:mb-10 desktop-l:mb-16",
+  highlightTitle: "la ciencia a los niños",
+  highlightTitleCss:
+    "left-[20%] -top-6 min-[379px]:left-[-6%] w-[60%] min-[379px]:w-[55%] min-[379px]:top-1 desktop-s:top-2 max-h-[80%]",
 };
 
 // we can have min 2 cards and max 4 cards in each row

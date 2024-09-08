@@ -88,6 +88,10 @@ p {
     0px 4px 50px 15px rgba(0, 0, 0, 0.15);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .wrapper {
   padding-left: 1.25rem;
   padding-right: 1.25rem;

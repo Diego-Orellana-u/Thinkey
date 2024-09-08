@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingTwoHighlight from "./HeadingTwoHighlight";
 import CloseIcon from "./Icons/CloseIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function TeamInfo({
   openInfo,
@@ -15,6 +15,16 @@ export function TeamInfo({
     setOverlayClicked(!overlayClicked);
     setOpenInfo(false);
   };
+
+  useEffect(() => {
+    openInfo
+      ? document.body.classList.add("no-scroll")
+      : document.body.classList.remove("no-scroll");
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [openInfo]);
   return (
     <>
       <span

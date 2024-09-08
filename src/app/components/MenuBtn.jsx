@@ -10,14 +10,13 @@ export const MenuBtn = () => {
   const [overlayClicked, setOverlayClicked] = useState(false);
 
   useEffect(() => {
-    const body = document.querySelector("body");
-    if (activeMenu) {
-      body.classList.remove("overflow-auto");
-      body.classList.add("overflow-hidden");
-    } else {
-      body.classList.remove("overflow-hidden");
-      body.classList.add("overflow-auto");
-    }
+    activeMenu
+      ? document.body.classList.add("no-scroll")
+      : document.body.classList.remove("no-scroll");
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
   }, [activeMenu]);
 
   const handleMenuClick = (e) => {

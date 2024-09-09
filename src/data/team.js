@@ -43,7 +43,6 @@ export const teamInfo = {
       },
       key: "example-key-team-1",
     },
-
     {
       name: "Brian Herbert",
       position: "Co-Founder, CEO",

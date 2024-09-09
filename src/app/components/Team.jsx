@@ -59,7 +59,9 @@ export function TeamInfo({
             <div className="flex flex-col tablet-xl:flex-row tablet-xl:gap-10">
               <div className="tablet-xl:flex-[0_0_40%] tablet-xl:relative">
                 <Image
-                  src={sidebarInfo.imgHref}
+                  src={
+                    sidebarInfo.imgHref ? sidebarInfo.imgHref : "/miembro1.jpg"
+                  }
                   width={1280}
                   height={720}
                   alt={sidebarInfo.imgAlt}

@@ -37,3 +37,22 @@ export const onlyTextProduct = {
   headingColor: "text-black-heading-color",
   textColor: "text-black-body-color",
 };
+
+export const onlyTextCenterAbout = {
+  paragraph: [
+    {
+      text: "Since 2011 we ve been working with",
+      highlight: false,
+      key: "random-key-onlytext1",
+    },
+    { text: "amazing", highlight: true, key: "random-key-onlytext2" },
+    {
+      text: "organizations to create",
+      highlight: false,
+      key: "random-key-onlytext3",
+    },
+    { text: "meaningful", highlight: false, key: "random-key-onlytext4" },
+    { text: "results", highlight: true, key: "random-key-onlytext5" },
+  ],
+  sectionPadding: "pt-10 pb-32",
+};

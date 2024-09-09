@@ -42,7 +42,10 @@ export default function ServicesForm({ formFields, btnText }) {
       <form onSubmit={form.handleSubmit(onSubmit)}>
         {formFields.map((fieldInfo) =>
           Array.isArray(fieldInfo) ? (
-            <div className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5">
+            <div
+              key={fieldInfo.key}
+              className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5"
+            >
               {fieldInfo.map((subField) => (
                 <FormField
                   control={form.control}

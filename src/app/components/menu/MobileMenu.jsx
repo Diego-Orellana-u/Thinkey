@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import x from "../../assets/icons/x.svg";
+import CloseIcon from "../Icons/CloseIcon";
 import { MenuNavm } from "./MenuNavm";
 
 export const MobileMenu = ({
@@ -30,13 +30,11 @@ export const MobileMenu = ({
             : "ease-in duration-300 -translate-x-full"
         } bg-white drop-shadow-2xl`}
       >
-        <div className="h-14 flex justify-between items-center px-5 mobile-l:px-7 relative">
-          <Image
-            className={`cursor-pointer absolute right-6`}
-            src={x}
-            onClick={handleOverlayClick}
-            alt=""
-          />
+        <div
+          className="h-14 flex justify-end items-center px-5 mobile-l:px-7 relative"
+          onClick={handleOverlayClick}
+        >
+          <CloseIcon />
         </div>
 
         <MenuNavm />

@@ -5,8 +5,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import TestimonyCard from "./TestimonyCard";
-import Heading2 from "./Heading2";
+import TestimonyCard from "@/components/testimonies/TestimonyCard";
+import Heading2 from "../Heading2";
 
 export default function Testimonies({ testimoniesInfo }) {
   return (

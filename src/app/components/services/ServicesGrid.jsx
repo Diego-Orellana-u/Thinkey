@@ -1,4 +1,4 @@
-import Heading2 from "./Heading2";
+import Heading2 from "../Heading2";
 
 export default function ServicesGrid({
   servicesTop,

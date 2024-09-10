@@ -1,8 +1,8 @@
-import Faq from "@/components/Faq";
-import Fifty from "@/components/Fifty";
+import Faq from "@/components/faq/Faq";
+import Fifty from "@/components/fifty/Fifty";
 import Hero from "@/components/Hero";
-import ServicesImg from "@/components/ServicesImg";
-import Testimonies from "@/components/Testimonies";
+import ServicesImg from "@/components/services/ServicesImg";
+import Testimonies from "@/components/testimonies/Testimonies";
 import LeadsForm from "@/components/LeadsForm";
 import { servicesFaq } from "data/faq";
 import { colegiosEquipoFiftyInfo } from "data/fifty";

@@ -1,8 +1,8 @@
 "use client";
-import { MenuBtn } from "./MenuBtn";
+import { MenuBtn } from "./menu/MenuBtn";
 import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
-import DesktopMenu from "./DesktopMenu";
+import DesktopMenu from "./menu/DesktopMenu";
 import { Button } from "./ui/button";
 import { btn } from "data/nav";
 

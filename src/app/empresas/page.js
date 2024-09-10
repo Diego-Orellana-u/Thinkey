@@ -1,7 +1,7 @@
-import Fifty from "@/components/Fifty";
+import Fifty from "@/components/fifty/Fifty";
 import Hero from "@/components/Hero";
-import ServicesImg from "@/components/ServicesImg";
-import Testimonies from "@/components/Testimonies";
+import ServicesImg from "@/components/services/ServicesImg";
+import Testimonies from "@/components/testimonies/Testimonies";
 import { empresasFiftyInfo } from "data/fifty";
 import { empresasHeroInfo } from "data/heroInfo";
 import { colegiosServicesInfo } from "data/services";

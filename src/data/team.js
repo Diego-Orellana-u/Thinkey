@@ -21,22 +21,22 @@ export const teamInfo = {
         mail: "correoprueba123@gmail.com",
         beforeFunFactText: [
           {
-            text: "Texto1marta Within insolvency law, there are often major interests at stake. Moreover, there is usually pressure on the boiler, which quickly brings matters to a head. In that situation it is important to keep calm, analyze matters quickly and - where possible - take a practical approach.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             key: "jejeje-key-example-7",
           },
           {
-            text: "Texto2marta I have been a lawyer since 2017 and specialize in insolvency law, commercial disputes and general civil law. I mainly work for SME companies that are in dire straits, want to file for bankruptcy of a counterparty or are unable to collect a claim against a counterparty.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             key: "jejeje-key-example-8",
           },
           {
-            text: "Texto3marta In addition, I am regularly appointed by the court as a curator in bankruptcies. The knowledge and experience gained in that role also comes in handy in my other businesses.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             key: "jejeje-key-example-9",
           },
         ],
         funFact: "she is a great runner!",
         afterFunFactText: [
           {
-            text: "Outside of wrk, she enjoys traveling, cooking, skiing, hiking, and running, frequently running in the Lausanne Marathon. To recharge, she loves spending time with family, friends, and her dog Luna.",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             key: "blablabla-key-example-2",
           },
         ],

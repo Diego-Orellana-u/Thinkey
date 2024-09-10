@@ -148,6 +148,7 @@ export default function Team({ teamInfo }) {
     <section className="wrapper pb-16">
       <div className="mb-10 flex flex-col items-center">
         <HeadingTwoHighlight
+          color="text-main-heading-color"
           titleCss={teamInfo.titleCss}
           first={teamInfo.title}
           second={teamInfo.highlightTitle}

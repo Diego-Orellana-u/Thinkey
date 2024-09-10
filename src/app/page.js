@@ -1,9 +1,9 @@
-import Fifty from "./components/Fifty";
+import Fifty from "./components/fifty/Fifty";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
+import Services from "@/components/services/Services";
 import ImpactNumbers from "./components/ImpactNumbers";
 import VennHome from "./components/VennHome";
-import Testimonies from "./components/Testimonies";
+import Testimonies from "@/components/testimonies/Testimonies";
 import { homeHeroInfo } from "data/heroInfo";
 import { homeFiftyInfo } from "data/fifty";
 import { homeServicesInfo } from "data/services";

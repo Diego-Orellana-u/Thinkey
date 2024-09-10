@@ -1,8 +1,8 @@
-import Faq from "@/components/Faq";
-import Fifty from "@/components/Fifty";
+import Faq from "@/components/faq/Faq";
+import Fifty from "@/components/fifty/Fifty";
 import Hero from "@/components/Hero";
-import Testimonies from "@/components/Testimonies";
-import OnlyTextOne from "@/components/OnlyTextOne";
+import Testimonies from "@/components/testimonies/Testimonies";
+import OnlyTextOne from "@/components/onlytext/OnlyTextOne";
 import { familiasCumpleañosFaq } from "data/faq";
 import { cumpleañosFiftyInfo } from "data/fifty";
 import { onlyTextCumpleaños } from "data/onlyText";

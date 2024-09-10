@@ -1,5 +1,5 @@
-import Heading2 from "./Heading2";
-import Star from "./Icons/Star";
+import Heading2 from "../Heading2";
+import Star from "../Icons/Star";
 
 export default function OnlyTextOne({ onlyTextInfo }) {
   return (

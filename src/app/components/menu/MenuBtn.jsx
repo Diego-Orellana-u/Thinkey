@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MobileMenu } from "./MobileMenu";
-import MenuIcon from "./Icons/MenuIcon";
-import { Button } from "./ui/button";
+import MenuIcon from "../Icons/MenuIcon";
+import { Button } from "../ui/button";
 
 export const MenuBtn = () => {
   const [activeMenu, setActiveMenu] = useState(false);

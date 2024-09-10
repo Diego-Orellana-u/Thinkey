@@ -1,6 +1,6 @@
 import { desktopNav } from "data/nav.js";
 import Link from "next/link";
-import DesktopMenuSelectNav from "./DesktopMenuSelectNav";
+import DesktopMenuSelectNav from "../menu/DesktopMenuSelectNav";
 
 export default function DesktopMenu() {
   return (

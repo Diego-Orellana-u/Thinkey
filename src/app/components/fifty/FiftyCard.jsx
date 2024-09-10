@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import RightArrow from "./Icons/RightArrow";
-import { Button } from "./ui/button";
+import RightArrow from "../Icons/RightArrow";
+import { Button } from "../ui/button";
 
 export default function FiftyCard({
   type,

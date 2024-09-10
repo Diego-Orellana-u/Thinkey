@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "./ui/label";
+import { Label } from "../ui/label";
 import Link from "next/link";
 
 const formSchema = z.object({

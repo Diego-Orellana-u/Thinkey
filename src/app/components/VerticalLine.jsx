@@ -2,7 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-export default function VerticalLine({ height, strokeWidth, containerRef }) {
+export default function VerticalLine({
+  height,
+  strokeColor,
+  strokeWidth,
+  containerRef,
+}) {
   const pathRef = useRef(null);
   const circleRef = useRef(null);
 
@@ -10,9 +15,9 @@ export default function VerticalLine({ height, strokeWidth, containerRef }) {
     const container = containerRef.current;
     const path = pathRef.current;
     const circle = circleRef.current;
-    const pathLength = path.getTotalLength();
 
-    path.style.strokeDasharray = `${pathLength}`;
+    // Obtenemos el largo total del path
+    const pathLength = 2030;
 
     let ticking = false;
 
@@ -68,26 +73,27 @@ export default function VerticalLine({ height, strokeWidth, containerRef }) {
   return (
     <div className="-z-50 absolute top-0 left-0 w-full h-full text-center overflow-hidden flex items-center justify-center">
       <svg
-        viewBox="0 0 20 1030"
+        viewBox="0 0 20 2030"
         fill="none"
         className="inline-block h-full w-10"
         preserveAspectRatio="xMidYMax meet"
       >
         <path
           ref={pathRef}
-          d="M10 0V1030"
-          stroke="black"
+          d="M10 0V2030"
+          stroke={strokeColor}
           strokeWidth={strokeWidth}
           className="timeline-path-transition"
           style={{ opacity: 0 }}
-          strokeDashoffset={1030}
+          strokeDashoffset={2030}
+          strokeDasharray={2030}
         />
         <circle
           ref={circleRef}
           cx="10"
           cy="0"
           r={strokeWidth / 2}
-          fill="black"
+          fill={strokeColor}
           className="timeline-path-transition"
           style={{
             transform: "translateY(-6px)",

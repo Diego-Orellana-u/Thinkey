@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export default function HeadingTwoHighlight({
+  color,
   titleCss,
   first,
   second,
@@ -8,9 +9,9 @@ export default function HeadingTwoHighlight({
 }) {
   return (
     <h2
-      className={`${
-        titleCss && titleCss
-      } text-black-heading-color relative flex flex-col items-center text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem] text-center font-bold`}
+      className={`${titleCss && titleCss} ${
+        color ? color : "text-black-heading-color"
+      } relative flex flex-col items-center text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem] text-center font-bold`}
     >
       {first}
       <span className="relative">

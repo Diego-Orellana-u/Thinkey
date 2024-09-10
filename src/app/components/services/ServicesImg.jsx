@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading2 from "./Heading2";
+import Heading2 from "../Heading2";
 import Link from "next/link";
 
 export default function ServicesImg({ servicesInfo }) {

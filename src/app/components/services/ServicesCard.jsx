@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import ServiceCard1 from "./Icons/ServiceCard1";
-import ServiceCard2 from "./Icons/ServiceCard2";
-import ServiceCard3 from "./Icons/ServiceCard3";
+import { buttonVariants } from "../ui/button";
+import ServiceCard1 from "../Icons/ServiceCard1";
+import ServiceCard2 from "../Icons/ServiceCard2";
+import ServiceCard3 from "../Icons/ServiceCard3";
 
 export default function ServicesCard(service) {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading2 from "./Heading2";
+import Heading2 from "../Heading2";
 import ServicesCard from "./ServicesCard";
 import HeadingTwoHighlight from "@/components/HeadingTwoHighlight";
 

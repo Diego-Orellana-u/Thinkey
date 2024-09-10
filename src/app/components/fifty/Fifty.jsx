@@ -1,5 +1,5 @@
-import FiftyCard from "./FiftyCard";
-import Heading2 from "./Heading2";
+import FiftyCard from "@/components/fifty/FiftyCard";
+import Heading2 from "../Heading2";
 
 export default function Fifty({ fiftyInfo }) {
   return (

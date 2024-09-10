@@ -1,6 +1,5 @@
 import Image from "next/image";
-import plusIcon from "../../assets/icons/plus.svg";
-import { mobileNav } from "../../data/nav.js";
+import { mobileNav } from "data/nav.js";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -40,7 +39,13 @@ export const MenuNavm = () => {
                   >
                     <div className="flex h-full justify-between items-center w-full">
                       <span className="text-p-xl">{link.name}</span>
-                      <Image className="" src={plusIcon} alt="" />
+                      <Image
+                        className=""
+                        src="/plus.svg"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
                     </div>
                   </div>
                   <div

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ServicesForm from "./ServicesForm";
+import ServicesForm from "../components/services/ServicesForm";
 
 export default function LeadsForm({ formInfo }) {
   return (

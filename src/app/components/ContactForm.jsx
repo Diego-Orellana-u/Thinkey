@@ -1,4 +1,4 @@
-import ServicesForm from "./ServicesForm";
+import ServicesForm from "../components/services/ServicesForm";
 import Image from "next/image";
 
 export default function ContactForm({ formInfo }) {

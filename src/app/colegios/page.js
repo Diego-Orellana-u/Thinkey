@@ -11,6 +11,7 @@ import { colegiosHeroInfo } from "data/heroInfo";
 import { colegiosServicesInfo } from "data/services";
 import { colegiosFormInfo } from "data/forms";
 import { colegiosTestimonies } from "data/testimonies";
+import Cta from "../components/Cta";
 
 export default function Colegios() {
   return (
@@ -27,8 +28,9 @@ export default function Colegios() {
       <Fifty fiftyInfo={colegiosEquipoFiftyInfo} />
       <ServicesImg servicesInfo={colegiosServicesInfo} />
       <LeadsForm formInfo={colegiosFormInfo} />
-      <Testimonies testimoniesInfo={colegiosTestimonies} />
       <Faq faqInfo={servicesFaq} />
+      <Testimonies testimoniesInfo={colegiosTestimonies} />
+      <Cta />
     </>
   );
 }

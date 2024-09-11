@@ -13,6 +13,8 @@ export default function Faq({ faqInfo }) {
         faqInfo.sectionPadding ? faqInfo.sectionPadding : "py-20"
       } ${faqInfo.bgColor ? faqInfo.bgColor : "bg-main-200"} ${
         faqInfo.textColor ? faqInfo.textColor : "text-white"
+      } ${
+        faqInfo.sectionMargin && faqInfo.sectionMargin
       } flex flex-col tablet-l:flex-row`}
     >
       <div className="wrapper text-left tablet-l:w-3/4">

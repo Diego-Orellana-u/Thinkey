@@ -8,6 +8,7 @@ import { servicesFaq } from "data/faq";
 import { colegiosEquipoFiftyInfo } from "data/fifty";
 
 import { colegiosHeroInfo } from "data/heroInfo";
+import { ctaColegios } from "data/cta";
 import { colegiosServicesInfo } from "data/services";
 import { colegiosFormInfo } from "data/forms";
 import { colegiosTestimonies } from "data/testimonies";
@@ -30,7 +31,7 @@ export default function Colegios() {
       <LeadsForm formInfo={colegiosFormInfo} />
       <Faq faqInfo={servicesFaq} />
       <Testimonies testimoniesInfo={colegiosTestimonies} />
-      <Cta />
+      <Cta ctaInfo={ctaColegios} />
     </>
   );
 }

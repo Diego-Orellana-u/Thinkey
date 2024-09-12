@@ -5,13 +5,21 @@ export const colegiosFormInfo = {
   imgHref: "/a.png",
   imgAlt: "",
   formFields: [
-    { name: "username", placeholder: "Nombre", key: "form-key-example1" },
+    {
+      name: "username",
+      placeholder: "Nombre",
+      key: "form-colegios-key-example1",
+    },
     {
       name: "correo",
       placeholder: "Correo Electrónico",
       key: "form-key-example2",
     },
-    { name: "teléfono", placeholder: "Teléfono", key: "form-key-example3" },
+    {
+      name: "teléfono",
+      placeholder: "Teléfono",
+      key: "form-colegios-key-example3",
+    },
   ],
   btnText: "Contactar",
 };

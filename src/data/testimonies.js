@@ -167,7 +167,23 @@ export const familiasCumpleañosTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo Que Dicen Los Padres y Niños De Nuestros Cumpleaños",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "pt-20 pb-32",
 };
 
@@ -214,7 +230,23 @@ export const productsTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo que opinan los colegios con los que hemos trabajado",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "pt-10 desktop-s:pt-20 pb-32",
 };
 
@@ -261,7 +293,23 @@ export const empresasTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo que opinan los colegios con los que hemos trabajado",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "pt-20 pb-32",
 };
 
@@ -308,6 +356,22 @@ export const colegiosTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo que opinan los colegios con los que hemos trabajado",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "pt-20 pb-32",
 };

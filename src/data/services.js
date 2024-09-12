@@ -200,7 +200,7 @@ export const familiasServicesInfo = {
       key: "random-key-home-fifty-onlytext2",
     },
   ],
-  titleCss: "pb-16 desktop-s:pb-20",
+  titleCss: "",
 };
 
 export const colegiosServicesInfo = {
@@ -252,6 +252,35 @@ export const colegiosServicesInfo = {
       key: "service-img-card-1",
     },
   ],
+  title: [
+    {
+      text: "Aventuras educativas con",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Nuestros",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+    {
+      text: "Bootcamps",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-3 desktop-s:-left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext3",
+    },
+    {
+      text: "Científicos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   sectionPadding: "py-20",
-  title: "Aventuras educativas con nuestros Bootcamps cientificos",
 };

@@ -362,14 +362,14 @@ export const colegiosEquipoFiftyInfo = {
     {
       text: "Conoce Al Equipo",
       block: false,
-      highlight: true,
+      highlight: false,
       ubication: "top-2 -left-5 min-w-[110%]",
       key: "random-key-home-fifty-onlytext1",
     },
     {
       text: "Detras",
       block: false,
-      highlight: true,
+      highlight: false,
       ubication: false,
       key: "random-key-home-fifty-onlytext2",
     },

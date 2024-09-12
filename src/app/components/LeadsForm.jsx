@@ -1,12 +1,14 @@
 import Image from "next/image";
 import ServicesForm from "../components/services/ServicesForm";
 
-export default function LeadsForm({ formInfo }) {
+export default function LeadsForm({ formInfo, position, width }) {
   return (
     <section
-      className={` ${
-        formInfo.sectionMargin && formInfo.sectionMargin
-      } flex flex-col bg-white items-center tablet-xl:flex-row tablet-xl:h-[900px] overflow-x-hidden`}
+      className={` ${formInfo.sectionMargin && formInfo.sectionMargin} flex ${
+        position && position
+      } ${
+        width && width
+      } flex-col bg-white items-center tablet-xl:flex-row tablet-xl:h-[900px] overflow-x-hidden`}
     >
       <div className="relative w-full h-full tablet-xl:flex-[0_0_50%]">
         <Image

@@ -1,5 +1,5 @@
 import FiftyCard from "@/components/fifty/FiftyCard";
-import Heading2 from "../Heading2";
+import HeadingTwoHighlight from "../HeadingTwoHighlight";
 
 export default function Fifty({ fiftyInfo }) {
   return (
@@ -9,7 +9,11 @@ export default function Fifty({ fiftyInfo }) {
       }`}
     >
       <div className="wrapper flex flex-col text-center items-center gap-2 pb-12 tablet-xl:pb-16 desktop-l:gap-8">
-        <Heading2 title={fiftyInfo.title} />
+        <HeadingTwoHighlight
+          color="text-black-heading-color"
+          title={fiftyInfo.title}
+          titleCss={fiftyInfo.titleCss}
+        />
         {fiftyInfo.desc && (
           <p className="text-black-body-color text-p-xl desktop-s:max-w-[70%]">
             {fiftyInfo.desc}

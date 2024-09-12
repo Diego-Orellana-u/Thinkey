@@ -11,11 +11,9 @@ export default function Timeline({ timelineInfo }) {
     <section>
       <div className="mb-10">
         <HeadingTwoHighlight
-          color="text-main-heading-color"
+          color="text-black-heading-color"
           titleCss={timelineInfo.titleCss}
-          first={timelineInfo.title}
-          second={timelineInfo.highlightTitle}
-          highlightTitleCss={timelineInfo.highlightTitleCss}
+          title={timelineInfo.title}
         />
       </div>
       <div

@@ -34,12 +34,32 @@ export const homeServicesInfo = {
       keys: "Cohete",
     },
   ],
-  sectionPadding: "desktop-l:pb-24",
-  title: "Una nueva forma de acercar",
-  titleCss: "wrapper mb-10 desktop-s:mb-10 desktop-l:mb-16",
-  highlightTitle: "la ciencia a los niños",
-  highlightTitleCss:
-    "left-[20%] -top-6 min-[379px]:left-[-6%] w-[60%] min-[379px]:w-[55%] min-[379px]:top-1 desktop-s:top-2 max-h-[80%]",
+  sectionPadding: "desktop-l:pb-16",
+  highlightTitle: true,
+  title: [
+    {
+      text: "Una Nueva Forma De Acercar",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "La Ciencia",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-3 desktop-s:-left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext2",
+    },
+    {
+      text: "A Los Niños",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext3",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
 };
 
 // we can have min 2 cards and max 4 cards in each row
@@ -150,7 +170,37 @@ export const familiasServicesInfo = {
     },
   ],
   sectionPadding: "py-20",
-  title: "Aventuras educativas con nuestros Bootcamps cientificos",
+  title: [
+    {
+      text: "Aventuras educativas con",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Nuestros",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+    {
+      text: "Bootcamps",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-3 desktop-s:-left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext3",
+    },
+    {
+      text: "Científicos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
 };
 
 export const colegiosServicesInfo = {

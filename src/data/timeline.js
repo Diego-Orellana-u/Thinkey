@@ -1,6 +1,6 @@
 export const timelineAbout = {
   title: "Nuestra Historia",
-  highlightTitle: "Haciendo Ciencia",
+  highlightTitle: false,
   milestones: [
     {
       date: "2008",
@@ -24,6 +24,16 @@ export const timelineAbout = {
       key: "text-timeline-key-1",
     },
   ],
+  title: [
+    {
+      text: "Our History",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+  ],
+  titleCss: false,
   strokeColor: "#D63C3D",
   strokeWidth: "8",
 };

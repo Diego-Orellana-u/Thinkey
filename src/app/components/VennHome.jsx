@@ -19,7 +19,7 @@ export default function VennHome({ data, sectionPadding }) {
         />
 
         <div className="flex flex-col gap-8 items-center tablet-xl:items-start tablet-xl:gap-0 desktop-s:flex-[0_0_55%]">
-          <h2 className="absolute tablet-xl:relative top-16 tablet-xl:top-0 mb-8 text-h2-s tablet-s:text-h2-l tablet-s:leading-[48px] tablet-xl:text-left font-bold text-main-heading-color tracking-tight desktop-s:text-h2-l desktop-l:text-h2-xl desktop-l:leading-[67px]">
+          <h2 className="absolute tablet-xl:relative top-16 tablet-xl:top-0 mb-8 text-h2-s tablet-s:text-h2-l tablet-s:leading-[48px] tablet-xl:text-left font-bold text-black-heading-color tracking-tight desktop-s:text-h2-l desktop-l:text-h2-xl desktop-l:leading-[67px]">
             {data.title}
             <span className="block">{data.highlightTitle}</span>
             <Image

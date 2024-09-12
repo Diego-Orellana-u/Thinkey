@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Heading2 from "../Heading2";
 import Link from "next/link";
+import HeadingTwoHighlight from "../HeadingTwoHighlight";
 
 export default function ServicesImg({ servicesInfo }) {
   return (
@@ -9,7 +10,11 @@ export default function ServicesImg({ servicesInfo }) {
         servicesInfo.sectionPadding ? servicesInfo.sectionPadding : "py-20"
       }`}
     >
-      <Heading2 title={servicesInfo.title} />
+      <HeadingTwoHighlight
+        color="text-black-heading-color"
+        titleCss={servicesInfo.titleCss}
+        title={servicesInfo.title}
+      />
       <div className="flex flex-col desktop-s:flex-row items-center justify-between mt-20 gap-5">
         {servicesInfo.servicesCard &&
           servicesInfo.servicesCard.map((card) => (

@@ -57,7 +57,22 @@ export const homeFiftyInfo = {
     },
   ],
   sectionPadding: "pt-32 pb-20",
-  title: "Paquetes de Cumpleaños Científicos",
+  title: [
+    {
+      text: "Cumpleaños",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Cientificos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   desc: "",
 };
 
@@ -117,7 +132,22 @@ export const familiasFiftyInfo = {
     },
   ],
   sectionPadding: "pb-20",
-  title: "Cumpleaños Científicos",
+  title: [
+    {
+      text: "Cumpleaños",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Cientificos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   desc: "Convierte la próxima fiesta de cumpleaños en una aventura científica. Nuestros cumpleaños científicos combinan la magia del aprendizaje con la diversión, permitiendo que los niños descubran la ciencia a través de experimentos interactivos y emocionantes.",
 };
 
@@ -178,7 +208,22 @@ export const empresasFiftyInfo = {
     },
   ],
   sectionPadding: "pb-20",
-  title: "Cumpleaños Científicos",
+  title: [
+    {
+      text: "Cumpleaños",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Cientificos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   desc: "Convierte la próxima fiesta de cumpleaños en una aventura científica. Nuestros cumpleaños científicos combinan la magia del aprendizaje con la diversión, permitiendo que los niños descubran la ciencia a través de experimentos interactivos y emocionantes.",
 };
 
@@ -238,7 +283,22 @@ export const cumpleañosFiftyInfo = {
     },
   ],
   sectionPadding: "pt-32 pb-20",
-  title: "Paquetes de Cumpleaños Científicos",
+  title: [
+    {
+      text: "Cumpleaños",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Cientificos",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   desc: "",
 };
 
@@ -298,7 +358,29 @@ export const colegiosEquipoFiftyInfo = {
     },
   ],
   sectionPadding: "pb-20",
-  title: "Conoce al Equipo Detrás de THINKey",
+  title: [
+    {
+      text: "Conoce Al Equipo",
+      block: false,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-home-fifty-onlytext1",
+    },
+    {
+      text: "Detras",
+      block: false,
+      highlight: true,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+    {
+      text: "De Thinkey",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-fifty-onlytext2",
+    },
+  ],
   desc: "Somos un equipo apasionado por la educación STEAM, liderado por expertos en ciencia y tecnología, dedicados a transformar la manera en que los niños y jóvenes aprenden.",
 };
 

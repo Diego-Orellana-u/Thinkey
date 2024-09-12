@@ -41,7 +41,23 @@ export const homeTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo que opinan los colegios con los que hemos trabajado",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "mb-28",
 };
 
@@ -88,7 +104,23 @@ export const familiasTestimonies = {
       portrait: "/testimonies-portrait.jpg",
     },
   ],
-  title: "Lo que opinan los colegios con los que hemos trabajado",
+  title: [
+    {
+      text: "Lo que opinan los colegios",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext1",
+    },
+    {
+      text: "con los que hemos trabajado",
+      block: false,
+      highlight: false,
+      ubication: false,
+      key: "random-key-home-onlytext2",
+    },
+  ],
+  titleCss: "pb-16 desktop-s:pb-20",
   sectionPadding: "pt-20 pb-32",
 };
 

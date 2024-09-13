@@ -42,8 +42,16 @@ export default function Timeline({ timelineInfo }) {
                     <span className="relative text-black-heading-color block text-h1-xl desktop-s:text-[5rem] font-bold">
                       <span className="relative z-50">{milestone.date}</span>
                       <Image
-                        className={`z-10 absolute mobile-m:left-[-2%] top-2 w-[55%] max-w-[139px] desktop-s:max-w-[220px] h-[120%] min-[379px]:top-1 desktop-s:top-2 max-h-[80%] object-cover`}
-                        src="/highlight-marker.svg"
+                        className={`z-10 ${
+                          milestone.highlightCss
+                            ? milestone.highlightCss
+                            : "top-2 mobile-m:left-[-2%] desktop-s:top-2"
+                        } absolute w-[55%] max-w-[139px] desktop-s:max-w-[220px] h-[120%] min-[379px]:top-1 max-h-[80%] object-cover`}
+                        src={`${
+                          milestone.highlightHref
+                            ? milestone.highlightHref
+                            : "/highlight-marker.svg"
+                        }`}
                         width={210}
                         height={61}
                         alt="Highlight marker image"

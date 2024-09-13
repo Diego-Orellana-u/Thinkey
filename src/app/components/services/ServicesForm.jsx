@@ -49,7 +49,6 @@ export default function ServicesForm({ formFields, btnText }) {
               {fieldInfo.map((subField) => (
                 <FormField
                   control={form.control}
-                  key={subField.key}
                   name={subField.name}
                   render={({ field }) => (
                     <FormItem>
@@ -73,41 +72,42 @@ export default function ServicesForm({ formFields, btnText }) {
               ))}
             </div>
           ) : (
-            <FormField
-              control={form.control}
-              key={fieldInfo.key}
-              name={fieldInfo.name}
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    {fieldInfo.name === "Mensaje" ? (
-                      <>
-                        <Label htmlFor={fieldInfo.key} className="mb-4 block">
-                          {fieldInfo.placeholder}
-                        </Label>
-                        <Textarea
-                          placeholder={fieldInfo.placeholder}
-                          id={fieldInfo.key}
-                        />
-                      </>
-                    ) : (
-                      <>
-                        <Label htmlFor={fieldInfo.key} className="mb-4 block">
-                          {fieldInfo.placeholder}
-                        </Label>
-                        <Input
-                          id={fieldInfo.key}
-                          className="outline-none"
-                          placeholder={fieldInfo.placeholder}
-                          {...field}
-                        />
-                      </>
-                    )}
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div key={fieldInfo.key}>
+              <FormField
+                control={form.control}
+                name={fieldInfo.name}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      {fieldInfo.name === "Mensaje" ? (
+                        <>
+                          <Label htmlFor={fieldInfo.key} className="mb-4 block">
+                            {fieldInfo.placeholder}
+                          </Label>
+                          <Textarea
+                            placeholder={fieldInfo.placeholder}
+                            id={fieldInfo.key}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <Label htmlFor={fieldInfo.key} className="mb-4 block">
+                            {fieldInfo.placeholder}
+                          </Label>
+                          <Input
+                            id={fieldInfo.key}
+                            className="outline-none"
+                            placeholder={fieldInfo.placeholder}
+                            {...field}
+                          />
+                        </>
+                      )}
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
           )
         )}
         <div className="flex flex-col justify-end items-end">

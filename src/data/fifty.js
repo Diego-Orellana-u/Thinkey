@@ -62,13 +62,16 @@ export const homeFiftyInfo = {
       text: "Cumpleaños",
       block: false,
       highlight: true,
-      ubication: "top-2 -left-5 min-w-[110%]",
+      highlightHref: "/highlight-marker-2.svg",
+      ubication:
+        "top-1 tablet-l:top-4 -left-2 tablet-l:-left-5 min-w-[110%] opacity-55",
       key: "random-key-home-fifty-onlytext1",
     },
     {
       text: "Cientificos",
       block: false,
       highlight: false,
+      highlightHref: false,
       ubication: false,
       key: "random-key-home-fifty-onlytext2",
     },

@@ -10,6 +10,7 @@ import { contactFormInfo } from "data/forms";
 import { colegiosFormInfo } from "data/forms";
 import ServicesForm from "./services/ServicesForm";
 import Image from "next/image";
+import CloseIcon from "./Icons/CloseIcon";
 
 export const Header = () => {
   const [headerColor, setHeaderColor] = useState(false);
@@ -76,9 +77,9 @@ export const Header = () => {
       <div
         className={`${
           openedForm ? "translate-y-0 opacity-100" : "translate-y-[120%]"
-        } z-[999] pointer-events-none opacity-0 ease-in-out duration-700 transition-all fixed h-full -mt-[96px] w-full flex items-center`}
+        } z-[999] h-fit pointer-events-none opacity-0 ease-in-out duration-700 transition-all fixed tablet-l:h-full -mt-[96px] w-full flex items-center`}
       >
-        <div className="rounded-xl pointer-events-auto mx-[12%] h-fit flex bg-white w-full">
+        <div className="rounded-xl pointer-events-auto mx-[5%] desktop-l:mx-[12%] h-fit flex bg-white w-full">
           <div className="relative hidden desktop-s:block w-full tablet-xl:flex-[0_0_40%] desktop-l:flex-[0_0_45%]">
             <Image
               src={colegiosFormInfo.imgHref}
@@ -89,7 +90,17 @@ export const Header = () => {
             />
           </div>
 
-          <div className="tablet-l:px-10 w-full desktop-s:pl-12 desktop-l:pl-16 desktop-s:pr-10 pb-12 py-10">
+          <div className="tablet-l:px-10 w-full desktop-s:pl-12 desktop-l:pl-16 desktop-s:pr-10 pb-12 py-16 relative">
+            <div
+              onClick={handleOverlayClick}
+              className="cursor-pointer h-10 w-10 desktop-l:h-12 desktop-l:w-12 bg-black-heading-color flex items-center justify-center rounded-full absolute right-9 top-5"
+            >
+              <CloseIcon
+                w="w-5 desktop-l:w-7"
+                h="h-5 desktop-l:h-7"
+                color="white"
+              />
+            </div>
             <ServicesForm
               formFields={contactFormInfo.formFields}
               btnText={contactFormInfo.btnText}

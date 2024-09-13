@@ -1,11 +1,11 @@
-export default function CloseIcon({ w, h }) {
+export default function CloseIcon({ w, h, color }) {
   return (
     <svg
       width="20"
       height="20"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#222"
+      stroke={color ? color : "#222"}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

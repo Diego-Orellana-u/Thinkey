@@ -18,7 +18,7 @@ export default function BusinessInfo({ businessInfo }) {
 
       <div className="w-full mb-12 desktop-s:mb-0 desktop-s:mt-16">
         <span
-          className={`relative text-h2-s tablet-l:text-h2-l font-semibold leading-7 text-main-heading-color z-20`}
+          className={`relative text-h2-s tablet-l:text-h2-l font-bold leading-7 text-main-heading-color z-20`}
         >
           {businessInfo.title}
         </span>

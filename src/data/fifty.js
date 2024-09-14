@@ -56,7 +56,7 @@ export const homeFiftyInfo = {
       keys: "familias-fifty-card3",
     },
   ],
-  sectionPadding: "pt-32 pb-20",
+  sectionPadding: "pt-20 pb-20",
   title: [
     {
       text: "Cumpleaños",
@@ -384,7 +384,7 @@ export const colegiosEquipoFiftyInfo = {
       key: "random-key-home-fifty-onlytext2",
     },
   ],
-  desc: "Somos un equipo apasionado por la educación STEAM, liderado por expertos en ciencia y tecnología, dedicados a transformar la manera en que los niños y jóvenes aprenden.",
+  desc: "Somos un equipo apasionado por la educación STEAM, dedicado a transformar la manera en que los niños y jóvenes aprenden.",
 };
 
 export const productFiftyTwoInfo = {

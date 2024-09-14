@@ -8,14 +8,14 @@ export default function Fifty({ fiftyInfo }) {
         fiftyInfo.sectionPadding ? fiftyInfo.sectionPadding : "py-10"
       }`}
     >
-      <div className="wrapper flex flex-col text-center items-center gap-2 pb-12 tablet-xl:pb-16 desktop-l:gap-8">
+      <div className="mb-10 flex flex-col items-center">
         <HeadingTwoHighlight
           color="text-black-heading-color"
           title={fiftyInfo.title}
           titleCss={fiftyInfo.titleCss}
         />
         {fiftyInfo.desc && (
-          <p className="text-black-body-color text-p-xl desktop-s:max-w-[70%]">
+          <p className="text-gray-body-color mt-3 desktop-s:mt-8 text-p-s tablet-l:text-p-l text-center tablet-l:w-2/4 desktop-l:w-1/3">
             {fiftyInfo.desc}
           </p>
         )}

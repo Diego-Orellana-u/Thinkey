@@ -282,5 +282,6 @@ export const colegiosServicesInfo = {
       key: "random-key-home-fifty-onlytext2",
     },
   ],
+  desc: "You know what we do. Now learn why we do what we do - and the people who make it happen.",
   sectionPadding: "py-20",
 };

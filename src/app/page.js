@@ -4,11 +4,13 @@ import Services from "@/components/services/Services";
 import ImpactNumbers from "./components/ImpactNumbers";
 import VennHome from "./components/VennHome";
 import Blog from "./components/Blog";
+import Brands from "./components/Brands";
 import Testimonies from "@/components/testimonies/Testimonies";
 import { homeHeroInfo } from "data/heroInfo";
 import { homeFiftyInfo } from "data/fifty";
 import { blogInfo } from "data/blog";
 import { homeServicesInfo } from "data/services";
+import { homeBrandsInfo } from "data/brands";
 import { homeImpactSectionInfo } from "data/impactNumbers";
 import { homeVenn } from "data/vennSection";
 import { homeTestimonies } from "data/testimonies";
@@ -26,6 +28,7 @@ export default function Home() {
         topBlobColor="bg-purple-100"
       />
       <Services servicesInfo={homeServicesInfo} />
+      <Brands brandsInfo={homeBrandsInfo} />
       <Fifty fiftyInfo={homeFiftyInfo} />
       <Blog blogInfo={blogInfo} />
       <ImpactNumbers impactSectionInfo={homeImpactSectionInfo} />

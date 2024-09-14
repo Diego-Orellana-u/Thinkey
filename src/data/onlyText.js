@@ -17,6 +17,7 @@ export const onlyTextCumpleaños = {
   starColor: "fill-secondary-100",
 };
 
+//Object with all the info needed
 export const onlyTextProduct = {
   texts: [
     {
@@ -35,6 +36,25 @@ export const onlyTextProduct = {
   bgColor: "bg-transparent",
   starColor: "fill-btns-test",
   headingColor: "text-black-heading-color",
+  title: [
+    {
+      text: "¿Que son los",
+      block: true,
+      highlight: false,
+      ubication: false,
+      key: "random-key-product-onlytext1",
+    },
+    {
+      text: "Cumpleaños Científicos?",
+      block: true,
+      highlight: true,
+      ubication: "top-2 -left-5 min-w-[110%]",
+      key: "random-key-product-onlytext2",
+    },
+  ],
+  titleCss: "pb-5 tablet-l:pb-10",
+  titleJustify: "justify-start",
+  titleOrientation: "text-left justify-start",
   textColor: "text-black-body-color",
 };
 

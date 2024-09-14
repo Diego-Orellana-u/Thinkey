@@ -11,7 +11,7 @@ export default function VennHome({ data, sectionPadding }) {
     >
       <div className="flex flex-col items-center gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12 desktop-l:gap-32">
         <Image
-          src="/VennDiagram.svg"
+          src="/vennDiagram.svg"
           width={313}
           height={388}
           alt="Venn diagram with our core values, learning, science and enjoyment"

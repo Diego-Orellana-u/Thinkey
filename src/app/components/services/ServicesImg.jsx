@@ -10,12 +10,17 @@ export default function ServicesImg({ servicesInfo }) {
         servicesInfo.sectionPadding ? servicesInfo.sectionPadding : "py-20"
       }`}
     >
-      <HeadingTwoHighlight
-        color="text-black-heading-color"
-        titleCss={servicesInfo.titleCss}
-        title={servicesInfo.title}
-      />
-      <div className="flex flex-col desktop-s:flex-row items-center justify-between mt-20 gap-5">
+      <div className="mb-0 flex flex-col items-center">
+        <HeadingTwoHighlight
+          color="text-black-heading-color"
+          titleCss={servicesInfo.titleCss}
+          title={servicesInfo.title}
+        />
+        <p className="text-gray-body-color mt-3 desktop-s:mt-8 text-p-s tablet-l:text-p-l text-center tablet-l:w-2/4 desktop-l:w-1/3">
+          {servicesInfo.desc}
+        </p>
+      </div>
+      <div className="flex flex-col desktop-s:flex-row items-center justify-between mt-10 gap-5">
         {servicesInfo.servicesCard &&
           servicesInfo.servicesCard.map((card) => (
             <div

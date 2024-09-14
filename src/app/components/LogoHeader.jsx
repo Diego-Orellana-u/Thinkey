@@ -6,7 +6,7 @@ export default function LogoHeader() {
     <Link href="/">
       <Image
         className="w-44 pt-1 desktop-s:pt-0 desktop-s:w-[225px]"
-        src="/logo-lineal-morado2.svg"
+        src="/logo-thinkey-oficial.svg"
         alt="Logo of Thinkey school"
         width={215}
         height={67}

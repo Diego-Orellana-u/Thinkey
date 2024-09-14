@@ -1,4 +1,5 @@
 import Heading2 from "../Heading2";
+import HeadingTwoHighlight from "../HeadingTwoHighlight";
 import Star from "../Icons/Star";
 
 export default function OnlyTextOne({ onlyTextInfo }) {
@@ -12,14 +13,15 @@ export default function OnlyTextOne({ onlyTextInfo }) {
         onlyTextInfo.textColor ? onlyTextInfo.textColor : "text-white"
       }`}
     >
-      <div className="text-left mb-4 mobile-l:mb-7 tablet-l:max-w-[450px] desktop-l:max-w-[850px]">
-        <Heading2
-          orientation="text-left"
+      <div className="text-left mb-4 mobile-l:mb-7 tablet-l:max-w-[750px] desktop-l:max-w-[850px]">
+        <HeadingTwoHighlight
           color={`${
-            onlyTextInfo.headingColor ? onlyTextInfo.headingColor : "text-white"
+            onlyTextInfo.headingColor ? onlyTextInfo.headingColor : "text-black"
           }`}
-          title="¿Qué Son los Cumpleaños Científicos?"
-          padding={"pb-5 tablet-l:pb-10"}
+          title={onlyTextInfo.title}
+          titleJustify={onlyTextInfo.titleJustify}
+          titleOrientation={onlyTextInfo.titleOrientation}
+          titleCss={onlyTextInfo.titleCss}
         />
       </div>
 

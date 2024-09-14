@@ -9,12 +9,15 @@ export default function Timeline({ timelineInfo }) {
 
   return (
     <section>
-      <div className="mb-10">
+      <div className="mb-10 flex flex-col items-center">
         <HeadingTwoHighlight
           color="text-black-heading-color"
           titleCss={timelineInfo.titleCss}
           title={timelineInfo.title}
         />
+        <p className="text-gray-body-color mt-3 desktop-s:mt-8 text-p-s tablet-l:text-p-l text-center tablet-l:w-2/4 desktop-l:w-1/3">
+          {timelineInfo.desc}
+        </p>
       </div>
       <div
         ref={containerRef}

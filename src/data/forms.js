@@ -21,6 +21,7 @@ export const colegiosFormInfo = {
       key: "form-colegios-key-example3",
     },
   ],
+  formKey: "random-form-key-2",
   btnText: "Contactar",
 };
 
@@ -46,5 +47,6 @@ export const contactFormInfo = {
     ],
     { name: "Mensaje", placeholder: "Mensaje", key: "form-key-example5" },
   ],
+  formKey: "random-form-key-1",
   btnText: "Contactar",
 };

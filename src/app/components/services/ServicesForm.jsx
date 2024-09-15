@@ -43,11 +43,12 @@ export default function ServicesForm({ formFields, btnText }) {
         {formFields.map((fieldInfo) =>
           Array.isArray(fieldInfo) ? (
             <div
-              key={fieldInfo.key}
+              key={fieldInfo.formKey}
               className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5"
             >
               {fieldInfo.map((subField) => (
                 <FormField
+                  key={subField.key}
                   control={form.control}
                   name={subField.name}
                   render={({ field }) => (

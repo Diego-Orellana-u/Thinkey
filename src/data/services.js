@@ -282,6 +282,15 @@ export const colegiosServicesInfo = {
       key: "random-key-home-fifty-onlytext2",
     },
   ],
+  readMore: [
+    {
+      text: "Saber Más",
+      block: true,
+      highlight: true,
+      ubication: "left-0 top-1",
+      key: "random-key-home-fifty-onlytext1",
+    },
+  ],
   desc: "You know what we do. Now learn why we do what we do - and the people who make it happen.",
   sectionPadding: "py-20",
 };

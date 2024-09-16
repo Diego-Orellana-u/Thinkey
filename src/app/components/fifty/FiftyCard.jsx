@@ -59,12 +59,12 @@ export default function FiftyCard({
             href={btnHref}
           >
             {btnText}
-            <Button
+            <div
               variant="testSmall"
-              className="rounded-full w-7 h-7 px-0  tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px"
+              className="bg-btns-test text-black-heading-color hover:bg-accent-900 transition-all duration-200 border border-btns-border shadow-[3px_0_0_0_rgba(103,43,48,1)] rounded-full w-7 h-7 px-0  tablet-xl:size-6 desktop-l:size-8 flex justify-center items-center pt-px"
             >
               <RightArrow strokeColor="white" />
-            </Button>
+            </div>
           </Link>
         )}
       </div>

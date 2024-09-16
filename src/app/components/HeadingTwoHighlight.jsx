@@ -4,6 +4,7 @@ export default function HeadingTwoHighlight({
   color,
   title,
   titleCss,
+  titleSize,
   titleOrientation,
   titleWidth,
   titleJustify,
@@ -13,7 +14,11 @@ export default function HeadingTwoHighlight({
       <h2
         className={`${titleCss && titleCss} ${
           color ? color : "text-black-heading-color"
-        } relative max-w-[1200px] text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem] ${
+        } relative max-w-[1200px] ${
+          titleSize
+            ? titleSize
+            : "text-h2-s tablet-l:text-h2-l tablet-l:leading-10 desktop-s:text-h2-xl leading-8 desktop-s:leading-[3.5rem]"
+        }  ${
           titleOrientation ? titleOrientation : "text-center"
         } font-semibold`}
       >

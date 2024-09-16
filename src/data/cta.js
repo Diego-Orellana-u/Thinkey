@@ -8,4 +8,6 @@ export const ctaColegios = {
   secondBtnHref: "/",
   sectionPadding: false,
   bgColor: "bg-main-300",
+  fullWidth: true,
+  sectionPadding: false,
 };

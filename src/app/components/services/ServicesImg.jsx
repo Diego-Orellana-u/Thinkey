@@ -2,6 +2,7 @@ import Image from "next/image";
 import Heading2 from "../Heading2";
 import Link from "next/link";
 import HeadingTwoHighlight from "../HeadingTwoHighlight";
+import RightArrow from "../Icons/RightArrow";
 
 export default function ServicesImg({ servicesInfo }) {
   return (
@@ -21,7 +22,7 @@ export default function ServicesImg({ servicesInfo }) {
         </p>
       </div>
       <Link
-        href="/"
+        href="/hola"
         className="flex flex-col desktop-s:flex-row items-center justify-between mt-10 gap-5"
       >
         {servicesInfo.servicesCard &&
@@ -64,12 +65,15 @@ export default function ServicesImg({ servicesInfo }) {
                     {card.desc}
                   </p>
 
-                  <Link
-                    href={card.serviceHref}
-                    className="absolute bottom-5 tablet-s:bottom-6 desktop-s:bottom-8 font-bold"
-                  >
+                  <span className="absolute flex gap-3 items-center text-p-l bottom-5 tablet-s:bottom-6 desktop-s:bottom-5 font-bold">
                     {card.linkText}
-                  </Link>
+                    <div
+                      variant="testSmall"
+                      className="bg-btns-test text-black-heading-color hover:bg-accent-900 transition-all duration-200 border border-btns-border shadow-[3px_0_0_0_rgba(103,43,48,1)] rounded-full size-5 px-0 tablet-l:size-7 flex justify-center items-center pt-px"
+                    >
+                      <RightArrow strokeColor="white" />
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>

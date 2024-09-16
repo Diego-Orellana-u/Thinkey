@@ -7,4 +7,5 @@ export const ctaColegios = {
   secondBtnText: "Saber Más",
   secondBtnHref: "/",
   sectionPadding: false,
+  bgColor: "bg-main-300",
 };

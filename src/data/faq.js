@@ -18,7 +18,7 @@ export const servicesFaq = {
   ],
   title: "Preguntas sobre el producto",
   desc: "Entendemos que buscar una experiencia que mejore la calidad de tu establecimiento puede ser un desafío. Por este motivo, hemos creado una lista de preguntas frecuentes para guiarte. Queremos que este proceso sea lo más fácil posible para ti.",
-  bgColor: "bg-[#111827]",
+  bgColor: "bg-main-300",
   textColor: "text-white-body-color",
   titleColor: "text-white-body-color",
   sectionPadding: false,

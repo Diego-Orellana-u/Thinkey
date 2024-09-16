@@ -159,7 +159,7 @@ export default function Hero({
                   {heroInfo.title}
                 </span>
               )}
-              <p className="text-p-l tablet-l:mb-2 desktop-l:mb-5 desktop-s:max-w-[700px]">
+              <p className="text-p-l text-black-body-color tablet-l:mb-2 desktop-l:mb-5 desktop-s:max-w-[700px]">
                 {heroInfo.desc}
               </p>
               <div

@@ -5,7 +5,11 @@ export default function Cta({ ctaInfo }) {
     <div
       className={`tablet-l:px-[3rem] tablet-xl:px-[3.3rem] desktop-l:px-[5.75rem] desktop-s:py-20`}
     >
-      <div class="relative isolate overflow-hidden bg-[#111827] px-6 pt-16 shadow-2xl tablet-s:rounded-3xl tablet-l:px-16 tablet-xl:pt-24 desktop-s:px-24">
+      <div
+        class={`relative isolate overflow-hidden ${
+          ctaInfo.bgColor ? ctaInfo.bgColor : "bg-main-300"
+        } px-6 pt-16 shadow-2xl tablet-s:rounded-3xl tablet-l:px-16 tablet-xl:pt-24 desktop-s:px-24`}
+      >
         <svg
           viewBox="0 0 1024 1024"
           class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] tablet-s:left-full tablet-s:-ml-80 tablet-l:left-1/2 tablet-l:ml-0 tablet-l:-translate-x-1/2 tablet-l:-translate-y-[15%]"

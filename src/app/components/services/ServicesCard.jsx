@@ -30,7 +30,7 @@ export default function ServicesCard(service) {
         <h3 className="text-h3-s text-black-heading-color tablet-l:text-h2-s desktop-l:text-h3-xl font-semibold desktop-s:mb-4 desktop-l:mb-6">
           {service.title}
         </h3>
-        <p className="mb-10 desktop-l:mb-12 desktop-s:text-p-l">
+        <p className="mb-10 text-black-body-color desktop-l:mb-12 desktop-s:text-p-l">
           {service.desc}
         </p>
         <Link

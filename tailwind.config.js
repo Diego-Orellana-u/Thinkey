@@ -54,6 +54,7 @@ module.exports = {
         "buttons-text": "#9FCF00",
         "main-100": "#333B68",
         "main-200": "#1A2357",
+        "main-300": "#111827",
         "secondary-buttons-bg": "#9FCF00",
         "secondary-100": "#9FCF00",
         "btns-border": "#9d5b5d",

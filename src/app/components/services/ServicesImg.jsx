@@ -20,7 +20,10 @@ export default function ServicesImg({ servicesInfo }) {
           {servicesInfo.desc}
         </p>
       </div>
-      <div className="flex flex-col desktop-s:flex-row items-center justify-between mt-10 gap-5">
+      <Link
+        href="/"
+        className="flex flex-col desktop-s:flex-row items-center justify-between mt-10 gap-5"
+      >
         {servicesInfo.servicesCard &&
           servicesInfo.servicesCard.map((card) => (
             <div
@@ -53,11 +56,11 @@ export default function ServicesImg({ servicesInfo }) {
                       alt={card.insideImgAlt}
                     />
                   </div>
-                  <h3 className="mt-4 text-xl font-medium tablet-s:text-2xl">
+                  <h3 className="mt-5 text-p-l font-medium tablet-s:text-2xl">
                     {card.title}
                   </h3>
 
-                  <p className="mt-4 text-p-s tablet-s:text-base">
+                  <p className="mt-5 text-black-body-color text-p-s tablet-s:text-base">
                     {card.desc}
                   </p>
 
@@ -71,7 +74,7 @@ export default function ServicesImg({ servicesInfo }) {
               </div>
             </div>
           ))}
-      </div>
+      </Link>
     </div>
   );
 }

@@ -19,27 +19,33 @@ import Link from "next/link";
 import { useId } from "react";
 
 const formSchema = z.object({
-  Nombre: z.string().min(2).max(50),
-  Apellido: z.string().min(2).max(50),
-  Correo: z.string().min(7).max(50),
+  nombre: z.string().min(2).max(50),
+  apellido: z.string().min(2).max(50),
+  correo: z.string().min(7).max(50), // TODO: Validacion de correo
+  telefono: z.string().min(7).max(20),
+  mensaje: z.string().min(10).max(500),
 });
 
 export default function ServicesForm({ formFields, btnText }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      Nombre: "",
+      nombre: "",
+      apellido: "",
+      correo: "",
+      telefono: "",
+      mensaje: "",
     },
   });
 
   const formId = useId();
 
-  function onSubmit() {
+  function onSubmit(values) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
-
+  console.log(formFields, "formFields");
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>

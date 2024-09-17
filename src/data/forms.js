@@ -33,19 +33,23 @@ export const contactFormInfo = {
   imgHref: "/a.png",
   imgAlt: "",
   formFields: [
-    [
-      { name: "Nombre", placeholder: "Nombre", key: "form-key-example1" },
-      { name: "Apellido", placeholder: "Apellido", key: "form-key-example2" },
-    ],
-    [
-      {
-        name: "Correo",
-        placeholder: "Correo Electrónico",
-        key: "form-key-example3",
-      },
-      { name: "Teléfono", placeholder: "Teléfono", key: "form-key-example4" },
-    ],
-    { name: "Mensaje", placeholder: "Mensaje", key: "form-key-example5" },
+    { name: "Nombre", placeholder: "Nombre", key: "form-key-example1" },
+    { name: "Apellido", placeholder: "Apellido", key: "form-key-example2" },
+    {
+      name: "Correo",
+      placeholder: "Correo Electrónico",
+      key: "form-key-example3",
+    },
+    {
+      name: "Teléfono",
+      placeholder: "Teléfono",
+      key: "form-key-example4",
+    },
+    {
+      name: "Mensaje",
+      placeholder: "Mensaje",
+      key: "form-key-example5",
+    },
   ],
   formKey: "random-form-key-1",
   btnText: "Contactar",

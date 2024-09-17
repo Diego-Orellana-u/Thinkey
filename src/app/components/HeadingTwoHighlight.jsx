@@ -23,9 +23,9 @@ export default function HeadingTwoHighlight({
         } font-semibold`}
       >
         {title &&
-          title.map((text) =>
+          title.map((text, idx) =>
             text.highlight ? (
-              <div key={text.key} className="inline">
+              <div key={text.key + idx} className="inline">
                 <div className={`relative inline-block`}>
                   <em>{text.text}</em>
                   <Image
@@ -48,7 +48,7 @@ export default function HeadingTwoHighlight({
             ) : (
               <span
                 className={`${text.block ? "block" : "inline"}`}
-                key={text.key}
+                key={text.key + idx}
               >
                 {text.text}{" "}
               </span>

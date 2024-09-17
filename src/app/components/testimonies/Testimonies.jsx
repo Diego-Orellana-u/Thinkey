@@ -28,9 +28,9 @@ export default function Testimonies({ testimoniesInfo }) {
       />
       <Carousel>
         <CarouselContent className="tablet-l:-ml-10 desktop-s:-ml-6 desktop-l:-ml-12">
-          {testimoniesInfo.testimonies.map((testimony) => (
+          {testimoniesInfo.testimonies.map((testimony, idx) => (
             <CarouselItem
-              key={testimony.name}
+              key={testimony.name + idx}
               className="min-[600px]:basis-1/2 tablet-l:pl-10 desktop-s:basis-1/3 desktop-s:pl-6 desktop-l:pl-12 pb-1"
             >
               <TestimonyCard {...testimony} />

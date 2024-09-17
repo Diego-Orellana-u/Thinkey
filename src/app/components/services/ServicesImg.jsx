@@ -26,9 +26,9 @@ export default function ServicesImg({ servicesInfo }) {
         className="flex flex-col desktop-s:flex-row items-center justify-between mt-10 gap-5"
       >
         {servicesInfo.servicesCard &&
-          servicesInfo.servicesCard.map((card) => (
+          servicesInfo.servicesCard.map((card, idx) => (
             <div
-              key={card.key}
+              key={card.key + idx}
               className="box-shadow-testimonies w-full max-w-96 group relative block h-fit"
             >
               <span className="absolute inset-0 border-2 border-dashed border-zinc-400 rounded-xl"></span>

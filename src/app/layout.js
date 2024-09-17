@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Header } from "./components/Header";
-import InfoBar from "./components/InfoBar";
 import { generalSans } from "./fonts";
 import { cn } from "@/lib/utils";
 import Footer from "./components/Footer";

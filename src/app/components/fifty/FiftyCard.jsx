@@ -37,7 +37,7 @@ export default function FiftyCard({
           height={imgHeight}
           className={`${
             type === "original" && "rounded-xl"
-          } tablet-xl:h-[390px] desktop-s:min-h-[390px] desktop-l:h-full object-cover shadow-lg`}
+          } tablet-xl:h-[390px] desktop-s:min-h-[390px] max-h-[450px] desktop-l:h-full object-cover shadow-lg`}
           alt={imgAlt}
         />
       </div>

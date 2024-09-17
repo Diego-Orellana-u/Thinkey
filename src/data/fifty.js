@@ -22,7 +22,7 @@ export const homeFiftyInfo = {
       desc: "Desata el poder de la química con experimentos como la pasta de dientes para elefantes y el slime pegajoso. Perfecto para los pequeños químicos en formación.",
       btnText: "MÁS INFORMACIÓN",
       btnHref: "/",
-      imgLink: "/familias-science-kit.webp",
+      imgLink: "/crazy-scientists.jpg",
       imgAlt: "Imagen de nuestro kit de ciencia para cumpleaños cientificos",
       imgWidth: 1600,
       imgHeight: 1061,

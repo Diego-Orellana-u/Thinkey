@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "../ui/label";
 import Link from "next/link";
+import { useId } from "react";
 
 const formSchema = z.object({
   Nombre: z.string().min(2).max(50),
@@ -31,6 +32,8 @@ export default function ServicesForm({ formFields, btnText }) {
     },
   });
 
+  const formId = useId();
+
   function onSubmit() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
@@ -40,41 +43,42 @@ export default function ServicesForm({ formFields, btnText }) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        {formFields.map((fieldInfo) =>
-          Array.isArray(fieldInfo) ? (
-            <div
-              key={fieldInfo.formKey}
-              className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5"
-            >
-              {fieldInfo.map((subField) => (
-                <FormField
-                  key={subField.key}
-                  control={form.control}
-                  name={subField.name}
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <>
-                          <Label htmlFor={subField.key} className="mb-4 block">
-                            {subField.placeholder}
-                          </Label>
-                          <Input
-                            className="outline-none"
-                            id={subField.key}
-                            placeholder={subField.placeholder}
-                            {...field}
-                          />
-                        </>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              ))}
-            </div>
-          ) : (
-            <div key={fieldInfo.key}>
+        {formFields.map((fieldInfo, index) => (
+          <div key={formId + index}>
+            {Array.isArray(fieldInfo) ? (
+              <div className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5">
+                {fieldInfo.map((subField) => (
+                  <FormField
+                    key={subField.key}
+                    control={form.control}
+                    name={subField.name}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormControl>
+                          <>
+                            <Label
+                              htmlFor={subField.key}
+                              className="mb-4 block"
+                            >
+                              {subField.placeholder}
+                            </Label>
+                            <Input
+                              className="outline-none"
+                              id={subField.key}
+                              placeholder={subField.placeholder}
+                              {...field}
+                            />
+                          </>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                ))}
+              </div>
+            ) : (
               <FormField
+                key={fieldInfo.key}
                 control={form.control}
                 name={fieldInfo.name}
                 render={({ field }) => (
@@ -108,9 +112,10 @@ export default function ServicesForm({ formFields, btnText }) {
                   </FormItem>
                 )}
               />
-            </div>
-          )
-        )}
+            )}
+          </div>
+        ))}
+
         <div className="flex flex-col justify-end items-end">
           <span className="block ">
             By clicking “Submit” I agree to the{" "}

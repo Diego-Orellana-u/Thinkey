@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../assets/logos/logo-thinkey.svg";
 import LogoHeader from "./LogoHeader";
 
 export default function Footer() {

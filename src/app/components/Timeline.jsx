@@ -33,7 +33,7 @@ export default function Timeline({ timelineInfo }) {
           {timelineInfo.milestones &&
             timelineInfo.milestones.map((milestone, index) => (
               <div
-                key={milestone.key}
+                key={milestone.key + index}
                 className={`desktop-s:flex desktop-s:gap-32 desktop-s:items-center desktop-s:p-0 desktop-s:justify-between rounded-xl p-5 z-0 mobile-m:p-8 pb-10 mobile-m:pb-12 h-fit service-shadow bg-white desktop-s:bg-transparent desktop-s:shadow-none w-full  ${
                   (index + 1) % 2 === 0
                     ? "desktop-s:flex-row-reverse"
@@ -81,6 +81,7 @@ export default function Timeline({ timelineInfo }) {
                     className="rounded-xl"
                     width={1280}
                     height={720}
+                    alt="Slime"
                   />
                 </div>
               </div>

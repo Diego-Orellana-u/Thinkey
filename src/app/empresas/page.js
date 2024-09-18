@@ -7,6 +7,11 @@ import { empresasHeroInfo } from "data/heroInfo";
 import { colegiosServicesInfo } from "data/services";
 import { empresasTestimonies } from "data/testimonies";
 
+export const metadata = {
+  title: "Servicios Para Empresas | Eventos y Experiencias Científicas",
+  description: "",
+};
+
 export default function Empresas() {
   return (
     <>

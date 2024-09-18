@@ -6,6 +6,11 @@ import { teamInfo } from "data/team";
 import { timelineAbout } from "data/timeline";
 import { onlyTextCenterAbout } from "data/onlyText";
 
+export const metadata = {
+  title: "Sobre Nosotros | Nuestro Equipo y Nuestra Historia",
+  description: "",
+};
+
 export default function Nosotros() {
   return (
     <>

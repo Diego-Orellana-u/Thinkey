@@ -10,6 +10,11 @@ import { onlyTextCumpleaños } from "data/onlyText";
 import { cumpleañosHeroInfo } from "data/heroInfo";
 import { familiasCumpleañosTestimonies } from "data/testimonies";
 
+export const metadata = {
+  title: "Cumpleaños Científicos | Celebraciones científicas para niños",
+  description: "",
+};
+
 export default function Cumpleanos() {
   return (
     <>

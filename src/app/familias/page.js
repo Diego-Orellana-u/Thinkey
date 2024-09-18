@@ -8,6 +8,11 @@ import { familiasHeroInfo } from "data/heroInfo";
 import { familiasServicesInfo } from "data/services";
 import { familiasTestimonies } from "data/testimonies";
 
+export const metadata = {
+  title: "Servicios Para Familias | Cumpleaños Científicos",
+  description: "",
+};
+
 export default function Familias() {
   return (
     <>

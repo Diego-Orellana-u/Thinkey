@@ -15,6 +15,11 @@ import { homeImpactSectionInfo } from "data/impactNumbers";
 import { homeVenn } from "data/vennSection";
 import { homeTestimonies } from "data/testimonies";
 
+export const metadata = {
+  title: "ThinKey | Eventos Científicos Para Escuelas y Empresas",
+  description: "",
+};
+
 export default function Home() {
   return (
     <>

@@ -81,8 +81,9 @@ export default function Hero({ heroInfo }) {
             <div className="drop-shadow-2xl flex justify-center desktop-s:justify-end tablet-xl:self-center mb-6 tablet-xl:mb-0 tablet-xl:min-h-[700px]:pt-10 tablet-xl:w-3/4 desktop-s:w-2/4">
               <Image
                 src={heroInfo.img}
-                width={1920}
-                height={1280}
+                width={477}
+                height={477}
+                sizes="(max-width: 768px) 100vw, (max-width: 1400px) 50vw, 33vw"
                 className={`${heroInfo.shadow && heroInfo.shadow} ${
                   heroInfo.imgCustomCss && heroInfo.imgCustomCss
                 } rounded-full object-cover w-full desktop-s:w-full aspect-square max-w-[350px] tablet-l:max-w-[600px] h-full`}

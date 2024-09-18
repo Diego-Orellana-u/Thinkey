@@ -35,6 +35,7 @@ export default function FiftyCard({
           src={imgLink}
           width={imgWidth}
           height={imgHeight}
+          sizes="(max-width: 768px) 100vw, (max-width: 1400px) 50vw, 33vw"
           className={`${
             type === "original" && "rounded-xl"
           } tablet-xl:h-[390px] desktop-s:min-h-[390px] max-h-[450px] desktop-l:h-full object-cover shadow-lg`}

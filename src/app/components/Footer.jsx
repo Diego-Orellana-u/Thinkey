@@ -1,7 +1,7 @@
 import Link from "next/link";
 import LogoHeader from "./LogoHeader";
 
-export default function Footer() {
+export default function Footer({ footerInfo }) {
   return (
     <footer className="bg-white-bg wrapper">
       <div className="mx-auto space-y-8 pt-16 pb-8 min-[1024px]:space-y-16">
@@ -9,12 +9,9 @@ export default function Footer() {
           <div>
             <LogoHeader />
 
-            <p className="mt-4 max-w-xs text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-              cupiditate quae nam molestias.
-            </p>
+            <p className="mt-4 max-w-xs text-gray-500">{footerInfo.desc}</p>
 
-            <ul className="mt-8 flex gap-6">
+            <ul className="mt-8 flex gap-4">
               <li>
                 <Link
                   href="#"
@@ -66,189 +63,27 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 min-[640px]:grid-cols-2 min-[1024px]:col-span-2 min-[1024px]:grid-cols-4">
-            <div>
-              <p className="font-medium text-gray-900">Servicios</p>
+            {footerInfo.links &&
+              footerInfo.links.map((link) => (
+                <div key={link.key}>
+                  <p className="font-medium text-gray-900">{link.name}</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Ferias Cientificas{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Eventos para empresas{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Eventos para colegios{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Cumpleaños{" "}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="font-medium text-gray-900">Conocenos</p>
-
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Sobre nosotros{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Conoce al equipo{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Testimonios{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Prensa{" "}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="font-medium text-gray-900">Links Útiles</p>
-
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Contacto{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    FAQs{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Socios{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Blog{" "}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="font-medium text-gray-900">Legal</p>
-
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Accessibilidad{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Política de privacidad{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Política de devoluciones{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Términos y condiciones{" "}
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                  <ul className="mt-6 space-y-4 text-sm">
+                    {link.links &&
+                      link.links.map((sublink) => (
+                        <li>
+                          <Link
+                            href={sublink.href}
+                            className="text-gray-700 transition hover:opacity-75"
+                          >
+                            {" "}
+                            {sublink.name}{" "}
+                          </Link>
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              ))}
           </div>
         </div>
 

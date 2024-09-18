@@ -18,15 +18,7 @@ import { homeTestimonies } from "data/testimonies";
 export default function Home() {
   return (
     <>
-      <Hero
-        heroInfo={homeHeroInfo}
-        headingSize="text-h1-s tablet-s:text-[3rem] desktop-s:text-[3.5rem] desktop-s:leading-[62px] desktop-l:text-[4.5rem] desktop-l:leading-[75px]"
-        paddingTop="pt-12"
-        firstBlobColor="bg-main-200/50"
-        secondBlobColor="bg-secondary-100/30"
-        thirdBlobColor="bg-main-100/50"
-        topBlobColor="bg-purple-100"
-      />
+      <Hero heroInfo={homeHeroInfo} />
       <Services servicesInfo={homeServicesInfo} />
       <Brands brandsInfo={homeBrandsInfo} />
       <Fifty fiftyInfo={homeFiftyInfo} />

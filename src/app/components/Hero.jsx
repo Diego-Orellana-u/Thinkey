@@ -9,22 +9,11 @@ import DibujoMolecula from "./Icons/DibujoMolecula";
 
 import { buttonVariants } from "@/components/ui/button";
 
-export default function Hero({
-  heroInfo,
-  headingSize,
-  paddingTop,
-  titlePaddingTop,
-  firstBlobColor,
-  secondBlobColor,
-  thirdBlobColor,
-  topBlobColor,
-  separatedHeadingDisplay,
-  headingWidth,
-}) {
+export default function Hero({ heroInfo }) {
   return (
     <section
       className={`hero top-[-96px] h-full overflow-x-hidden ${
-        paddingTop ? paddingTop : "pt-[150px]"
+        heroInfo.paddingTop ? heroInfo.paddingTop : "pt-[150px]"
       }`}
     >
       <LineOne />
@@ -46,29 +35,35 @@ export default function Hero({
           <div className="blurblob top-0 desktop-s:w-2/4 desktop-s:-right-16 desktop-l:right-[10%] desktop-s:top-12">
             <div
               className={`${
-                firstBlobColor ? firstBlobColor : "bg-secondary-100"
+                heroInfo.firstBlobColor
+                  ? heroInfo.firstBlobColor
+                  : "bg-secondary-100"
               } green opacity-40 desktop-s:opacity-100 blob`}
             ></div>
             <div
               className={`${
-                secondBlobColor ? secondBlobColor : "bg-accent-900"
+                heroInfo.secondBlobColor
+                  ? heroInfo.secondBlobColor
+                  : "bg-accent-900"
               } red opacity-40 desktop-s:opacity-100 blob`}
             ></div>
             <div
               className={`${
-                thirdBlobColor ? thirdBlobColor : "bg-main-100"
+                heroInfo.thirdBlobColor
+                  ? heroInfo.thirdBlobColor
+                  : "bg-main-100"
               } blue opacity-40 desktop-s:opacity-100 blob`}
             ></div>
           </div>
         )}
       </div>
 
-      {heroInfo.blobTop && (
+      {heroInfo.topBlobColor && (
         <div className="hidden desktop-s:flex blob-cont-two">
           <div className="blurblob-two top-0 desktop-s:left-0">
             <div
               className={`${
-                topBlobColor ? topBlobColor : "bg-orange-500"
+                heroInfo.topBlobColor ? heroInfo.topBlobColor : "bg-orange-500"
               } red-two blob`}
             ></div>
           </div>
@@ -98,9 +93,9 @@ export default function Hero({
           )}
 
           <div
-            className={`${titlePaddingTop && titlePaddingTop} ${
-              !heroInfo.heading1 ? "" : "desktop-s:mt-6"
-            } tablet-xl:w-[81%] ${
+            className={`${
+              heroInfo.titlePaddingTop && heroInfo.titlePaddingTop
+            } ${!heroInfo.heading1 ? "" : "desktop-s:mt-6"} tablet-xl:w-[81%] ${
               !heroInfo.img
                 ? "desktop-s:w-[100%] desktop-l:w-9/12"
                 : "desktop-l:w-9/12"
@@ -120,26 +115,26 @@ export default function Hero({
                 <>
                   <span
                     className={`${
-                      headingSize
-                        ? headingSize
+                      heroInfo.headingSize
+                        ? heroInfo.headingSize
                         : "text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-l:text-h1-xl desktop-l:leading-[63px]"
                     } ${
-                      headingWidth ? headingWidth : ""
+                      heroInfo.headingWidth ? heroInfo.headingWidth : ""
                     } block text-black-heading-color tablet-s:leading-[57px] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold pt-1 tablet-s:pt-5 tablet-xl:pt-0`}
                   >
                     {heroInfo.separatedTitle1}
                     <span
                       className={`${
-                        headingSize
-                          ? headingSize
+                        heroInfo.headingSize
+                          ? heroInfo.headingSize
                           : "text-h1-s min-[345px]:text-h2-s tablet-s:text-[3rem] tablet-xl:text-[2.25rem] desktop-s:text-[3rem] desktop-l:text-h1-xl desktop-l:leading-[63px]"
                       } ${
                         heroInfo.titleGradient
                           ? heroInfo.titleGradient
                           : "text-black-heading-color"
                       } family-hero-gradient ml-[8px] tablet-s:text-[3rem] mobile-m:ml-0 ${
-                        separatedHeadingDisplay
-                          ? separatedHeadingDisplay
+                        heroInfo.separatedHeadingDisplay
+                          ? heroInfo.separatedHeadingDisplay
                           : "mobile-m:block min-[1280px]:block min-[1280px]:ml-0"
                       } text-h1-s tablet-s:leading-[57px] desktop-s:leading-[58px] desktop-l:mb-1 leading-[42px] font-bold`}
                     >

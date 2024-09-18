@@ -71,7 +71,7 @@ export default function Footer({ footerInfo }) {
                   <ul className="mt-6 space-y-4 text-sm">
                     {link.links &&
                       link.links.map((sublink) => (
-                        <li>
+                        <li key={sublink.key}>
                           <Link
                             href={sublink.href}
                             className="text-gray-700 transition hover:opacity-75"

@@ -49,7 +49,7 @@ export default function Timeline({ timelineInfo }) {
                           milestone.highlightCss
                             ? milestone.highlightCss
                             : "top-2 mobile-m:left-[-2%] desktop-s:top-2"
-                        } absolute w-[55%] max-w-[139px] desktop-s:max-w-[220px] h-[120%] min-[379px]:top-1 max-h-[80%] object-cover`}
+                        } absolute w-[55%] max-w-[139px] desktop-s:max-w-[220px] h-[120%] min-[379px]:top-5 max-h-[80%] object-cover`}
                         src={`${
                           milestone.highlightHref
                             ? milestone.highlightHref
@@ -60,11 +60,11 @@ export default function Timeline({ timelineInfo }) {
                         alt="Highlight marker image"
                       />
                     </span>
-                    <span className="text-h3-s desktop-s:text-h2-l">
+                    <span className="text-h3-s leading-7 desktop-s:text-h2-l desktop-s:leading-[3rem]">
                       {milestone.title}
                     </span>
                     <span
-                      className={`block border-b pb-1 w-1/4 ${
+                      className={`block border-b pt-2 pb-1 w-1/4 ${
                         milestone.lineColor
                           ? milestone.lineColor
                           : "border-red-500"

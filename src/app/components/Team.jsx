@@ -9,7 +9,6 @@ export function TeamInfo({
   openSidebar,
   setOpenSidebar,
   sidebarInfo,
-  setSidebarInfo,
   overlayClicked,
   setOverlayClicked,
 }) {
@@ -39,17 +38,17 @@ export function TeamInfo({
       <div
         className={`fixed top-0 ${
           openSidebar ? "right-0" : "-right-[100%]"
-        } ease-in-out text-black-body-color duration-700 desktop-s:duration-1000 transition-all w-full desktop-s:w-4/5 desktop-l:w-3/5 desktop-l:max-w-[870px] h-full overflow-x-hidden overflow-y-auto overscroll-contain z-[999] bg-[#e9e2cd] `}
+        } ease-in-out text-black-body-color duration-700 desktop-s:duration-1000 transition-all w-full desktop-s:w-4/5 desktop-l:w-3/5 desktop-l:max-w-[870px] h-full overflow-y-auto z-[999] bg-[#e9e2cd] `}
       >
-        <div className="pointer-events-auto relative">
+        <div>
           <div className="px-4 tablet-l:px-10">
             {/* top container with close button */}
             <div
-              className={`h-[65px] flex items-center justify-between border-b border-black tablet-l:h-20 sticky top-0 pointer-events-none w-full bg-[#e9e2cd]`}
+              className={`h-[65px] flex items-center justify-between border-b border-black tablet-l:h-20 sticky top-0`}
             >
               <span className="text-p-l font-medium">Biografía</span>
               <div
-                className="h-[37px] w-[37px] tablet-l:h-12 tablet-l:w-12 flex items-center justify-center pointer-events-auto rounded-full cursor-pointer bg-[#fdf7e7]"
+                className="h-[37px] w-[37px] tablet-l:h-12 tablet-l:w-12 flex items-center justify-center rounded-full cursor-pointer bg-[#fdf7e7]"
                 onClick={handleOverlayClick}
               >
                 <CloseIcon w="w-5 tablet-xl:w-7" h="h-5 tablet-xl:h-7" />
@@ -57,13 +56,13 @@ export function TeamInfo({
             </div>
 
             <div className="flex flex-col tablet-xl:flex-row tablet-xl:gap-10">
-              <div className="tablet-xl:flex-[0_0_40%] tablet-xl:relative">
+              <div className="tablet-xl:flex-[0_0_40%]">
                 <Image
                   src={
                     sidebarInfo.imgHref ? sidebarInfo.imgHref : "/miembro1.jpg"
                   }
-                  width={1280}
-                  height={720}
+                  width={289}
+                  height={363}
                   alt={sidebarInfo.imgAlt}
                   className="tablet-xl:sticky tablet-xl:top-32"
                 />

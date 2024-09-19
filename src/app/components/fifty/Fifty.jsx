@@ -8,7 +8,7 @@ export default function Fifty({ fiftyInfo }) {
         fiftyInfo.sectionPadding ? fiftyInfo.sectionPadding : "py-10"
       }`}
     >
-      <div className="mb-10 flex flex-col items-center">
+      <div className="wrapper mb-10 flex flex-col items-center">
         <HeadingTwoHighlight
           color="text-black-heading-color"
           title={fiftyInfo.title}

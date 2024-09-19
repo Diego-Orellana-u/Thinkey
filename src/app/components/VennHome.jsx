@@ -9,13 +9,13 @@ export default function VennHome({ data, sectionPadding }) {
         sectionPadding ? sectionPadding : "pb-32 pt-56 tablet-xl:pt-32"
       } text-center relative`}
     >
-      <div className="flex flex-col items-center gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12 desktop-l:gap-32">
+      <div className="flex flex-col items-center justify-between gap-8 tablet-xl:flex-row-reverse tablet-xl:gap-12 desktop-s:gap-0">
         <Image
           src="/vennDiagram.svg"
           width={313}
           height={388}
           alt="Venn diagram with our core values, learning, science and enjoyment"
-          className="desktop-s:w-full"
+          className="desktop-s:w-2/5"
         />
 
         <div className="flex flex-col gap-8 items-center tablet-xl:items-start tablet-xl:gap-0 desktop-s:flex-[0_0_55%]">
@@ -31,7 +31,7 @@ export default function VennHome({ data, sectionPadding }) {
             />
           </h2>
 
-          <p className="text-p-l text-black-body-color tablet-xl:text-left tablet-xl:mb-10">
+          <p className="text-p-l tablet-xl:text-p-xl text-black-body-color tablet-xl:text-left tablet-xl:mb-10 desktop-s:w-10/12">
             {data.desc}
           </p>
 

@@ -18,10 +18,6 @@ export default function Testimonies({ testimoniesInfo }) {
           : "mb-28"
       }`}
     >
-      {/* <Heading2      
-        title={testimoniesInfo.title}
-        padding="mb-8 desktop-s:mb-12 desktop-l:mb-16 text-center"
-      /> */}
       <HeadingTwoHighlight
         title={testimoniesInfo.title}
         titleCss={testimoniesInfo.titleCss}

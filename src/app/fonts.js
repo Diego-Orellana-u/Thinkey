@@ -5,5 +5,3 @@ export const generalSans = localFont({
   display: "swap",
   variable: "--font-generalSans",
 });
-
-// export const cabinetGrotesk

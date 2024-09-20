@@ -2,7 +2,7 @@
 import { MenuBtn } from "./menu/MenuBtn";
 import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
-import LeadsForm from "@/components/LeadsForm";
+import DatePicker from "@/components/DatePicker";
 import DesktopMenu from "./menu/DesktopMenu";
 import { Button } from "./ui/button";
 import { btn } from "data/nav";
@@ -84,8 +84,8 @@ export const Header = () => {
             <Image
               src={colegiosFormInfo.imgHref}
               className="rounded-l-xl w-full mb-7 tablet-s:mb-12 tablet-xl:mb-0 object-cover max-h-96 tablet-l:max-h-full tablet-l:h-[500px] tablet-xl:h-full"
-              width={613}
-              height={1313}
+              width={368}
+              height={637}
               alt={colegiosFormInfo.imgAlt}
             />
           </div>
@@ -105,6 +105,7 @@ export const Header = () => {
               formFields={contactFormInfo.formFields}
               btnText={contactFormInfo.btnText}
             />
+            <DatePicker />
           </div>
         </div>
       </div>

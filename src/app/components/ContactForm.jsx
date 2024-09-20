@@ -11,6 +11,7 @@ export default function ContactForm({ formInfo }) {
       <div className="px-5 mobile-l:px-7 min-[720px]:px-12 tablet-xl:pl-[3.3rem] desktop-l:pl-[5.75rem]">
         <Image
           src="/high-five.png"
+          priority={true}
           width={1280}
           height={720}
           className="rounded-xl tablet-l:max-h-[650px] object-cover"

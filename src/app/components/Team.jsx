@@ -38,13 +38,13 @@ export function TeamInfo({
       <div
         className={`fixed top-0 ${
           openSidebar ? "right-0" : "-right-[100%]"
-        } ease-in-out text-black-body-color duration-700 desktop-s:duration-1000 transition-all w-full desktop-s:w-4/5 desktop-l:w-3/5 desktop-l:max-w-[870px] h-full overflow-y-auto z-[999] bg-[#e9e2cd] `}
+        } ease-in-out text-black-body-color duration-700 desktop-s:duration-1000 transition-all w-full desktop-s:w-4/5 desktop-l:w-3/5 desktop-l:max-w-[870px] h-full overflow-y-auto z-[999] bg-[#e9e2cd]`}
       >
         <div>
           <div className="px-4 tablet-l:px-10">
             {/* top container with close button */}
             <div
-              className={`h-[65px] flex items-center justify-between border-b border-black tablet-l:h-20 sticky top-0`}
+              className={`h-[65px] bg-[#e9e2cd] flex items-center justify-between border-b border-black tablet-l:h-20 sticky top-0`}
             >
               <span className="text-p-l font-medium">Biografía</span>
               <div
@@ -64,6 +64,7 @@ export function TeamInfo({
                   width={289}
                   height={363}
                   alt={sidebarInfo.imgAlt}
+                  priority={true}
                   className="tablet-xl:sticky tablet-xl:top-32"
                 />
               </div>

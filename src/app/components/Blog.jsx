@@ -24,7 +24,7 @@ export default function Blog({ blogInfo }) {
             blogInfo.blogPosts.map((post) => (
               <article
                 key={post.key}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-xl bg-gray-900 dark:bg-gray-700 px-8 py-8 pb-8 pt-32 mobile-l:pt-80 desktop-s:pt-52 desktop-l:pt-80"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-xl bg-gray-900 dark:bg-gray-700 px-8 py-8 pb-8 pt-60 mobile-l:pt-80 desktop-s:pt-52 desktop-l:pt-80"
               >
                 <Image
                   width={1280}

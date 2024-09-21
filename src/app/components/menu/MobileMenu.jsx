@@ -19,8 +19,8 @@ export const MobileMenu = ({
       <span
         onClick={handleOverlayClick}
         className={`drawer__overlay ${
-          activeMenu ? "animate-in overflow-hidden" : ""
-        } ${overlayClicked ? "animate-out" : ""}`}
+          activeMenu ? "overlay-animate-in overflow-hidden" : ""
+        } ${overlayClicked ? "overlay-animate-out" : ""}`}
       ></span>
 
       <div

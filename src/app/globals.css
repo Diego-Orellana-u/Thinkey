@@ -126,11 +126,31 @@ p {
       visibility: hidden;
     }
     100% {
-      opacity: 0.3;
+      opacity: 1;
       visibility: visible;
     }
   }
   @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes overlayFadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 0.3;
+      visibility: visible;
+    }
+  }
+  @keyframes overlayFadeOut {
     0% {
       opacity: 0.3;
       visibility: visible;
@@ -181,10 +201,17 @@ p {
     }
   }
   .animate-in {
-    animation: fadeIn 0.6s ease-in-out forwards;
+    animation: fadeIn 0.3s ease-in-out forwards;
   }
   .animate-out {
-    animation: fadeOut 0.6s ease-in-out forwards;
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+
+  .overlay-animate-in {
+    animation: overlayFadeIn 0.6s ease-in-out forwards;
+  }
+  .overlay-animate-out {
+    animation: overlayFadeOut 0.6s ease-in-out forwards;
   }
   .height-in {
     animation: heightIn-2 0.2s linear forwards;

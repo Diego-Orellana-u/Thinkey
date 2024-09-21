@@ -17,6 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "../ui/label";
 import Link from "next/link";
 import { useId } from "react";
+import { CalendarForm } from "../DatePicker";
 
 const formSchema = z.object({
   Nombre: z.string().min(2).max(50),
@@ -76,6 +77,8 @@ export default function ServicesForm({ formFields, btnText }) {
                   />
                 ))}
               </div>
+            ) : fieldInfo.name === "Fecha" ? (
+              <CalendarForm />
             ) : (
               <FormField
                 key={fieldInfo.key}
@@ -118,13 +121,13 @@ export default function ServicesForm({ formFields, btnText }) {
 
         <div className="flex flex-col justify-end items-end">
           <span className="block ">
-            By clicking “Submit” I agree to the{" "}
+            Al hacer click en "Contactar" acepto los{" "}
             <Link href="/" className="text-orange-600">
-              Terms of Use
+              términos de uso
             </Link>{" "}
-            and the{" "}
+            y los{" "}
             <Link href="/" className="text-orange-600">
-              Privacy Statement
+              términos de privacidad
             </Link>
           </span>
           <Button

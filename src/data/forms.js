@@ -45,6 +45,7 @@ export const contactFormInfo = {
       },
       { name: "Teléfono", placeholder: "Teléfono", key: "form-key-example4" },
     ],
+    { name: "Fecha", placeholder: false, key: "form-key-example55" },
     { name: "Mensaje", placeholder: "Mensaje", key: "form-key-example5" },
   ],
   formKey: "random-form-key-1",

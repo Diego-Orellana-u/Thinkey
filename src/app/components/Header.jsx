@@ -2,7 +2,6 @@
 import { MenuBtn } from "./menu/MenuBtn";
 import LogoHeader from "./LogoHeader";
 import { useEffect, useState } from "react";
-import DatePicker from "@/components/DatePicker";
 import DesktopMenu from "./menu/DesktopMenu";
 import { Button } from "./ui/button";
 import { btn } from "data/nav";
@@ -71,8 +70,8 @@ export const Header = () => {
       <span
         onClick={handleOverlayClick}
         className={`drawer__overlay ${
-          openedForm ? "animate-in overflow-hidden" : ""
-        } ${overlayClicked ? "animate-out" : ""}`}
+          openedForm ? "overlay-animate-in overflow-hidden" : ""
+        } ${overlayClicked ? "overlay-animate-out" : ""}`}
       ></span>
       <div
         className={`${
@@ -105,7 +104,6 @@ export const Header = () => {
               formFields={contactFormInfo.formFields}
               btnText={contactFormInfo.btnText}
             />
-            <DatePicker />
           </div>
         </div>
       </div>

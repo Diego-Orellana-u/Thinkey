@@ -32,8 +32,8 @@ export function TeamInfo({
       <span
         onClick={handleOverlayClick}
         className={`drawer__overlay ${
-          openSidebar ? "animate-in overflow-hidden" : ""
-        } ${overlayClicked ? "animate-out" : ""}`}
+          openSidebar ? "overlay-animate-in overflow-hidden" : ""
+        } ${overlayClicked ? "overlay-animate-out" : ""}`}
       ></span>
       <div
         className={`fixed top-0 ${

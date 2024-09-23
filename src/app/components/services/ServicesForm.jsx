@@ -20,7 +20,10 @@ import { useId } from "react";
 import { CalendarForm } from "../DatePicker";
 
 const formSchema = z.object({
-  Nombre: z.string().min(2).max(50),
+  Nombre: z
+    .string()
+    .min(2, { message: "El nombre debe tener al menos 2 letras" })
+    .max(50),
   Apellido: z.string().min(2).max(50),
   Correo: z.string().min(7).max(50),
 });
@@ -38,7 +41,6 @@ export default function ServicesForm({ formFields, btnText }) {
   function onSubmit() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values);
   }
 
   return (

@@ -151,7 +151,7 @@ export const familiasFiftyInfo = {
       key: "random-key-home-fifty-onlytext2",
     },
   ],
-  desc: "Convierte la próxima fiesta de cumpleaños en una aventura científica. Nuestros cumpleaños científicos combinan la magia del aprendizaje con la diversión, permitiendo que los niños descubran la ciencia a través de experimentos interactivos y emocionantes.",
+  desc: "Convierte la próxima fiesta de cumpleaños en una aventura científica, combinando la magia del aprendizaje con la diversión.",
 };
 
 // To-do: Complete with real info

@@ -123,7 +123,7 @@ export default function ServicesForm({ formFields, btnText }) {
 
         <div className="flex flex-col justify-end items-end">
           <span className="block ">
-            Al hacer click en "Contactar" acepto los{" "}
+            Al hacer click en contactar acepto los{" "}
             <Link href="/" className="text-orange-600">
               términos de uso
             </Link>{" "}

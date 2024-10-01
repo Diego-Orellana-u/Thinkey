@@ -38,19 +38,98 @@ export default function BuyerData() {
 
   return (
     <div className="px-3 mobile-m:px-5">
+      <span className="font-semibold text-p-xl text-[#444] mb-3 block ">
+        Buyer Information
+      </span>
       <Form {...form}>
         <form>
-          <div className="flex flex-col tablet-l:flex-row tablet-l:gap-10 desktop-s:gap-5">
+          <div className="flex flex-col tablet-l:gap-10 desktop-s:gap-5">
             <FormField
               control={form.control}
               name="cumpleaños"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="mb-4">
                   <FormControl>
                     <>
                       <Input
-                        className="outline-none"
+                        className="outline-none bg-[#fdfbf3] border-2 border-gray-100/20 rounded-[5px] text-p-xs font-medium focus:bg-[#f5f3eb] placeholder:text-[#666]/80 py-6 px-3"
                         placeholder="Nombre"
+                        {...field}
+                      />
+                    </>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="Apellido"
+              render={({ field }) => (
+                <FormItem className="mb-4">
+                  <FormControl>
+                    <>
+                      <Input
+                        className="outline-none bg-[#fdfbf3] border-2 border-gray-100/20 rounded-[5px] text-p-xs font-medium focus:bg-[#f5f3eb] placeholder:text-[#666]/80 py-6 px-3"
+                        placeholder="Apellido"
+                        {...field}
+                      />
+                    </>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="Dirección"
+              render={({ field }) => (
+                <FormItem className="mb-4">
+                  <FormControl>
+                    <>
+                      <Input
+                        className="outline-none bg-[#fdfbf3] border-2 border-gray-100/20 rounded-[5px] text-p-xs font-medium focus:bg-[#f5f3eb] placeholder:text-[#666]/80 py-6 px-3"
+                        placeholder="Dirección"
+                        {...field}
+                      />
+                    </>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="Teléfono"
+              render={({ field }) => (
+                <FormItem className="mb-4">
+                  <FormControl>
+                    <>
+                      <Input
+                        className="outline-none bg-[#fdfbf3] border-2 border-gray-100/20 rounded-[5px] text-p-xs font-medium focus:bg-[#f5f3eb] placeholder:text-[#666]/80 py-6 px-3"
+                        placeholder="Teléfono"
+                        {...field}
+                      />
+                    </>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="Correo"
+              render={({ field }) => (
+                <FormItem className="mb-4">
+                  <FormControl>
+                    <>
+                      <Input
+                        className="outline-none bg-[#fdfbf3] border-2 border-gray-100/20 rounded-[5px] text-p-xs font-medium focus:bg-[#f5f3eb] placeholder:text-[#666]/80 py-6 px-3"
+                        placeholder="Correo"
                         {...field}
                       />
                     </>

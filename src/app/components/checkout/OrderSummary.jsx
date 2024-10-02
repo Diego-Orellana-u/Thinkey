@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OrderSummary() {
   return (
-    <div className="px-3 mobile-m:px-5 pb-40">
+    <div className="px-3 mobile-m:px-5 pb-10">
       <span className="font-semibold text-p-xl text-[#444] mb-3 block ">
         Order Summary
       </span>

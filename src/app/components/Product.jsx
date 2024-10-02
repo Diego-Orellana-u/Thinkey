@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Warning from "./Warning";
 
 export default function Product({ productInfo }) {
   return (
@@ -53,11 +54,7 @@ export default function Product({ productInfo }) {
               </h2>
             </div>
 
-            <div className="mt-3 mb-5">
-              <div className="bg-blue-100 rounded-3xl px-3 tablet-l:px-6 py-2 text-p-s w-fit">
-                <span>{productInfo.warningPill}</span>
-              </div>
-            </div>
+            <Warning text={productInfo.warningPill} />
 
             <div>
               <span className="flex gap-3 font-semibold text-h2-s mb-2">

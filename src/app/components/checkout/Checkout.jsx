@@ -22,7 +22,7 @@ export default function Checkout({ optionalExtras }) {
         </div>
       </div>
 
-      <div className="desktop-s:px-10 relative bg-gray-200 desktop-s:flex-[1_1_40%]">
+      <div className="desktop-s:px-10 relative border border-gray-300/20 bg-gray-200 desktop-s:flex-[1_1_40%]">
         <div className="tablet-s:max-w-[528px] sticky top-28">
           {/* Order Summary */}
           <OrderSummary />
@@ -32,7 +32,7 @@ export default function Checkout({ optionalExtras }) {
               variant="extraProduct"
               className="rounded-[5px] bg-[#424242] hover:bg-[#2C2C2C] w-full justify-center text-[18px] py-7 text-white font-semibold"
             >
-              Comprar ahora
+              Pagar ahora
             </Button>
           </div>
         </div>

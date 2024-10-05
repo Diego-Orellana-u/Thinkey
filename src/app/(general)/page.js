@@ -1,10 +1,10 @@
-import Fifty from "./components/fifty/Fifty";
-import Hero from "./components/Hero";
+import Fifty from "../components/fifty/Fifty";
+import Hero from "../components/Hero";
 import Services from "@/components/services/Services";
-import ImpactNumbers from "./components/ImpactNumbers";
-import VennHome from "./components/VennHome";
-import Blog from "./components/Blog";
-import Brands from "./components/Brands";
+import ImpactNumbers from "../components/ImpactNumbers";
+import VennHome from "../components/VennHome";
+import Blog from "../components/Blog";
+import Brands from "../components/Brands";
 import Testimonies from "@/components/testimonies/Testimonies";
 import { homeHeroInfo } from "data/heroInfo";
 import { homeFiftyInfo } from "data/fifty";

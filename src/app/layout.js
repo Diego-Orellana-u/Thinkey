@@ -1,14 +1,6 @@
 import "./globals.css";
-import { Header } from "./components/Header";
 import { generalSans } from "./fonts";
 import { cn } from "@/lib/utils";
-import Footer from "./components/Footer";
-import { footerInfo } from "data/footer";
-
-export const metadata = {
-  title: "Thinkey | Experiencias y Eventos Científicos Para Niños",
-  description: "",
-};
 
 export default function RootLayout({ children }) {
   return (
@@ -19,10 +11,7 @@ export default function RootLayout({ children }) {
           generalSans.variable
         )}
       >
-        {/* <InfoBar /> */}
-        <Header />
         {children}
-        <Footer footerInfo={footerInfo} />
       </body>
     </html>
   );

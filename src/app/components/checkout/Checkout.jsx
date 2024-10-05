@@ -7,8 +7,8 @@ import { Button } from "../ui/button";
 export default function Checkout({ optionalExtras }) {
   return (
     <div className="relative flex flex-col desktop-s:justify-center desktop-s:gap-10 desktop-s:flex-row items-center desktop-s:items-stretch">
-      <div className="tablet-s:w-[528px] desktop-s:pl-10 desktop-s:items-end desktop-s:flex desktop-s:flex-col desktop-s:flex-[1_1_40%]">
-        <div className="desktop-s:w-[528px] desktop-s:pl-10">
+      <div className="tablet-s:w-[528px] desktop-s:w-[650px] desktop-s:pl-10 desktop-s:items-end desktop-s:flex desktop-s:flex-col desktop-s:flex-[1_1_40%]">
+        <div className="desktop-s:w-[600px] desktop-s:pl-10">
           {/* Buyer Data */}
           <BuyerData />
 
@@ -22,8 +22,8 @@ export default function Checkout({ optionalExtras }) {
         </div>
       </div>
 
-      <div className="desktop-s:px-10 relative border border-gray-300/20 bg-gray-200 desktop-s:flex-[1_1_40%]">
-        <div className="tablet-s:max-w-[528px] sticky top-28">
+      <div className="desktop-s:px-10 w-full desktop-s:w-auto pt-10 desktop-s:pt-0 relative border border-gray-300/20 bg-gray-200/45 desktop-s:flex-[1_1_40%]">
+        <div className="tablet-s:max-w-[528px] my-0 mx-auto desktop-s:mx-0 sticky top-28">
           {/* Order Summary */}
           <OrderSummary />
 

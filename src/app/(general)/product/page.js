@@ -5,7 +5,7 @@ import Testimonies from "@/components/testimonies/Testimonies";
 import { productOne } from "data/product";
 import { productsTestimonies } from "data/testimonies";
 import { servicesFaq } from "data/faq";
-import FiftyTwo from "../components/fifty/FiftyTwo";
+import FiftyTwo from "../../components/fifty/FiftyTwo";
 import { productFiftyTwoInfo } from "data/fifty";
 import OnlyTextOne from "@/components/onlytext/OnlyTextOne";
 import { onlyTextProduct } from "data/onlyText";

@@ -12,7 +12,7 @@ import { ctaColegios } from "data/cta";
 import { colegiosServicesInfo } from "data/services";
 import { colegiosFormInfo } from "data/forms";
 import { colegiosTestimonies } from "data/testimonies";
-import Cta from "../components/Cta";
+import Cta from "../../components/Cta";
 
 export const metadata = {
   title: "Servicios Para Colegios | Ferias Científicas",

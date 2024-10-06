@@ -4,7 +4,7 @@ export default function OrderSummary() {
   return (
     <div className="px-3 mobile-m:px-5 tablet-s:px-0 pb-10 ">
       <span className="font-semibold text-p-xl text-[#444] mb-3 block ">
-        Order Summary
+        Resumen De La Compra
       </span>
 
       {/* Order Summary Product Container */}

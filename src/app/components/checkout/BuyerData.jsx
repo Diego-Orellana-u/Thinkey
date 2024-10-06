@@ -39,7 +39,7 @@ export default function BuyerData() {
   return (
     <div className="px-3 mobile-m:px-5 mb-5 tablet-s:px-0">
       <span className="font-semibold text-p-xl text-[#444] mb-3 block ">
-        Buyer Information
+        Información Del Comprador
       </span>
       <Form {...form}>
         <form>

@@ -19,11 +19,10 @@ module.exports = {
       "desktop-l": "1150px",
     },
     fontSize: {
+      "h2-s": "1.875rem", //font-size: 30px, line-height: 36px   LISTO
+      "h3-s": "1.5rem", //font-size: 24px, line-height: 28px LISTO
+      "p-s": "1rem", //font-size: 16px, line-height: 24px LISTO
       "h1-s": "2.188rem", //font-size: 35px, line-height: 42px
-      "h2-s": "1.875rem", //font-size: 30px, line-height: 36px
-      "h3-s": "1.5rem", //font-size: 24px, line-height: 28px
-      "p-xs": "0.875rem", //font-size: 14px, line-height: 21px
-      "p-s": "1rem", //font-size: 16px, line-height: 24px
       "p-l": "1.125rem", //font-size: 18px, line-height: 30px
       "h2-l": "2.375rem", //font-size: 38px, line-height: 45px
       "h1-xl": "3.25rem", //font-size: 52px, line-height: 63px

@@ -32,9 +32,20 @@ export default function BuyerData() {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      Nombre: "",
+      nombre: "",
+      apellido: "",
+      correo: "",
+      telefono: "",
+      mensaje: "",
     },
   });
+
+  const formId = useId();
+
+  function onSubmit(values) {
+    console.log(values);
+    // Additional feedback could be added here
+  }
 
   return (
     <div className="px-3 mobile-m:px-5 mb-5 tablet-s:px-0">
